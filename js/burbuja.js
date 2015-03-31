@@ -86,12 +86,12 @@ node.append("circle")
 					   return "30px";
 					  }else{
 						  if(d.r>70){ 
-							  return "24px";
+							  return "20px";
 					  		}else{
 					  			if(d.r>50){ 
-						  			return "20px";
+						  			return "18px";
 						  		}else{
-						  		return "15px";
+						  		return "12px";
 								} 
 							} 
 						  
@@ -102,11 +102,7 @@ node.append("circle")
      
    
       
-  node.append("g")
-  	.attr("id",function(d) { return "jugadores_"+(normalize(d.className)).replace(/\s/g,"_"); })
-  	.attr("class", "jugadores_cont")
-  	.attr("width", function(d) { return (d.r)*2; })
-	  .attr("height", function(d) { return (d.r)*2; });
+  
 
   node.append("text")
       .attr("dy", ".3em")
@@ -122,12 +118,12 @@ node.append("circle")
 					   return "30px";
 					  }else{
 						  if(d.r>70){ 
-							  return "24px";
+							  return "20px";
 					  		}else{
 					  			if(d.r>50){ 
-						  			return "20px";
+						  			return "16px";
 						  		}else{
-						  		return "15px";
+						  		return "12px";
 								} 
 							} 
 						  
@@ -136,6 +132,73 @@ node.append("circle")
 						}
 		})
       .text(function(d) { return d.className.substring(0, d.r / 3); });
+      
+      
+     var jug=node.append("g")
+	  	.attr("id",function(d) { return "jugadores_"+(normalize(d.className)).replace(/\s/g,"_"); })
+	  	.attr("class", "jugadores_cont")
+	  	.attr("width", function(d) { return ((d.r)*2)+20; })
+		 .attr("height", function(d) { return ((d.r)*2)+20; })
+		 .attr("x",0)
+		 .attr("y",0)
+		 .attr("opacity","0");
+		 
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx",0)
+		 	.attr("cy","-90");
+		 	
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx",63.63)
+		 	.attr("cy","-63.63");
+		 	
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx",63.63)
+		 	.attr("cy","-63.63");
+		 
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx",90)
+		 	.attr("cy","0");
+		 	
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx","63.63")
+		 	.attr("cy","63.63");
+		 	
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx",0)
+		 	.attr("cy","90");
+
+		 	
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx","-63.63")
+		 	.attr("cy","63.63");
+		 	
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx","-90")
+		 	.attr("cy","0");
+		 	
+		 jug.append("circle")
+		 	.attr("r","20px")
+		 	.attr("fill","white")
+		 	.attr("cx",-63.63)
+		 	.attr("cy","-63.63");
+		 
+		 
 });
 
 // Returns a flattened hierarchy containing all leaf nodes under the root.
@@ -160,32 +223,37 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 	var radio=d3.select(this).attr("radio_o");
 	
 	
-	
+	m.select("text").transition()
+		.style("font-size","15px");
 	if(radio>80){
-		m.select("text").transition()
-		.style("font-size","25px");
+		
 		m.select(".circulo_in").transition()
-		.attr("r",80);
+		.attr("r",50);
 	}else{
 		//m.moveToFront();		
 		m.select(".circulo_in").transition()
-		.attr("r",80);
+		.attr("r",50);
 		
 		m.select(".circulo_out").transition()
-		.attr("r",80);
+		.attr("r","120px");
 		
 		
 		
 		
 		m.select(".circulo_back")
 		
-		.attr("fill","rgb(41, 40, 51)");
+		.attr("fill","rgba(41, 40, 51,.7)");
 		
 		m.select(".circulo_back")
-		.attr("r",100);
+		.attr("r",120);
 		
-		m.moveToFront();
+		
 	}
+
+	m.select(".jugadores_cont").transition().delay(300).attr("opacity",1);
+	
+	m.moveToFront();
+	
 	
 	
 	
@@ -204,11 +272,21 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 
 
 $(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
+	
+	
 	var radio=d3.select(this).attr("radio_o");
 	console.log(radio);
 	var m=d3.select(this.parentNode);
-	console.log(m.select(".circulo_in"));
+	
+	m.select(".jugadores_cont").transition().attr("opacity",0);
+	
 	m.select(".circulo_in").transition()
+		.attr("r",radio);
+	
+	m.select(".circulo_out").transition()
+		.attr("r",radio);
+		
+	m.select(".circulo_back").transition()
 		.attr("r",radio);
 		
 	text_size=$(this).attr("font_size");
@@ -220,8 +298,9 @@ $(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
 		
 	m.select(".circulo_back")
 		.attr("fill","transparent");
-		
-
+	
+	
+	
 		
 	
 

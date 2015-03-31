@@ -6,20 +6,24 @@
 
 
 text{
-		color: white;
-		fill: white;
-		text-transform: uppercase;
-		font-family: 'Lato';
-		pointer-events: none;
-	}
+	color: white;
+	fill: white;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	pointer-events: none;
+}
 	
-	#indepth_burbujas_container{
-		display: table;
-		margin: auto;
-		max-width: 1000px;
-		width: 100%;
-		
-	}
+#indepth_burbujas_container{
+	display: table;
+	margin: auto;
+	max-width: 1000px;
+	width: 100%;
+	
+}
+	
+.jugadores_cont{
+	pointer-events: none;
+}
 
 .indepth_pages{
 	width: 100%;
