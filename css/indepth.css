@@ -1,0 +1,1347 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+#nav-bar-wrapper{
+	display: none;
+}
+
+
+text{
+		color: white;
+		fill: white;
+		text-transform: uppercase;
+		font-family: 'Lato';
+		pointer-events: none;
+	}
+	
+	#indepth_burbujas_container{
+		display: table;
+		margin: auto;
+		max-width: 1000px;
+		width: 100%;
+		
+	}
+
+.indepth_pages{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 19px;
+	margin: auto;
+}
+
+.indepth_page{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	margin: auto;
+	font-family: 'Lato', sans-serif;
+}
+
+.indepth_page_content{
+	background-color:  white;
+	position: relative;
+	
+}
+
+.indepth_share{
+		position: fixed;
+		right: 15px;
+		bottom: 20px;
+		z-index: 2000;
+		display: -webkit-inline-box;
+     display: -webkit-inline-flex;
+   display: -moz-inline-box;
+     display: -ms-inline-flexbox;
+     display: inline-flex;
+		
+	}
+	
+	#drag{
+		display: none;
+		right: 3px;
+		top: 8px;
+		z-index: 2000;
+	}
+	
+	.indepth_share_item{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.4);
+		float: left;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: auto 20px ;
+		margin-left: 7px;
+		cursor: pointer;
+		margin-bottom: 5px;
+	}
+	
+	.indepth_share_item.facebook{
+		background-image: url(../images/boton_facebook.png);
+	}
+	
+	.indepth_share_item.facebook:hover{
+		background-color: #3660A4;
+	}
+	
+	.indepth_share_item.twitter{
+		background-image: url(../images/boton_twitter.png);
+	}
+	
+	.indepth_share_item.twitter:hover{
+		background-color: #02B2F7;
+	}
+	
+	.indepth_share_item.whatsapp{
+		display: none;
+		background-image: url(../images/boton_whatsapp.png);
+	}
+	
+	.indepth_share_item.whatsapp:hover{
+		background-color: #85D86D;
+	}
+
+#com{
+	background: white;
+}
+
+#indepth_coments{
+	max-width: 800px;
+	margin: auto;
+	width: 100%;
+}
+
+.indepth_page_content .indepth_title{
+	font-size:34px;   /* tamaÃ±o */
+	font-weight: 700;
+	text-transform: uppercase; /* comentar para quitar mayusculas */
+	text-align: center; /* ajustar alineacion (justify, left, right o center) */	
+	color: #fd6968;
+}
+
+.indepth_page_body{
+	bottom: 0px;
+	left: 0px;
+	margin: 0 auto;
+	position: relative;
+	right: 0px;
+	top: 0px;
+	max-width: 1440px;
+	z-index: 2;
+	padding: 60px 0;
+}
+
+#indepth_cover{
+	background: #141414;
+}
+
+#indepth_cover .indepth_page_body{
+	position: relative;
+	display: table;
+	text-align: center;
+	height: 100%;
+	background: ;
+	background-repeat: no-repeat;
+	background-position: center 20px;
+	background-size: 1332px auto;
+	max-width: 1440px;
+	background-image: url();
+	width: 100%;
+	padding: 0;
+}
+
+.indepth_page_content .indepth_text{
+	color: #535252; /* color de la fuente*/
+	text-align:justify; /* ajustar alineacion (justify, left, right o center) */
+	font-weight: 400;
+	font-size: 1em;
+	width: 660px;
+	margin: auto;
+}
+
+#indepth_intro .indepth_page_body{
+}
+
+#indepth_cover .indepth_titlle_container{
+	margin-top: 240px;
+	 color: #FFF;
+}
+
+ #indepth_ver_texto{
+	display: inline-block;
+	 cursor: pointer;
+	 width: 50px;
+	 height: 50px;
+	 background-image: url(../images/Flecha.svg);
+	 background-size: 100%;
+	 margin-top: 60px;
+}
+
+#indepth_ver_texto:hover{
+	
+}
+
+#indepth_cover .indepth_parallax_back{
+	background-image: url(../images/Fondo.jpg);
+	background-size: cover;
+	background-position: center center;	
+	background-attachment: fixed;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.indepth_cover_content{
+	
+	display: table-cell;
+	
+	vertical-align: middle;
+	
+}
+
+.indepth_cover_content .indepth_cover_conatainer_in{
+	width: 950px;
+	height: 585px;
+	margin: auto;
+	position: relative;
+}
+
+#indepth_monitor{
+	background-image: url(../images/Box1-01.svg);
+	background-size: 100%;
+	width: 644px;
+	height: 140px;
+	position: absolute;
+	background-repeat: no-repeat;
+	right: 0px;
+	top: 10px;
+	overflow: hidden;
+}
+
+#indepth_monitor_img{
+	display: table;
+	vertical-align: middle;
+	height: 100%;
+}
+
+#indepth_monitor_img img{
+	height: 80px;
+	margin-top: 30px;
+	-webkit-animation: monitor_mov 8s infinite; /* Safari 4+ */
+  -moz-animation:    monitor_mov 8s infinite; /* Fx 5+ */
+  -o-animation:      monitor_mov 8s infinite; /* Opera 12+ */
+  animation:         monitor_mov 8s infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes monitor_mov {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-1020px,0px);}
+}
+
+@-webkit-keyframes monitor_mov {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-1020px,0px);}
+}
+
+@-moz-keyframes monitor_mov {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-1020px,0px);}
+}
+
+@-o-keyframes monitor_mov {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-1020px,0px);}
+}
+
+@keyframes monitor_mov {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-1020px,0px);}
+}
+
+
+
+
+#indepth_mono_container{
+	width: 270px;
+	height: 585px;
+	background-image: url(../images/Box4-01.svg);
+	background-size: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: table;
+}
+
+#indepth_barras{
+	width: 230px;
+	height: 420px;
+	background-image: url(../images/Box5-01.svg);
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#barras_container{
+	width: 200px;
+	height: auto;
+	display: table;
+	margin: auto;
+	margin-top: 50px;
+}
+
+#barras_container ul{
+	text-decoration: none;
+	 list-style:none;
+}
+
+#barras_container li{
+	height: 30px;
+	margin-bottom: 8px;
+}
+
+#barra_1{
+	background-color: #6ac5ed;
+	width: 80%;
+	-webkit-animation: barra_mov_1 8s infinite; /* Safari 4+ */
+  -moz-animation:    barra_mov_1 8s infinite; /* Fx 5+ */
+  -o-animation:      barra_mov_1 8s infinite; /* Opera 12+ */
+  animation:         barra_mov_1 8s infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes barra_mov_1 {
+    0% {width: 80%;}
+    30% {width: 40%;}
+    60% {width: 90%;}
+    100% {width: 80%;}
+}
+
+@-webkit-keyframes barra_mov_1 {
+   0% {width: 80%;}
+    30% {width: 40%;}
+    60% {width: 90%;}
+    100% {width: 80%;}
+}
+
+@-moz-keyframes barra_mov_1 {
+    0% {width: 80%;}
+    30% {width: 40%;}
+    60% {width: 90%;}
+    100% {width: 80%;}
+}
+
+@-o-keyframes barra_mov_1 {
+   0% {width: 80%;}
+    30% {width: 40%;}
+    60% {width: 90%;}
+    100% {width: 80%;}
+}
+
+@keyframes barra_mov_1 {
+    0% {width: 80%;}
+    30% {width: 40%;}
+    60% {width: 90%;}
+    100% {width: 80%;}
+}
+
+
+
+#barra_2{
+	background-color: #1578ab;
+	width: 60%;
+	-webkit-animation: barra_mov_2 6s infinite; /* Safari 4+ */
+  -moz-animation:    barra_mov_2 6s infinite; /* Fx 5+ */
+  -o-animation:      barra_mov_2 6s infinite; /* Opera 12+ */
+  animation:         barra_mov_2 6s infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes barra_mov_2 {
+    0% {width: 60%;}
+    30% {width: 80%;}
+    60% {width: 30%;}
+    100% {width: 60%;}
+}
+
+@-webkit-keyframes barra_mov_2 {
+    0% {width: 60%;}
+    30% {width: 80%;}
+    60% {width: 30%;}
+    100% {width: 60%;}
+}
+@-moz-keyframes barra_mov_2 {
+    0% {width: 60%;}
+    30% {width: 80%;}
+    60% {width: 30%;}
+    100% {width: 60%;}
+}
+@-o-keyframes barra_mov_2 {
+    0% {width: 60%;}
+    30% {width: 80%;}
+    60% {width: 30%;}
+    100% {width: 60%;}
+}
+
+
+#barra_3{
+	background-color: #149bea;
+	width: 75%;
+	-webkit-animation: barra_mov_3 7s infinite; /* Safari 4+ */
+	-moz-animation:    barra_mov_3 7s infinite; /* Fx 5+ */
+	-o-animation:      barra_mov_3 7s infinite; /* Opera 12+ */
+	animation:         barra_mov_3 7s infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes barra_mov_3 {
+    0% {width: 75%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 30%;}
+    100% {width: 75%;}
+}
+
+@-webkit-keyframes barra_mov_3 {
+   0% {width: 75%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 30%;}
+    100% {width: 75%;}
+}
+@-moz-keyframes barra_mov_3 {
+   0% {width: 75%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 30%;}
+    100% {width: 75%;}
+}
+@-o-keyframes barra_mov_3 {
+    0% {width: 75%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 30%;}
+    100% {width: 75%;}
+}
+
+
+#barra_4{
+	background-color: #6ac5ed;
+	width: 30%;
+	-webkit-animation: barra_mov_4 3s infinite; /* Safari 4+ */
+	-moz-animation:    barra_mov_4 3s infinite; /* Fx 5+ */
+	-o-animation:      barra_mov_4 3s infinite; /* Opera 12+ */
+	animation:         barra_mov_4 3s infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes barra_mov_4 {
+    0% {width: 30%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 70%;}
+    100% {width: 30%;}
+}
+
+@-webkit-keyframes barra_mov_4 {
+    0% {width: 30%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 70%;}
+    100% {width: 30%;}
+}
+
+
+@-moz-keyframes barra_mov_4 {
+    0% {width: 30%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 70%;}
+    100% {width: 30%;}
+}
+@-o-keyframes barra_mov_4 {
+    0% {width: 30%;}
+    30% {width: 85%;}
+    60% {width: 50%;}
+	80% {width: 70%;}
+    100% {width: 30%;}
+}
+
+
+#barra_5{
+	background-color: #1578ab;
+	width: 94%;
+	-webkit-animation: barra_mov_5 9s infinite; /* Safari 4+ */
+	-moz-animation:    barra_mov_5 9s infinite; /* Fx 5+ */
+	-o-animation:      barra_mov_5 9s infinite; /* Opera 12+ */
+	animation:         barra_mov_5 9s infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes barra_mov_5 {
+    0% {width: 94%;}
+    30% {width: 50%;}
+    60% {width: 70%;}
+	80% {width: 98%;}
+    100% {width: 94%;}
+}
+
+@-webkit-keyframes barra_mov_5 {
+     0% {width: 94%;}
+    30% {width: 50%;}
+    60% {width: 70%;}
+	80% {width: 98%;}
+    100% {width: 94%;}
+}
+
+@-moz-keyframes barra_mov_5 {
+     0% {width: 94%;}
+    30% {width: 50%;}
+    60% {width: 70%;}
+	80% {width: 98%;}
+    100% {width: 94%;}
+}
+
+@-o-keyframes barra_mov_5 {
+    0% {width: 94%;}
+    30% {width: 50%;}
+    60% {width: 70%;}
+	80% {width: 98%;}
+    100% {width: 94%;}
+}
+
+
+.idnepth_barra_sep{
+	color: white;
+	margin-top: 25px;
+	width: 171px;
+}
+
+.indepth_mono{
+	display: table-cell;
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.indepth_mono img{
+	margin: auto;
+}
+
+.mono_img{
+	display: none;
+}
+
+
+.mono_active{
+	display: block;
+}
+
+
+#indepth_cover #indepth_title{
+	width: 360px;
+	height: 360px;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 320px;
+	
+}
+
+
+.indepth_tltle_text{
+	color: #00adef;
+	font-size: 56px;
+	text-align: center;
+	line-height: 66px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+
+
+.indepth_pesentado{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.indepth_arrow_cover{
+	width: 70px;
+	height: 70px;
+	background-image: url(../images/Arrow_1-01.svg);
+	margin: auto;
+	margin-top: 40px;
+	cursor: pointer;
+	background-size: 100%;
+}
+
+.indepth_arrow_cover:hover{
+	opacity: .6;
+	width: 65px;
+	height: 65px;
+	transform: translate(2px,2px);
+}
+
+
+.indepth_parallax_back {
+	height: 100%;
+	background-size: 1440px auto;
+	background-color: #000;
+	top: 0px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+
+
+#indepth_page1{
+	background-color: #22212a;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+
+.indepth_break{
+		height: 800px;
+}
+
+.indepth_break .indepth_page_body{
+	height: 100%;
+	background-size: cover;
+	top: 0px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+}
+
+#indepth_page2{
+	background-color: #292833;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding:50px 0px;
+	color: white;
+	
+}
+
+
+
+#indepth_page3{
+	background: #121212;
+	color: #e2e1dd;
+	padding: 30px 0px;
+}
+
+
+#indepth_page4{
+	background-image: url(../images/Fondo_expertos.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: auto;
+	background-color: white;
+	color: #363636;
+	padding: 30px 0;
+}
+
+#indepth_page4 .indepth_disponible_title_line div{
+	background-color: #363636;
+}
+
+.indepth_expertos_container{
+	width: 960px;
+	min-height: 100px;
+	margin: auto;
+	margin-top: 20px;
+	display: table;
+}
+
+.indepth_experto_container{
+	float: left;
+	width: 310px;
+	display: table;
+	background-color: white;
+	
+	
+}
+
+.indepth_experto_sep{
+	width: 15px;
+	float: left;
+	min-height: 100px;
+	height: 100%;
+}
+
+.indepth_experto_foto{
+	display: table;
+	width: 100%;
+	height: auto;
+	
+}
+
+
+
+.indepth_experto_foto img{
+	width: 100%;
+}
+
+.indepth_expertos_info{
+	display: table;
+	padding: 10px 15px;
+}
+
+
+.indepth_experto_nombre{
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.indepth_experto_desc{
+	font-style: italic;
+	font-size: 18px;
+	color: #8c8f95;
+	margin-top: 5px;
+}
+
+.indepth_expertos_info .indepth_apuestas_game{
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left: 0px;
+	font-weight: 600;
+	color: #8c8f95;
+}
+
+.indepth_expertos_info .indepth_apuestas_game2{
+	font-size: 18px;
+	margin-left: 0px;
+	padding-top: 3px;
+	color: #8c8f95;
+	font-weight: 400;
+}
+
+.indepth_expertos_info .indepth_apostado{
+	color: #8c8f95;
+	margin-left: 0;
+	background-position: 0px 0px;
+	padding-left: 25px;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: 7px;
+}
+
+.indepth_apuesta_expertos{
+	max-width: 960px;
+	width: 100%;
+	margin: auto;
+	margin-top: 15px;
+	background-color: white;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.indepth_nombre_apuesta{
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.indepth_fecha_expertos{
+	font-size: 16px;
+	color: #8c8f95;
+	font-weight: 300;
+	padding-top: 3px;
+	
+}
+
+.indepth_apuesta_expertos_resultado{
+	width: 310px;
+	background-color: white;
+	float: left;
+	padding: 15px 0;
+	text-align: center;
+}
+
+
+.indepth_apuesta_expertos_resultados{
+	display: table;
+	width: 960px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.indepth_trofeo{
+	width: 25px;
+	height: 25px;
+	margin: auto;
+	background-image: url(../images/Copa_2.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	
+}
+
+.indepth_trofeo.win{
+	background-image: url(../images/Copa_1.svg);
+}
+
+.indepth_resultado_experto{
+	font-size: 26px;
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+.indepth_expertos_efectividad{
+	width: 280px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+.indepth_efectividad_texto{
+	color: #8c8f95;
+	font-size: 18px;
+	font-weight: 600;
+	display: table;
+	width: 100%;
+}
+
+.indepth_efectividad_texto_izq{
+	float: left;
+}
+
+.indepth_efectividad_texto_der{
+	float: right;
+}
+
+.indepth_efectividad_bar{
+	width: 100%;
+	height: 10px;
+	background-color: #e7e7e7;
+	overflow: hidden;
+	border-radius: 50px;
+	margin-top: 10px;
+}
+
+.indepth_efectividad_bar div{
+	background-color: #363636;
+	height: 10px;
+}
+
+@media screen and (max-width:1023px) {
+	.indepth_quotes_cont{
+		width: 500px;
+	}
+	.indepth_quote_box{
+		margin-bottom: 15px;
+	}
+	.indepth_page_body{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:960px) {
+	.indepth_cover_side.right {
+		right: -200px;
+	}
+	
+	.indepth_cover_side.left {
+		left: -200px;
+	}
+	
+	.indepth_cover_side {
+		width: 254px;
+		background-size: 100% auto;
+	}
+	
+	#ficha1 {
+		top: 85px;
+		left: 120px;
+	}
+	
+	#indepth_page2{
+		background-size: auto 100%;
+	}
+	
+	.indepth_disponible_title{
+		width: 800px;
+	}
+	
+	.indepth_disponible_title_line{
+		width: 37%;
+	}
+	
+	.indepth_diponible_barra{
+		width: 800px;
+	}
+	
+	.indepth_disponible_circulos_item{
+		width: 100px;
+	}
+	
+	.indepth_apuestas_container{
+		width: 800px;
+	}
+	
+	.indepth_apuestas_col.right{
+		width: 333px;
+		
+	}
+	
+	.indepth_apuestas_col.center{
+		width: 363px;
+	}
+	
+	.indepth_nota{
+		width: 440px;
+	}
+	
+	.indepth_expertos_container{
+		width: 800px;
+	}
+	
+	.indepth_experto_container{
+		width: 256px;
+	}
+	
+	.indepth_apuesta_expertos{
+		width: 800px;
+	}
+	.indepth_expertos_efectividad{
+		width: 80%;
+	}
+	.indepth_apuesta_expertos_resultados{
+		width: 800px;
+	}
+	
+	.indepth_apuesta_expertos_resultado{
+		width: 256px;
+	}
+}
+
+
+@media screen and (max-width:830px) {
+	.indepth_cover_side.right {
+		right: -100px;
+	}
+	
+	.indepth_cover_side.left {
+		left: -100px;
+	}
+	
+	.indepth_cover_side {
+		width: 204px;
+		background-size: 100% auto;
+	}
+	
+	#ficha1 {
+		top: 85px;
+		left: 120px;
+	}
+	
+	#indepth_page2{
+		background-size: auto 100%;
+	}
+	
+	.indepth_disponible_title{
+		width: 700px;
+	}
+	
+	.indepth_disponible_title_line{
+		width: 37%;
+	}
+	
+	.indepth_diponible_barra{
+		width: 700px;
+	}
+	
+	.indepth_disponible_circulos_item{
+		width: 100px;
+		height: 130px;
+	}
+	
+	.indepth_apuestas_container{
+		width: 700px;
+	}
+	
+	.indepth_apuestas_col.right{
+		width: 293px;
+	}
+	
+	.indepth_apuestas_col.center{
+		width: 303px;
+	}
+	
+	.indepth_nota{
+		width: 380px;
+		padding: 46px 160px;
+	}
+	
+	.indepth_expertos_container{
+		width: 635px;
+	}
+	
+	.indepth_experto_container{
+		width: 310px;
+		margin-bottom: 15px;
+	}
+	
+	.indepth_experto_container:last-child{
+		float: none;
+		margin: auto;
+	}
+	
+	.indepth_apuesta_expertos{
+		width: 700px;
+	}
+	
+	
+	.indepth_experto_sep.sep_dos{
+		display: none;
+	}
+	
+
+	.indepth_expertos_efectividad{
+		width: 80%;
+	}
+	.indepth_apuesta_expertos_resultados{
+		width: 700px;
+	}
+	
+	.indepth_apuesta_expertos_resultado{
+		width: 228.3px;
+	}
+	
+	.indepth_disponible_title_line{
+		width: 34%;
+	}
+	#ficha2{
+		right: 80px;
+	}
+}
+
+
+
+@media screen and (max-width:760px) {
+	.indepth_muneco_img{
+		right: 100px;
+	}	
+	
+	.indepth_disponible_title{
+		width: 660px;
+	}
+	
+	.indepth_diponible_barra{
+		width: 600px;
+	}
+	
+	.indepth_disponible_circulos{
+		width: 540px;
+	}
+	
+	.indepth_disponible_circulos_item{
+		width: 130px;
+		height: 150px;
+	}
+	
+	#indepth_page3 .indepth_disponible_title_line{
+		width: 23%;
+	}
+	
+	.indepth_apuestas_container{
+		width: 600px;
+	}
+	
+	.indepth_apuestas_col.right {
+		width: 193px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.indepth_nota {
+		width: 380px;
+		padding: 46px 110px;
+	}
+	
+	.indepth_title{
+		width: 500px;
+		margin: auto;
+	}
+	
+	.indepth_title img{
+		width: 100%;
+	}
+	
+	#ficha4{
+		display: none;
+	}
+	
+	#ficha1 {
+		left: 40px;
+	}
+}
+
+@media screen and (max-width:660px) {
+	.indepth_page_content .indepth_text{
+		width: 80%;
+	}
+	
+	.indepth_disponible_title{
+		width: 600px;
+	}
+	
+	.indepth_experto_sep.sep_uno{
+		display: none;
+	}
+	
+	.indepth_experto_container{
+		float: none;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	
+	.indepth_disponible_title{
+		width: 90%;
+	}
+	
+	.indepth_disponible_title_line{
+		width: 20%;
+	}
+	
+	.indepth_expertos_container{
+		width: auto;
+	}
+	
+	.indepth_apuesta_expertos{
+		padding: 30px 15px;
+		width: auto;
+		min-width: 270px;
+		display: table;
+	}
+	
+	.indepth_apuesta_expertos_resultados{
+		width: auto;
+		display: table;
+	}
+	
+	.indepth_apuesta_expertos_resultado{
+		float: none;
+		margin: auto;
+		margin-bottom: 15px;
+		width: 300px;
+	}
+	
+	
+}
+
+@media screen and (max-width:600px) {
+	.indepth_cover_side{
+		
+	}	
+	
+	#ficha1 {
+		display: none;
+	}
+	
+	.indepth_diponible_barra{
+		width: 90%;
+	}
+	
+	.indepth_disponible_circulos {
+		width: 520px;
+	}
+	
+	.indepth_disponible_circulos {
+		width: 260px;
+	}
+	
+	.indepth_apuestas_container {
+		width: 300px;
+	}
+	
+	.indepth_apuestas_col.center{
+		float: none;
+		width: 100%;
+	}
+	
+	.indepth_apuestas_col{
+		float: none;
+	}
+	
+	.indepth_apuestas_col.right{
+		width: 90%;
+		padding: 15px 5%;
+		height: auto;
+		display: table;
+		margin-top: 2px;
+	}
+	
+	.indepth_nota {
+		width: 200px;
+		padding: 46px 50px;
+	}
+	
+	.indepth_title {
+		width: 80%;
+	}
+	
+	#indepth_cover .indepth_page_body{
+		z-index: 100;
+	}
+	
+	#ficha3 {
+		top: 500px;
+		left: 40px;
+	}
+	#indepth_page3 .indepth_disponible_title_line{
+		width: 15%;
+	}
+	
+	#indepth_page1{
+		height: 500px;
+	}
+	
+	.indepth_muneco{
+		width: 100%;
+	}
+	
+	
+	.indepth_muneco_img{
+		width: 100%;
+		right: 0;
+		height: 450px;
+		
+	}
+	
+	.indepth_muneco_img img{
+		width: 300px;
+		margin: auto;
+		
+	}
+	
+	.indepth_muneco_lines{
+		width: 200px;
+	}
+	
+	.indepth_muneco_info{
+		margin-top: 0;
+		position: absolute;
+		bottom: 30px;
+		left: 0px;
+		z-index: 100;
+		width: 100%;
+	}
+	
+	.indepth_muneco_lines{
+		display: none;
+	}
+	
+	.indepth_muneco_item_left{
+		text-align: center;
+		width: 200px;
+		margin: auto;
+		float: none;
+	}
+	
+	.indepth_page_content .indepth_text{
+		width: 96%
+	}
+	
+	.indepth_apuesta_ahora{
+		width: 100%;
+		margin: auto;
+		padding: 0;
+		text-align: center;
+		margin-top: -5px;
+		border-radius: 0;
+	}
+
+	
+}
+
+@media screen and (max-width:414px) {
+	#ficha3 {
+		display: none;	
+	}	
+	
+	#indepth_page3 .indepth_disponible_title_line {
+width: 10%;
+}
+
+.indepth_break {
+height: 500px;
+}
+	
+}
+
+@media screen and (max-width:385px) {
+	
+	
+	#indepth_cover .indepth_titlle_container{
+		margin-top: 200px;
+	}
+	
+	#indepth_cover{
+		height: 500px;
+	}
+	
+	#ficha5{
+		display: none;
+	}
+	#indepth_page3 .indepth_disponible_title_line {
+width: 5%;
+}
+
+#indepth_cover .indepth_parallax_back {
+background-size: 250px auto, cover;
+background-position: center 125px, 50% 0px;
+background-attachment: scroll;
+}
+	
+}
+
+@media screen and (max-width:360px) {
+	.indepth_disponible_numeros_item{
+		width: 50px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+}
+
+
+@media screen and (max-height:500px) {
+	#indepth_cover{
+		max-height: 600px;
+	}
+	
+	#indepth_cover .indepth_parallax_back{
+		background-position: center bottom;
+	}
+	
+	#indepth_cover .indepth_titlle_container{
+		margin-top: 40%;
+	}
+}
+
+@media screen and (max-height:500px) {
+	#indepth_cover{
+		max-height: 500px;
+	}
+	
+	#indepth_cover .indepth_parallax_back{
+		background-position: center bottom;
+	}
+	
+	#indepth_cover .indepth_titlle_container{
+		margin-top: 30%;
+	}
+}

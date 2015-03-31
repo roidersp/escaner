@@ -1,0 +1,25 @@
+{
+ "name": "flare",
+ "children": [
+      {"name": "América", "size": 20},
+      {"name": "Puebla", "size": 1},
+       {"name": "Chiapas", "size": 1},
+      {"name": "Cruz Azul", "size": 16},
+      {"name": "Querétaro", "size": 8},
+       {"name": "Tijuana", "size": 2},
+       {"name": "Tigres", "size": 8},
+      {"name": "Chivas", "size": 1},
+      {"name": "Pachuca", "size": 14},
+       {"name": "Atlas", "size": 8},
+      {"name": "Toluca", "size": 10},
+      {"name": "Monterrey", "size": 9},
+      {"name": "León", "size": 3},
+      
+ {"name": "Querétaro", "size": 8},
+  {"name": "Querétaro", "size": 8},
+       {"name": "Puebla", "size": 1}
+     
+      
+    
+    ]
+}
