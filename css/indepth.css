@@ -644,203 +644,397 @@ text{
 
 
 #indepth_page3{
-	background: #121212;
+	background: #22212a;
 	color: #e2e1dd;
-	padding: 30px 0px;
+	padding: 50px 0px;
 }
 
+#indepth_min_jug_container{
+	width: 1000px;
+	margin: auto;
+	display: table;
+	position: relative;
+}
+
+.idnepth_jugmin_container{
+	
+}
+
+.indepth_min-left{
+	
+}
+
+.indepth_mints{
+	width: 100%;
+	height: 160px;
+	
+}
+
+.indepth_mints_left{
+	width: 5%;
+	height: 100%;
+	 -ms-transform: translate(0,-13px); /* IE 9 */
+    -webkit-transform: translate(0,-13px);
+	transform: translate(0,-13px);
+	float: left;
+
+}
+
+.indepth_mints_r{
+	width: 95%;
+	float: right;
+	border-top: 3px solid #2c2b34;
+}
+
+.indepth_min_back{
+	width: 100%;
+	height: auto;
+	display: table;
+	top: 160px;
+	left: 0px;
+	position: absolute;
+}
+
+.indepth_min_cont{
+	width: 930px;
+	float: right;
+	display: table;
+}
+
+.indepth_jugadores_up{
+	height: 640px;
+}
+
+.indepth_jugadores_back{
+	border-top: 4px solid #ea4344;
+}
+
+.indepth_jugmin_jugador{
+	width: 84px;
+	float: left;
+	display: table;
+}
+
+.indepth_jugmin_barra{
+	width: 4px;
+	height: 20px;
+	background-color: #ea4344;
+	margin: auto;
+}
+
+.indepth_jugmin_name{
+	padding-top: 5px;
+	text-align: center;
+}
+
+.indepth_barra_jugmin{
+	width: 84px;
+	height: 100%;
+	float: left;
+	position: relative;
+	bottom: 0px;
+}
+
+.indepth_linea_barra{
+	
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	display: table;
+	height: 75%;
+}
+
+.indepth_linea_barra .indepth_linea_in{
+	width: 0px;
+	height: 100%;
+	margin: auto;
+	border-left: 2px dashed rgba(161, 161, 161, 0.4);
+}
+
+.indepth_jugmin_jugador_imagen{
+	position: absolute;
+	top: 0px;
+	width: 90%;
+	margin-left: 5%;
+	display: table;
+}
+
+.indepth_jugmin_jugador_imagen_cont{
+	width: 100%;
+	display: table;
+	position: relative; 
+}
+
+.indepth_jugmin_jugador_imagen img{
+	width: 100%;
+	position: static;
+	top: 0px;
+	left: 0px;
+	
+}
+
+.indepth_image_cont{
+	position: absolute;
+	transform: translate(0,-50%);
+	-ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%);
+	z-index: 2;
+	
+}
+
+.idnepth_imagen_line{
+	z-index: 1;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	border-right: 30px solid white;
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	position: absolute;
+	transform: translate(-45px,0px);
+	-ms-transform: translate(-45px,0px); /* IE 9 */
+    -webkit-transform: translate(-45px,0px);
+}
+
+.idnepth_imagen_line div{
+	
+	
+}
+
+
+#indepth_break_1{
+	height: 400px;
+	background-image: url(../images/Fondo_2.jpg);
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+#indepth_break_1 .indepth_parallax_back{
+	background-color: transparent;
+	width: 800px;
+	
+	margin: auto;
+	position: relative;
+}
+
+.indepth_boteLla_cont{
+	position: absolute;
+	right: 0px;
+	bottom: 20px;
+	display: table;
+}
+
+.indepth_botella_powerade{
+	height: 700px;
+	position: relative;
+}
+
+.indepth_power_logo{
+	width: 270px;
+	left: 120px;
+	position: absolute;
+	bottom: 80px;
+}
+
+.indepth_haypower{
+	width: 480px;
+	position: absolute;
+	top: 50px;
+}
 
 #indepth_page4{
-	background-image: url(../images/Fondo_expertos.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	margin: auto;
-	background-color: white;
-	color: #363636;
-	padding: 30px 0;
+	background-color: #292833;
 }
 
-#indepth_page4 .indepth_disponible_title_line div{
-	background-color: #363636;
-}
-
-.indepth_expertos_container{
-	width: 960px;
-	min-height: 100px;
-	margin: auto;
-	margin-top: 20px;
-	display: table;
-}
-
-.indepth_experto_container{
-	float: left;
-	width: 310px;
-	display: table;
-	background-color: white;
-	
+#indepth_page4{
 	
 }
 
-.indepth_experto_sep{
-	width: 15px;
+#indepth_goleadores{
+	width: 100%;
+	max-width: 960px;
+	height: 390px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.indepth_goleadores_cont.izq{
+	width: 376px;
 	float: left;
-	min-height: 100px;
+	height: 100%;
+	display: inline-block;
+}
+
+.indepth_goleadores_cont.der{
+	float: right;
+	width: 500px;
 	height: 100%;
 }
 
-.indepth_experto_foto{
-	display: table;
-	width: 100%;
-	height: auto;
-	
-}
 
-
-
-.indepth_experto_foto img{
-	width: 100%;
-}
-
-.indepth_expertos_info{
-	display: table;
-	padding: 10px 15px;
-}
-
-
-.indepth_experto_nombre{
-	font-size: 22px;
-	font-weight: 600;
-}
-
-.indepth_experto_desc{
-	font-style: italic;
-	font-size: 18px;
-	color: #8c8f95;
-	margin-top: 5px;
-}
-
-.indepth_expertos_info .indepth_apuestas_game{
-	font-size: 18px;
-	margin-top: 20px;
-	margin-left: 0px;
-	font-weight: 600;
-	color: #8c8f95;
-}
-
-.indepth_expertos_info .indepth_apuestas_game2{
-	font-size: 18px;
-	margin-left: 0px;
-	padding-top: 3px;
-	color: #8c8f95;
-	font-weight: 400;
-}
-
-.indepth_expertos_info .indepth_apostado{
-	color: #8c8f95;
-	margin-left: 0;
-	background-position: 0px 0px;
-	padding-left: 25px;
-	line-height: 18px;
-	padding-top: 2px;
-	margin-top: 7px;
-}
-
-.indepth_apuesta_expertos{
-	max-width: 960px;
-	width: 100%;
-	margin: auto;
-	margin-top: 15px;
-	background-color: white;
-	padding: 30px 0;
-	text-align: center;
-}
-
-.indepth_nombre_apuesta{
-	font-size: 22px;
-	font-weight: 600;
-}
-
-.indepth_fecha_expertos{
-	font-size: 16px;
-	color: #8c8f95;
-	font-weight: 300;
-	padding-top: 3px;
-	
-}
-
-.indepth_apuesta_expertos_resultado{
-	width: 310px;
-	background-color: white;
+.indepth_goleador_circulo{
+	width: 80px;
+	height: 80px;
+	background: white;
 	float: left;
-	padding: 15px 0;
+	margin: 3px 3px;
+	border: 4px solid #d1d1d1;
+	border-radius: 50%;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.indepth_goleador_circulo:hover{
+	border: 4px solid #ee494a;
+}
+
+.indepth_goleador_circulo img{
+	height: 100%;
+}
+
+.indepth_barra_goleador{
+	width: 500px;
+	height: 60px;
+	background-color: #22212a;
+	color: white;
+	font-size: 22px;
+}
+
+.indepth_barra_nombre_jug{
+	float: left;
+	width: 300px;
+	height: 100%;
 	text-align: center;
-}
-
-
-.indepth_apuesta_expertos_resultados{
+	line-height: 100%;
 	display: table;
-	width: 960px;
-	margin: auto;
-	margin-top: 15px;
 }
 
-.indepth_trofeo{
-	width: 25px;
-	height: 25px;
+.indepth_barra_nombre_jug div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_barra_goles{
+	float: left;
+	width: 200px;
+	display: table;
+	height: 100%;
+	background-color: #24242c;
+}
+
+.indepth_barra_goles_cont{
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+.indepth_barra_goles_cont div{
+	display: table;
 	margin: auto;
-	background-image: url(../images/Copa_2.svg);
-	background-position: center center;
+	background-image: url(../images/Icon-01.svg);
+	padding-left: 50px;
+	background-size: 25px;
+	line-height: 25px;
 	background-repeat: no-repeat;
-	background-size: auto 100%;
+	
+	background-position: left center;
+}
+
+.indepth_jugador_goles{
+	display: table;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+	height: 50px;
+}
+
+.indepth_jugador_goles img{
+	width: 100px;
+}
+
+.indepth_goles{
+	position: absolute;
+	height: 50px;
+	  min-width: 150px;
+
+}
+
+.indepth_circulo_goles{
+	background-color: rgba(125, 125, 125, 0.2);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
 	
 }
 
-.indepth_trofeo.win{
-	background-image: url(../images/Copa_1.svg);
-}
-
-.indepth_resultado_experto{
-	font-size: 26px;
-	font-weight: 600;
-	padding-top: 10px;
-}
-
-.indepth_expertos_efectividad{
-	width: 280px;
-	margin: auto;
-	margin-bottom: 15px;
-}
-
-.indepth_efectividad_texto{
-	color: #8c8f95;
-	font-size: 18px;
-	font-weight: 600;
-	display: table;
-	width: 100%;
-}
-
-.indepth_efectividad_texto_izq{
+.indepth_linea_goles{ 
 	float: left;
+	height: 100%;
+	display: table;
+	vertical-align: middle;
+	margin: auto 7px;
 }
 
-.indepth_efectividad_texto_der{
+.indepth_linea_goles_in{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_linea_goles_in div{
+	width: 60px;
+	height: 2px;
+	background-color: #6e6f71;
+
+}
+
+.indepth_numero_goles{
+	float: left;
+	display: table;
+	line-height: 50px;
+	color: white;
+}
+
+#indepth_goles_izquierda{
+	right: -110px;
+	bottom: -10px;
+	
+	
+}
+
+#indepth_goles_derecha{
+	left: -110px;
+	bottom: -10px;
+	text-align: right;
+}
+
+#indepth_goles_derecha .indepth_circulo_goles{
 	float: right;
 }
 
-.indepth_efectividad_bar{
-	width: 100%;
-	height: 10px;
-	background-color: #e7e7e7;
-	overflow: hidden;
-	border-radius: 50px;
-	margin-top: 10px;
+#indepth_goles_derecha .indepth_linea_goles{
+	float: right;	
+	
 }
 
-.indepth_efectividad_bar div{
-	background-color: #363636;
-	height: 10px;
+#indepth_goles_derecha .indepth_numero_goles{
+	float: right;
 }
+
+
+#indepth_goles_cabeza{
+	top: -10px;
+	left: 21px;
+}
+
+#indepth_goles_cabeza .indepth_circulo_goles{
+	width: 60px;
+	height: 60px;
+}
+
 
 @media screen and (max-width:1023px) {
 	.indepth_quotes_cont{

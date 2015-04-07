@@ -64,12 +64,18 @@ node.append("circle")
       .attr("class","circulo_back")
       .attr("fill","transparent");
       
+      
 
 node.append("circle")
-      .attr("r", function(d) { return d.r; })
+      .attr("r", 20)
       .style("fill", "#6b333a")
       .attr("radio_o", function(d) { return d.r; })
-      .attr("class","circulo_in");
+      .attr("class","circulo_in")
+      .transition()
+      	.attr("r",function(d) { return d.r; })
+      	.delay(800)
+      	.duration(1500)
+      	;
 
   node.append("circle")
       .attr("r", function(d) { return d.r; })
@@ -86,12 +92,12 @@ node.append("circle")
 					   return "30px";
 					  }else{
 						  if(d.r>70){ 
-							  return "20px";
+							  return "18px";
 					  		}else{
 					  			if(d.r>50){ 
-						  			return "18px";
+						  			return "16px";
 						  		}else{
-						  		return "12px";
+						  		return "10px";
 								} 
 							} 
 						  
@@ -106,32 +112,37 @@ node.append("circle")
 
   node.append("text")
       .attr("dy", ".3em")
-      .style("text-anchor", "middle")
-      
-      .style("font-size",function(d) { if(d.r>150){ 
-	      	return "40px";
-	      }else{
-		      if(d.r>120){
-			       return "34px";
-			   }else{
-				   if(d.r>90){ 
-					   return "30px";
-					  }else{
-						  if(d.r>70){ 
-							  return "20px";
-					  		}else{
-					  			if(d.r>50){ 
-						  			return "16px";
+      .style("text-anchor", "middle")     
+      .style("opacity","0")
+      .style("font-size","12px") 
+      .text(function(d) { return d.className.substring(0, d.r / 3); })
+		.transition()
+	      	.delay(1500)
+	      	.duration(2000)
+	      	.style("opacity","1")
+	      	.style("font-size",function(d) { if(d.r>150){ 
+		      	return "40px";
+		      }else{
+			      if(d.r>120){
+				       return "34px";
+				   }else{
+					   if(d.r>90){ 
+						   return "30px";
+						  }else{
+							  if(d.r>70){ 
+								  return "18px";
 						  		}else{
-						  		return "12px";
+						  			if(d.r>50){ 
+							  			return "14px";
+							  		}else{
+							  		return "10px";
+									} 
 								} 
+							  
 							} 
-						  
-						} 
-						}
-						}
-		})
-      .text(function(d) { return d.className.substring(0, d.r / 3); });
+					}
+			}
+			});
       
       
      var jug=node.append("g")
@@ -143,11 +154,29 @@ node.append("circle")
 		 .attr("y",0)
 		 .attr("opacity","0");
 		 
+		 
+		 var def=d3.select("#indepth_burbujas_container svg").insert("defs",":first-child")
+		 
+		 def.append("pattern")
+		 		.attr("width","40px")
+		 		.attr("height","40px")
+		 		.attr("x","20")
+		 		.attr("y","10")
+		 		.attr("id","circle1")
+		 		.attr("patternUnits","userSpaceOnUse")
+		 		.append("image")
+		 			.attr("xlink:href","images/Jugadores/1_Oribe-Peralta.png")
+		 			.attr("x","0")
+		 			.attr("width","40px")
+		 		.attr("height","40px")
+		 			.attr("y","0");
+		 
 		 jug.append("circle")
 		 	.attr("r","20px")
-		 	.attr("fill","white")
 		 	.attr("cx",0)
-		 	.attr("cy","-90");
+		 	.attr("cy","-90")
+		 	.style("fill","url(#circle1)");
+		 	
 		 	
 		 jug.append("circle")
 		 	.attr("r","20px")
@@ -222,30 +251,31 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 	var m=d3.select(this.parentNode);
 	var radio=d3.select(this).attr("radio_o");
 	
+	d3.selectAll(".burbuja_equipos").attr("opacity",".4");
+	
+	m.attr("opacity","1");
+	
 	
 	m.select("text").transition()
-		.style("font-size","15px");
+		.style("font-size","15px")
+		.style("opacity",1);
 	if(radio>80){
 		
 		m.select(".circulo_in").transition()
-		.attr("r",50);
+		.attr("r",60);
 	}else{
 		//m.moveToFront();		
 		m.select(".circulo_in").transition()
-		.attr("r",50);
+		.attr("r",60);
 		
 		m.select(".circulo_out").transition()
 		.attr("r","120px");
-		
-		
-		
-		
 		m.select(".circulo_back")
 		
-		.attr("fill","rgba(41, 40, 51,.7)");
+		.attr("fill","rgba(41, 40, 51,1)");
 		
 		m.select(".circulo_back")
-		.attr("r",120);
+		.attr("r",62);
 		
 		
 	}
@@ -272,7 +302,7 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 
 
 $(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
-	
+	d3.selectAll(".burbuja_equipos").attr("opacity","1");
 	
 	var radio=d3.select(this).attr("radio_o");
 	console.log(radio);
