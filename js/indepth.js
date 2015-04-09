@@ -7,7 +7,82 @@ var tamaño_total=1920;
 var ventana_alto = $(window).height();
 
 
+$("#indepth_page6").on("click",function() {
+	d3.selectAll("polygon").attr("fill","#e42a2c");
+});
 
+
+var indepth_circulos = function(component, width, minw, datos, img){
+		var svg = d3.select("#"+component+" .indepth_grafica_partidos").append("svg") 
+		    .attr("xmlns", "http://www.w3.org/2000/svg")
+		    .attr("version", "1.1")
+		    .attr("viewBox", "0 0 130 130");	
+	
+		var g=svg.append("g").attr("id","pieChart")
+		.attr("transform", "translate(" + 130 / 2 + "," + 130 / 2 + ")");
+		var initial_entity = JSON.parse('[{"number":"0"},{"number":"1"}]');
+		var color = ["#e82b2c", "#8b8c8f", "#6bdb6b"];
+		var diameter= width;
+		var donut_center= minw;
+		var entity= JSON.parse('[{"number":"'+datos["perdidos"]+'"},{"number":"'+datos["empatados"]+'"},{"number":"'+datos["ganados"]+'"}]');
+		
+		
+		var radius = diameter/2;   //calculate the radius value
+		
+		var color = d3.scale.ordinal() // assign the color in the array for each pie
+		    .range(color);  // color array
+		
+		var arc = d3.svg.arc()  // draw the circle for the donnut
+		    .outerRadius(radius) // size donnut
+		    .innerRadius(donut_center/2); // size donut center
+		    
+		var pie = d3.layout.pie() // draw the piece of pie
+		    .sort(null)
+		    .value(function (d) { 
+		    	 return d.number; 
+		    	}); //assing the value of the pie for calculate the size
+		
+		var path = g.selectAll("path")
+		  .data(pie(entity))
+		  .enter().append("path")
+		  .attr("fill", function(d, i) { return color(i); })
+		  .attr("d", arc)
+		  .each(function(d) { this._current = d; }); 
+		
+		  $.each(entity ,function (i, array){
+			  array.number = +array.number;
+		  });
+		 	
+		// var timeout = setTimeout(function(){change();},1000);
+		
+		/*function change() {
+		    clearTimeout(timeout);
+		    path = path.data(pie(entity)); // compute the new angles
+		    path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
+		}*/
+						  
+		function arcTween(a) {
+		  	var i = d3.interpolate(this._current, a);
+		  	this._current = i(0);
+		  	return function(t) {
+		    	return arc(i(t));
+		};
+	}
+		var total=datos["perdidos"]+datos["empatados"]+datos["ganados"];
+		//$("#"+component+" .indepth_grafica_partidos").append("")
+		
+	}
+	
+	
+
+	
+	var oficiales={"ganados":4,"empatados":1,"perdidos":1};
+	var amistosos={"ganados":4,"empatados":1,"perdidos":1};
+	
+	indepth_circulos("grafica_oficiales", 130, 105, oficiales, "Oficiales");
+	
+	indepth_circulos("grafica_amistosos", 130, 105, amistosos, "Amistosos");
+	
 
 
 var indepth_mono_gira = function(){
@@ -162,7 +237,8 @@ $(" #skrollr-body").css({
 	"width": "100%",
 	"height": "auto"
  });
-     
+    
+   
    
  var device = navigator.userAgent
 

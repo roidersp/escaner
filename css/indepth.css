@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
+
+polygon{
+	fill: #5B5C66;
+}
+
+#sonora{
+	fill: red;
+}
+
 #nav-bar-wrapper{
 	display: none;
 }
@@ -120,7 +129,7 @@ text{
 }
 
 .indepth_page_content .indepth_title{
-	font-size:34px;   /* tamaÃ±o */
+	font-size:40px;   /* tamaÃ±o */
 	font-weight: 700;
 	text-transform: uppercase; /* comentar para quitar mayusculas */
 	text-align: center; /* ajustar alineacion (justify, left, right o center) */	
@@ -641,7 +650,200 @@ text{
 	
 }
 
+.indepth_dirigidos_cont{
+	display: table;
+	margin: 30px auto;
+}
 
+#indepth_numero_dirigidos{
+	color: white;
+	width: 106px;
+	height: 106px;
+	border-radius: 50%;
+	border: 10px solid white;
+	margin: 40px auto;
+	line-height: 106px;
+	text-align: center;
+	font-size: 46px;
+}
+
+.indepth_grafica_dirigidas{
+	width: 500px;
+	display: table;
+	float: left;
+}
+
+.indepth_grafica_partidos{
+	display: table;
+	margin: auto;
+	width: 270px;
+	height: 270px;
+	position: relative;
+}
+
+.indepth_grafica_text_out{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: table;
+	color: #b1abb0;
+}
+
+.indepth_grafica_text_in{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_grafica_total{
+	font-size: 44px;
+}
+
+.indepth_grafica_ptext{
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.indepth_partidos_tabla{
+	width: 100%;
+	display: table;
+	margin: 40px auto;
+}
+
+.indepth_partidos_columna{
+	float: left;
+	width: 164px;
+	display: table;
+	margin-right: 4px;
+}
+
+.indepth_partidos_columna:last-child{
+	margin: 0;
+}
+
+.indepth_partidos_columna.ganados .indepth_partidos_circulo, .indepth_partidos_columna.ganados .indepth_box_partidos{
+	background-color: #6bdb6b;
+}
+
+.indepth_partidos_columna.ganados .indepth_marcador_team{
+	color: #6bdb6b;
+}
+
+.indepth_partidos_columna.empatados .indepth_partidos_circulo, .indepth_partidos_columna.empatados .indepth_box_partidos{
+	background-color: #8b8c8f;
+}
+
+.indepth_partidos_columna.empatados .indepth_marcador_team{
+	color: #8b8c8f;
+}
+
+.indepth_partidos_columna.perdidos .indepth_partidos_circulo, .indepth_partidos_columna.perdidos .indepth_box_partidos{
+	background-color: #e82b2c;
+}
+
+.indepth_partidos_columna.perdidos .indepth_marcador_team{
+	color: #e82b2c;
+}
+
+
+
+
+.indepth_box_partidos{
+	width: 100%;
+	height: 25px;
+	margin-top: 20px;
+}
+
+
+
+.indepth_partidos_circulo{
+	width: 116px;
+	height: 116px;
+	border-radius: 50%;
+	margin: auto;
+	display: table;
+	color: white;
+	text-align: center;
+	
+}
+
+.indepth_partido_circulo_cont{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_partido_circulo_num{
+	font-size: 34px;
+	line-height: 34px;
+}
+
+.indepth_partido_circulo_text{
+	font-size: 18px;
+	font-weight: 300;
+}
+
+
+.indepth_partidos_container{
+	display: table;
+	margin-top: 5px;
+	width: 100%;
+
+}
+
+.partido_item{
+	width: 100%;
+	background-color: #26262e;
+	display: table;
+	min-height: 22px;
+	padding:  9px 0;
+	display: table;
+	text-align: center;
+	
+}
+
+.indepth_escudo_team{
+	width: 32px;
+	height: 22px;
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_escudo_team img{
+	height: 100%;
+}
+
+.indepth_team_cont_out{
+	height: 100%;
+	min-height: 22px;
+	width: 132px;
+	display: table;
+	float: left;
+}
+
+.indepth_team_cont{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 13px;
+}
+
+.indepth_nombre_team{
+	width: 96px;
+	float: left;
+	text-align: left;
+	
+	
+}
+
+.indepth_marcador_team{
+	float: right;
+	width: 28px;
+	text-align: right;
+	margin-right: 5px;
+}
 
 #indepth_page3{
 	background: #22212a;
@@ -1034,6 +1236,257 @@ text{
 	width: 60px;
 	height: 60px;
 }
+
+#indepth_page5{
+	background-color: #22212a;
+}
+
+#indepth_goles_min_container{
+	display: table;
+	margin: auto;
+	max-width: 924px;
+	width: 96%;
+}
+
+.indepth_tiempos_cont{
+	height: 24px;
+	display: table;
+	margin: 40px auto;
+}
+
+.indepth_tiempos{
+	float: left;
+	height: 24px;
+	display: table;
+	margin: auto;
+}
+
+.indepth_tiempos.primero{
+	width: 205px;
+}
+
+.indepth_tiempos.primero .indepth_tiempo_box{
+	background-color: #ffee11; 
+}
+
+.indepth_tiempo_box{
+	width: 52px;
+	height: 24px;
+	float: left;
+	
+}
+
+
+.indepth_tiempos.segundo .indepth_tiempo_box{
+	background-color: #6dda69;
+}
+
+.indepth_tiempo_text{
+	color: white;
+	padding-left: 10px;
+	line-height: 100%;
+	float: left;
+	line-height: 24px;
+}
+
+.indepth_graficas_goles{
+	width: 100%;
+	margin-top: 40px;
+}
+
+.indepth_graficas_head{
+	width: 100%;
+	border-bottom: 2px solid #797a80;
+	text-transform: uppercase;
+	line-height: 34px;
+	font-size: 18px;
+}
+
+.indepth_texto_grafica_head{
+	margin-left: 20px;
+	
+}
+
+.indepth_graficas_goles.favor{
+	color:  #2a56ae;
+}
+
+.indepth_graficas_goles.contra{
+	color:  #c42c2c;
+}
+
+.indepth_graficas_cont{
+	display: table;
+	width: 100%;
+	padding: 40px 0;
+}
+
+.indepth_grafica{
+	width: 50%;
+	min-width: 400px;
+	margin: auto;
+	float: left;
+	
+}
+
+.indepth_grafica_in{
+	width: 400px;
+	margin: auto;
+}
+
+.indepth_grafica_text{
+	color: white;
+	width: 300px;
+	margin-left: 40px;
+	font-size: 18px;
+	margin-bottom: 40px;
+	
+}
+
+.indepth_grafica_text span{
+	float: right;
+}
+
+.indepth_grafica_image{
+	width: 290px;
+	margin: auto;
+	position: relative;
+}
+
+.indepth_grafica_image img  {
+	width: 100%;
+}
+
+
+.indepth_grafica_numeros{
+	position: absolute;
+	font-size: 22px;
+	display: table;
+}
+
+
+#indepth_grafica_numeros_15{
+	top: -14px;
+	right: -34px;
+}
+
+#indepth_grafica_numeros_30{
+	top: 92px;
+	right: -34px;
+}
+
+#indepth_grafica_numeros_45{
+	bottom: 0px;
+	right: -34px;
+}
+
+#indepth_grafica_numeros_60{
+	bottom: 0px;
+	left: -34px;
+}
+
+#indepth_grafica_numeros_75{
+	top: 92px;
+	left: -34px;
+}
+
+#indepth_grafica_numeros_90{
+	top: -14px;
+	left: -34px;
+}
+
+#indepth_page6{
+	background-color: #292833;
+}
+
+#indepth_mapa_container{
+	width: 800px;
+	margin: 60px auto;
+	display: table;
+	
+}
+
+.indepth_mapa_svg{
+	width: 625px;
+	float: right;
+}
+
+.indepth_mapa_svg svg{
+	width: 100%;
+}
+
+.indepth_mapa_left{
+	width: 150px;
+	float: left;
+	color: white;
+}
+
+.indepth_edo_data{
+	width: 100%;
+	display: table;
+	float: left;
+	height: 30px;
+	
+}
+
+.indepth_edo_box{
+	height: 100%;
+	width: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	float: left;
+	text-align: center;
+
+}
+
+.indepth_edo_nombre{
+	height: 100%;
+	line-height: 30px;
+	font-size: 14px;
+	float: left;
+	margin-left: 10px;
+}
+
+#indepth_edo1 .indepth_edo_box{
+	background-color: #e42a2c;
+}
+
+#indepth_edo2 .indepth_edo_box{
+	background-color: #e46e2d;
+}
+
+#indepth_edo3 .indepth_edo_box{
+	background-color: #e2bd31;
+}
+
+#indepth_edo4 .indepth_edo_box{
+	background-color: #dee334;
+}
+
+#indepth_edo5 .indepth_edo_box{
+	background-color: #a6df34;
+}
+
+#indepth_edo6 .indepth_edo_box{
+	background-color: #a6df34;
+}
+
+#indepth_edo7 .indepth_edo_box{
+	background-color: #71da35;
+}
+
+#indepth_edo8 .indepth_edo_box{
+	background-color: #71da35;
+}
+
+#indepth_edo9 .indepth_edo_box{
+	background-color: #71da35;
+}
+
+#indepth_edo10 .indepth_edo_box{
+	background-color: #71da35;
+}
+
 
 
 @media screen and (max-width:1023px) {
