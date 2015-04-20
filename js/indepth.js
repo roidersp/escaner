@@ -11,8 +11,78 @@ $("#indepth_page6").on("click",function() {
 	d3.selectAll("polygon").attr("fill","#e42a2c");
 });
 
+var normalize = (function() {
+  var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+ 
+  for(var i = 0, j = from.length; i < j; i++ )
+      mapping[ from.charAt( i ) ] = to.charAt( i );
+ 
+  return function( str ) {
+      var ret = [];
+      for( var i = 0, j = str.length; i < j; i++ ) {
+          var c = str.charAt( i );
+          if( mapping.hasOwnProperty( str.charAt( i ) ) )
+              ret.push( mapping[ c ] );
+          else
+              ret.push( c );
+      }      
+      return ret.join( '' );
+  }
+ 
+})();
+
 
 var indepth_circulos = function(component, width, minw, datos, img){
+	
+		var ganados=0, perdidos=0, empatados=0;
+		console.log("test");
+		console.log(datos.partido);
+		var col_ganados=$("#"+component+ " .indepth_partidos_columna.ganados");
+			var col_empatados=$("#"+component+ " .indepth_partidos_columna.empatados")
+			var col_perdidos=$("#"+component+ " .indepth_partidos_columna.perdidos")
+	
+		$.each(datos.partido, function( i, item ) {
+			
+			console.log(item.equipo);
+			
+			var marcador;
+				
+			if(item.tipo=="local"){
+				marcador=item.goles_a_favor+"-"+item.goles_encontra;
+			}else{
+				marcador=item.goles_encontra+"-"+item.goles_a_favor;
+			}
+				
+			var item_col='<div class="partido_item"><div class="indepth_escudo_team"><img src="images/Banderas/'+(normalize(item.equipo)).replace(" ","_")+'.png" ></div><div class="indepth_team_cont_out"><div class="indepth_team_cont"><div class="indepth_nombre_team">'+item.equipo+'</div><div class="indepth_marcador_team">'+marcador+'</div></div></div></div>';
+			
+			//empatados
+			if(item.goles_a_favor==item.goles_encontra){
+				col_empatados.find(".indepth_partidos_container").append(item_col);
+				empatados++;
+			}
+			
+			//ganados
+			if(item.goles_a_favor>item.goles_encontra){
+				col_ganados.find(".indepth_partidos_container").append(item_col);
+				ganados++
+			}
+			
+			//perdidos
+			if(item.goles_a_favor<item.goles_encontra){
+				col_perdidos.find(".indepth_partidos_container").append(item_col);
+				perdidos++
+			}
+         	
+         	
+         	
+         	
+         	
+         });
+		
+		 
+	
 		var svg = d3.select("#"+component+" .indepth_grafica_partidos").append("svg") 
 		    .attr("xmlns", "http://www.w3.org/2000/svg")
 		    .attr("version", "1.1")
@@ -24,7 +94,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		var color = ["#e82b2c", "#8b8c8f", "#6bdb6b"];
 		var diameter= width;
 		var donut_center= minw;
-		var entity= JSON.parse('[{"number":"'+datos["perdidos"]+'"},{"number":"'+datos["empatados"]+'"},{"number":"'+datos["ganados"]+'"}]');
+		var entity= JSON.parse('[{"number":"'+perdidos+'"},{"number":"'+empatados+'"},{"number":"'+ganados+'"}]');
 		
 		
 		var radius = diameter/2;   //calculate the radius value
@@ -52,15 +122,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		  $.each(entity ,function (i, array){
 			  array.number = +array.number;
 		  });
-		 	
-		// var timeout = setTimeout(function(){change();},1000);
-		
-		/*function change() {
-		    clearTimeout(timeout);
-		    path = path.data(pie(entity)); // compute the new angles
-		    path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
-		}*/
-						  
+		 						  
 		function arcTween(a) {
 		  	var i = d3.interpolate(this._current, a);
 		  	this._current = i(0);
@@ -68,20 +130,37 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		    	return arc(i(t));
 		};
 	}
-		var total=datos["perdidos"]+datos["empatados"]+datos["ganados"];
-		//$("#"+component+" .indepth_grafica_partidos").append("")
+	
+		var total=perdidos+empatados+ganados;
+		$("#"+component+" .indepth_grafica_partidos .indepth_grafica_total").html(total);
+		col_perdidos.find(".indepth_partido_circulo_num").html(perdidos);
+		col_empatados.find(".indepth_partido_circulo_num").html(empatados);
+		col_ganados.find(".indepth_partido_circulo_num").html(ganados);
+		
 		
 	}
 	
+	var oficiales;
+	var amistosos;
 	
-
+	$.getJSON( "js/partidos.json", function( data ) {
+		oficiales=data.oficiales;
+		amistosos=data.amistosos;
+      
+		var total=oficiales.partido.length+amistosos.partido.length;
+		$("#indepth_numero_dirigidos").html(total);
+      
+		indepth_circulos("grafica_oficiales", 130, 105, oficiales, "Oficiales");
 	
-	var oficiales={"ganados":4,"empatados":1,"perdidos":1};
-	var amistosos={"ganados":4,"empatados":1,"perdidos":1};
+		indepth_circulos("grafica_amistosos", 130, 105, amistosos, "Amistosos");
+      
+    });
 	
-	indepth_circulos("grafica_oficiales", 130, 105, oficiales, "Oficiales");
+	//var p_oficiales=
 	
-	indepth_circulos("grafica_amistosos", 130, 105, amistosos, "Amistosos");
+	
+	
+	
 	
 
 
@@ -103,70 +182,7 @@ var indepth_mono_gira = function(){
 
 indepth_mono_gira();
 
-var indepth_circulos = function(component, width, minw, porcentaje, img){
-		var svg = d3.select("#"+component).append("svg") 
-		    .attr("xmlns", "http://www.w3.org/2000/svg")
-		    .attr("version", "1.1")
-		    .attr("viewBox", "0 0 130 150");	
-	
-		var g=svg.append("g").attr("id","pieChart")
-		.attr("transform", "translate(" + 130 / 2 + "," + 130 / 2 + ")");
-		var initial_entity = JSON.parse('[{"number":"0"},{"number":"1"}]');
-		var color = ["#FFFFFF", "#000000"];
-		var diameter= width;
-		var donut_center= minw;
-		var entity= JSON.parse('[{"number":"'+porcentaje+'"},{"number":"'+(100-porcentaje)+'"}]');
-		
-		var radius = diameter/2;   //calculate the radius value
-		
-		var color = d3.scale.ordinal() // assign the color in the array for each pie
-		    .range(color);  // color array
-		
-		var arc = d3.svg.arc()  // draw the circle for the donnut
-		    .outerRadius(radius) // size donnut
-		    .innerRadius(donut_center/2); // size donut center
-		    
-		var pie = d3.layout.pie() // draw the piece of pie
-		    .sort(null)
-		    .value(function (d) { 
-		    	 return d.number; 
-		    	}); //assing the value of the pie for calculate the size
-		
-		var path = g.selectAll("path")
-		  .data(pie(entity))
-		  .enter().append("path")
-		  .attr("fill", function(d, i) { return color(i); })
-		  .attr("d", arc)
-		  .each(function(d) { this._current = d; }); 
-		
-		  $.each(entity ,function (i, array){
-			  array.number = +array.number;
-		  });
-		 	
-		// var timeout = setTimeout(function(){change();},1000);
-		
-		/*function change() {
-		    clearTimeout(timeout);
-		    path = path.data(pie(entity)); // compute the new angles
-		    path.transition().duration(750).attrTween("d", arcTween); // redraw the arcs
-		}*/
-						  
-		function arcTween(a) {
-		  	var i = d3.interpolate(this._current, a);
-		  	this._current = i(0);
-		  	return function(t) {
-		    	return arc(i(t));
-		};
-	}
-	
-	
-svg.append("image")
-		.attr("transform", "translate(" + 42 + "," + 42 + ")")
-		.attr("width",46)
-		.attr("height",46)
-		.attr("xlink:href","http://s3.amazonaws.com/stadium-azteca.underdog.gs/page/626afd40-91b2-4c1d-b95e-8e298ed39c2f/final/images/Imgs_dark_"+img+".svg");
 
-}
 
 
 

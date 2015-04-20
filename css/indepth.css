@@ -236,9 +236,11 @@ text{
 }
 
 #indepth_monitor_img{
-	display: table;
-	vertical-align: middle;
+
 	height: 100%;
+	  width: 98%;
+  overflow: hidden;
+  margin: auto;
 }
 
 #indepth_monitor_img img{
@@ -914,12 +916,22 @@ text{
 
 .indepth_linea_barra{
 	
+position: absolute;
+	bottom: 0px;
+	width: 100%;
+	display: table;
+	height: 50%;
+
+}
+
+.indepth_linea_barra_cont{
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
 	display: table;
 	height: 75%;
 }
+
 
 .indepth_linea_barra .indepth_linea_in{
 	width: 0px;

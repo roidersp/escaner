@@ -1,0 +1,130 @@
+{
+  "oficiales": {
+    "partido": [
+      {
+        "equipo": "Nueva Zelanda",
+        "goles_a_favor": "5",
+        "goles_encontra": "1",
+        "tipo": "visitante"
+      },
+      {
+        "equipo": "Nueva Zelanda",
+        "goles_a_favor": "4",
+        "goles_encontra": "2",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Camerún",
+        "goles_a_favor": "1",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Croacia",
+        "goles_a_favor": "3",
+        "goles_encontra": "1",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Brasil",
+        "goles_a_favor": "0",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Holanda",
+        "goles_a_favor": "1",
+        "goles_encontra": "2",
+        "tipo": "local"
+      }
+    ]
+  },
+  "amistosos": {
+    "partido": [
+      {
+        "equipo": "Corea",
+        "goles_a_favor": "4",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Israel",
+        "goles_a_favor": "3",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Ecuador",
+        "goles_a_favor": "1",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Bolivia",
+        "goles_a_favor": "1",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Honduras",
+        "goles_a_favor": "2",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Panamá",
+        "goles_a_favor": "1",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Holanda",
+        "goles_a_favor": "3",
+        "goles_encontra": "2",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Nigeria",
+        "goles_a_favor": "0",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "EEUU",
+        "goles_a_favor": "2",
+        "goles_encontra": "2",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Chile",
+        "goles_a_favor": "0",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Bosnia",
+        "goles_a_favor": "0",
+        "goles_encontra": "1",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Portugal",
+        "goles_a_favor": "0",
+        "goles_encontra": "1",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Bielorrusia",
+        "goles_a_favor": "2",
+        "goles_encontra": "3",
+        "tipo": "local"
+      },
+      {
+        "equipo": "EEUU",
+        "goles_a_favor": "0",
+        "goles_encontra": "2",
+        "tipo": "local"
+      }
+    ]
+  }
+}

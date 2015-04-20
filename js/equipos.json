@@ -1,0 +1,27 @@
+{
+  "equipos:": {
+    "america:": {
+      "jugadores": [
+        {
+          "Guillermo": {
+            "minutos": "0",
+            "estado": "guadalajara",
+            "img": "http",
+            "goles": [
+              {
+                "cabeza": "0",
+                "pie_der": "0",
+                "pie_izq": "0"
+              }
+            ],
+            "": {}
+          }
+        }
+      ]
+    },
+    "cruz_azul:": {},
+    "tigres:": {},
+    "toluca:": {},
+    "monterrey:": {}
+  }
+}
