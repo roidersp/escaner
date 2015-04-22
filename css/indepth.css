@@ -60,63 +60,62 @@ text{
 }
 
 .indepth_share{
-		position: fixed;
-		right: 15px;
-		bottom: 20px;
-		z-index: 2000;
-		display: -webkit-inline-box;
-     display: -webkit-inline-flex;
-   display: -moz-inline-box;
-     display: -ms-inline-flexbox;
-     display: inline-flex;
-		
-	}
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	z-index: 2000;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;	
+}
 	
-	#drag{
-		display: none;
-		right: 3px;
-		top: 8px;
-		z-index: 2000;
-	}
-	
-	.indepth_share_item{
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		background-color: rgba(255, 255, 255, 0.4);
-		float: left;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: auto 20px ;
-		margin-left: 7px;
-		cursor: pointer;
-		margin-bottom: 5px;
-	}
-	
-	.indepth_share_item.facebook{
-		background-image: url(../images/boton_facebook.png);
-	}
-	
-	.indepth_share_item.facebook:hover{
-		background-color: #3660A4;
-	}
-	
-	.indepth_share_item.twitter{
-		background-image: url(../images/boton_twitter.png);
-	}
-	
-	.indepth_share_item.twitter:hover{
-		background-color: #02B2F7;
-	}
-	
-	.indepth_share_item.whatsapp{
-		display: none;
-		background-image: url(../images/boton_whatsapp.png);
-	}
-	
-	.indepth_share_item.whatsapp:hover{
-		background-color: #85D86D;
-	}
+#drag{
+	display: none;
+	right: 3px;
+	top: 8px;
+	z-index: 2000;
+}
+
+.indepth_share_item{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.4);
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 20px ;
+	margin-left: 7px;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.indepth_share_item.facebook{
+	background-image: url(../images/boton_facebook.png);
+}
+
+.indepth_share_item.facebook:hover{
+	background-color: #3660A4;
+}
+
+.indepth_share_item.twitter{
+	background-image: url(../images/boton_twitter.png);
+}
+
+.indepth_share_item.twitter:hover{
+	background-color: #02B2F7;
+}
+
+.indepth_share_item.whatsapp{
+	display: none;
+	background-image: url(../images/boton_whatsapp.png);
+}
+
+.indepth_share_item.whatsapp:hover{
+	background-color: #85D86D;
+}
 
 #com{
 	background: white;
