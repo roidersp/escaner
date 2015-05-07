@@ -132,7 +132,7 @@ text{
 	font-weight: 700;
 	text-transform: uppercase; /* comentar para quitar mayusculas */
 	text-align: center; /* ajustar alineacion (justify, left, right o center) */	
-	color: #fd6968;
+	color: #63d7fd;
 }
 
 .indepth_page_body{
@@ -223,7 +223,7 @@ text{
 }
 
 #indepth_monitor{
-	background-image: url(../images/Box1-01.svg);
+	background-image: url(../images/Box2-01.svg);
 	background-size: 100%;
 	width: 644px;
 	height: 140px;
@@ -237,9 +237,10 @@ text{
 #indepth_monitor_img{
 
 	height: 100%;
-	  width: 98%;
-  overflow: hidden;
-  margin: auto;
+	  width: 510px;
+	  overflow: hidden;
+	  margin: auto;
+	  float: left;
 }
 
 #indepth_monitor_img img{
@@ -253,8 +254,32 @@ text{
 }
 
 
+#indept_monitor_cuadro{
+	width: 120px;
+	height: 114px;
+	margin-top: 13px;
+	background-color: #050505;
+	float: right;
+	margin-right: 13px;
+	background-image: url(../images/Corazon.svg);
+	background-repeat: no-repeat;
+	background-position: 12px 16px;
+}
 
+#indepth_monitor_big{
+	font-size: 46px;
+	padding-left: 50px;
+	color: #00adef;
+	padding-top: 5px;
+	line-height: 50px;
+}
 
+.indepth_monitor_num{
+	font-size: 22px;
+	color: #00adef;
+	padding-left: 50px;
+	line-height: 24px;
+}
 
 
 #indepth_mono_container{
@@ -649,6 +674,12 @@ text{
 	float: right;	
 }
 
+#grafica_total{
+	width: 500px;
+	margin: auto;
+	margin-top: 40px;
+}
+
 .indepth_grafica_dirigidas{
 	width: 500px;
 	display: table;
@@ -705,29 +736,24 @@ text{
 	margin: 0;
 }
 
-.indepth_partidos_columna.ganados .indepth_partidos_circulo, .indepth_partidos_columna.ganados .indepth_box_partidos{
-	background-color: #6bdb6b;
+.indepth_partidos_columna.ganados .indepth_partidos_circulo, .indepth_partidos_columna.ganados .indepth_box_partidos, .indepth_partidos_circulo.ganados{
+	
+	border: 2px solid #1fe9bb;
 }
 
-.indepth_partidos_columna.ganados .indepth_marcador_team{
-	color: #6bdb6b;
+
+
+.indepth_partidos_columna.empatados .indepth_partidos_circulo, .indepth_partidos_columna.empatados .indepth_box_partidos, .indepth_partidos_circulo.empatados{
+	border: 2px solid #ccc5c5;
 }
 
-.indepth_partidos_columna.empatados .indepth_partidos_circulo, .indepth_partidos_columna.empatados .indepth_box_partidos{
-	background-color: #8b8c8f;
+
+
+.indepth_partidos_columna.perdidos .indepth_partidos_circulo, .indepth_partidos_columna.perdidos .indepth_box_partidos, .indepth_partidos_circulo.perdidos{
+	border: 2px solid #e40047;
 }
 
-.indepth_partidos_columna.empatados .indepth_marcador_team{
-	color: #8b8c8f;
-}
 
-.indepth_partidos_columna.perdidos .indepth_partidos_circulo, .indepth_partidos_columna.perdidos .indepth_box_partidos{
-	background-color: #e82b2c;
-}
-
-.indepth_partidos_columna.perdidos .indepth_marcador_team{
-	color: #e82b2c;
-}
 
 .indepth_box_partidos{
 	width: 100%;
@@ -776,7 +802,12 @@ text{
 	padding:  9px 0;
 	display: table;
 	text-align: center;
+	  border-left: 2px solid transparent;
 	
+}
+
+.partido_item.local{
+	  border-left: 2px solid green;
 }
 
 .indepth_escudo_team{
@@ -834,6 +865,97 @@ text{
 	position: relative;
 }
 
+.indepth_min_jug_item{
+	width: 100%;
+	height: 60px;
+}
+
+#indepth_min_jug_container_movil{
+	display: none;
+	width: 500px;
+	margin: auto;
+}
+
+.indepth_min_jug_nom{
+	width: 160px;
+	height: auto;
+	font-size: 26px;
+	text-align: right;
+	padding-right: 20px;
+	float: left;
+	line-height: 28px;
+}
+
+.indepth_min_jug_mins{
+	width: 100px;
+	float: right;
+	padding-right: 20px;
+	line-height: 60px;
+	height: 100%;
+	text-align: right;
+	font-size: 30px;
+	
+}
+
+
+.indepth_min_jug_bar{
+	width: 200px;
+	float: left;
+	height: 100%;
+	display: table;
+}
+
+.indepth_min_jug_bar_cont{
+	display: table-cell;
+	vertical-align:bottom ;
+}
+
+.indepth_min_jug_bar_out{
+	width: 90%;
+	height: 10px;
+	margin: auto;
+	background: #192e34;
+	border-radius: 5px;
+}
+
+.indepth_barritas{
+	width: 90%;
+	margin: auto;
+	display: table;
+	max-height: 10px;
+}
+
+.indepth_barritas img{
+	width: 100%;
+}
+
+.indepth_min_jug_bar_in{
+	width: 100%;
+	height: 100%;
+	transform: translate(-2px,-2px);
+	background: #d70044;
+	border-radius: 5px;
+}
+
+.indepth_min_jug_bar_ball{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	float: right;
+	transform: translate(0px, -3px);
+	background: white;
+}
+
+.indepth_min_jug_bar_ball_in{
+	background-color: #d70044;
+	width: 10px;
+	height: 10px;
+	margin: 3px auto;
+	border-radius: 50%;
+	
+}
+
+
 .idnepth_jugmin_container{
 	
 }
@@ -861,7 +983,7 @@ text{
 .indepth_mints_r{
 	width: 95%;
 	float: right;
-	border-top: 3px solid #2c2b34;
+	border-top: 1px solid #d8abb9;
 }
 
 .indepth_min_back{
@@ -883,8 +1005,13 @@ text{
 	height: 640px;
 }
 
+.indepth_jugmin_mins{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
 .indepth_jugadores_back{
-	border-top: 4px solid #ea4344;
+	border-top: 4px solid #e40047;
 }
 
 .indepth_jugmin_jugador{
@@ -896,7 +1023,7 @@ text{
 .indepth_jugmin_barra{
 	width: 4px;
 	height: 20px;
-	background-color: #ea4344;
+	background-color: #e40047;
 	margin: auto;
 }
 
@@ -963,9 +1090,9 @@ position: absolute;
 
 .indepth_image_cont{
 	position: absolute;
-	transform: translate(0,-50%);
-	-ms-transform: translate(0,-50%); /* IE 9 */
-    -webkit-transform: translate(0,-50%);
+	transform: translate(0,-66px);
+	-ms-transform: translate(0,-66px); /* IE 9 */
+    -webkit-transform: translate(0,-66px);
 	z-index: 2;
 	
 }
@@ -979,9 +1106,9 @@ position: absolute;
 	display: table-cell;
 	vertical-align: middle;
 	position: absolute;
-	transform: translate(-45px,0px);
-	-ms-transform: translate(-45px,0px); /* IE 9 */
-    -webkit-transform: translate(-45px,0px);
+	transform: translate(-48px,0px);
+	-ms-transform: translate(-48px,0px); /* IE 9 */
+    -webkit-transform: translate(-48px,-5px);
 }
 
 .idnepth_imagen_line div{
@@ -1075,7 +1202,7 @@ position: absolute;
 }
 
 .indepth_goleador_circulo:hover{
-	border: 4px solid #ee494a;
+	border: 4px solid #2b9fe5;
 }
 
 .indepth_goleador_circulo img{
@@ -1126,7 +1253,6 @@ position: absolute;
 	background-size: 25px;
 	line-height: 25px;
 	background-repeat: no-repeat;
-	
 	background-position: left center;
 }
 
@@ -1151,7 +1277,7 @@ position: absolute;
 }
 
 .indepth_circulo_goles{
-	background-color: rgba(125, 125, 125, 0.2);
+	background-color: rgba(44, 159, 230, 0.2);
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -1252,7 +1378,7 @@ position: absolute;
 }
 
 .indepth_tiempos.primero .indepth_tiempo_box{
-	background-color: #ffee11; 
+	background-color: #36e8b9; 
 }
 
 .indepth_tiempo_box{
@@ -1264,7 +1390,7 @@ position: absolute;
 
 
 .indepth_tiempos.segundo .indepth_tiempo_box{
-	background-color: #6dda69;
+	background-color: #259bd8;
 }
 
 .indepth_tiempo_text{
@@ -1294,7 +1420,7 @@ position: absolute;
 }
 
 .indepth_graficas_goles.favor{
-	color:  #2a56ae;
+	color:  #66bee2;
 }
 
 .indepth_graficas_goles.contra{
@@ -1352,33 +1478,33 @@ position: absolute;
 
 
 #indepth_grafica_numeros_15{
-	top: -14px;
-	right: -34px;
+	top: 14px;
+	right: -32px;
 }
 
 #indepth_grafica_numeros_30{
-	top: 92px;
-	right: -34px;
+	top:119px;
+	right: -32px;
 }
 
 #indepth_grafica_numeros_45{
-	bottom: 0px;
-	right: -34px;
+	bottom: 32px;
+	right: -32px;
 }
 
 #indepth_grafica_numeros_60{
-	bottom: 0px;
-	left: -34px;
+	bottom: 32px;
+	left: -32px;
 }
 
 #indepth_grafica_numeros_75{
-	top: 92px;
-	left: -34px;
+	top: 119px;
+	left: -32px;
 }
 
 #indepth_grafica_numeros_90{
-	top: -14px;
-	left: -34px;
+	top: 14px;
+	left: -32px;
 }
 
 #indepth_page6{
@@ -1517,6 +1643,7 @@ position: absolute;
 	
 	.indepth_barra_jugmin, .indepth_jugmin_jugador{
 		width: 74px;
+		font-size: 16px;
 	}
 	
 	#indepth_goleadores{
@@ -1712,6 +1839,7 @@ position: absolute;
 	
 	.indepth_barra_jugmin, .indepth_jugmin_jugador{
 		width: 64px;
+		font-size: 14px;
 	}
 	
 	.indepth_min_cont{
@@ -1736,6 +1864,40 @@ position: absolute;
 
 
 @media screen and (max-width:780px) {
+		.indepth_barra_jugmin, .indepth_jugmin_jugador{
+			width: 54px;
+		}
+		
+		#indepth_min_jug_container{
+			width: 700px;
+		}
+		
+		.indepth_mints_r{
+			width: 90%;
+		}
+		
+		.idnepth_imagen_line {
+		  border-bottom: 3px solid transparent;
+		  border-top: 3px solid transparent;
+		  border-right: 15px solid white;
+		  transform: translate(-40px,0px);
+		  -ms-transform: translate(-40px,0px);
+		  -webkit-transform: translate(-32px,-2px);
+		}
+		
+		.indepth_mints{
+			height: 140px;
+		}
+		
+		.indepth_jugadores_up{
+			height: 560px;
+		}
+		
+		
+		.indepth_min_cont{
+			width: 600px;
+		}
+		
 		.indepth_goleadores_cont izq{
 			width: 300px;
 			
@@ -1850,13 +2012,34 @@ position: absolute;
 		.indepth_mapa_svg{
 			
 		}
-	
+		
+		#indepth_min_jug_container{
+			display: none;
+		}
+		
+		#indepth_min_jug_container_movil{
+			display: table;
+		}
+		
+		#indepth_goleadores{
+			height: auto;
+		}
+		
+		.indepth_goleadores_cont.izq, .indepth_goleadores_cont.der{
+			float: none;
+			margin: 30px auto;
+			display: table;
+		}
 }
 
 @media screen and (max-width:600px) {
 	.indepth_page_content .indepth_title{
 		width: 94%;
 		margin: auto;
+	}
+	
+	#indepth_goleadores{
+		width: auto;
 	}
 	
 }
@@ -1872,6 +2055,96 @@ position: absolute;
 			width: 140px;
 			margin-bottom: 8px;
 		}
+		
+		.indepth_min_jug_item{
+			width: 100%;
+			height: 60px;
+		}
+		
+		#indepth_min_jug_container_movil{
+			width: 400px;
+			margin: auto;
+		}
+		
+		.indepth_min_jug_nom{
+			width: 160px;
+			height: auto;
+			font-size: 26px;
+			text-align: right;
+			padding-right: 20px;
+			float: left;
+			line-height: 28px;
+		}
+		
+		.indepth_min_jug_mins{
+			width: 100px;
+			float: right;
+			padding-right: 20px;
+			line-height: 60px;
+			height: 100%;
+			text-align: right;
+			font-size: 30px;
+			
+		}
+		
+		
+		.indepth_min_jug_bar{
+			width: 200px;
+			float: left;
+			height: 100%;
+			display: table;
+		}
+		
+		.indepth_min_jug_bar_cont{
+			display: table-cell;
+			vertical-align:bottom ;
+		}
+		
+		.indepth_min_jug_bar_out{
+			width: 90%;
+			height: 10px;
+			margin: auto;
+			background: #192e34;
+			border-radius: 5px;
+		}
+		
+		.indepth_barritas{
+			width: 90%;
+			margin: auto;
+			display: table;
+			max-height: 10px;
+		}
+		
+		.indepth_barritas img{
+			width: 100%;
+		}
+		
+		.indepth_min_jug_bar_in{
+			width: 100%;
+			height: 100%;
+			transform: translate(-2px,-2px);
+			background: #d70044;
+			border-radius: 5px;
+		}
+		
+		.indepth_min_jug_bar_ball{
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			float: right;
+			transform: translate(0px, -3px);
+			background: white;
+		}
+		
+		.indepth_min_jug_bar_ball_in{
+			background-color: #d70044;
+			width: 10px;
+			height: 10px;
+			margin: 3px auto;
+			border-radius: 50%;
+			
+		}
+
 		
 		
 	
@@ -1982,11 +2255,14 @@ background-attachment: scroll;
 	
 }
 
-@media screen and (max-width:360px) {
-	.indepth_disponible_numeros_item{
-		width: 50px;
-		background-size: 100% auto;
-		background-repeat: no-repeat;
+@media screen and (max-width:320px) {
+	.indepth_goleadores_cont.izq{
+		width: 236px;
+	}
+	
+	.indepth_goleador_circulo{
+		width: 45px;
+		height: 45px;
 	}
 }
 

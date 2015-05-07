@@ -5,13 +5,13 @@
         "equipo": "Nueva Zelanda",
         "goles_a_favor": "5",
         "goles_encontra": "1",
-        "tipo": "visitante"
+        "tipo": "local"
       },
       {
         "equipo": "Nueva Zelanda",
         "goles_a_favor": "4",
         "goles_encontra": "2",
-        "tipo": "local"
+        "tipo": "Visitante"
       },
       {
         "equipo": "Camerún",
@@ -23,19 +23,19 @@
         "equipo": "Croacia",
         "goles_a_favor": "3",
         "goles_encontra": "1",
-        "tipo": "local"
+        "tipo": "Visitante"
       },
       {
         "equipo": "Brasil",
         "goles_a_favor": "0",
         "goles_encontra": "0",
-        "tipo": "local"
+        "tipo": "Visitante"
       },
       {
         "equipo": "Holanda",
         "goles_a_favor": "1",
         "goles_encontra": "2",
-        "tipo": "local"
+        "tipo": "Visitante"
       }
     ]
   },
@@ -51,7 +51,7 @@
         "equipo": "Israel",
         "goles_a_favor": "3",
         "goles_encontra": "0",
-        "tipo": "local"
+        "tipo": "Local"
       },
       {
         "equipo": "Ecuador",
@@ -81,7 +81,7 @@
         "equipo": "Holanda",
         "goles_a_favor": "3",
         "goles_encontra": "2",
-        "tipo": "local"
+        "tipo": "Visitante"
       },
       {
         "equipo": "Nigeria",
@@ -93,7 +93,7 @@
         "equipo": "EEUU",
         "goles_a_favor": "2",
         "goles_encontra": "2",
-        "tipo": "local"
+        "tipo": "Visitante"
       },
       {
         "equipo": "Chile",
@@ -117,13 +117,13 @@
         "equipo": "Bielorrusia",
         "goles_a_favor": "2",
         "goles_encontra": "3",
-        "tipo": "local"
+        "tipo": "Visitante"
       },
       {
         "equipo": "EEUU",
         "goles_a_favor": "0",
         "goles_encontra": "2",
-        "tipo": "local"
+        "tipo": "Visitante"
       }
     ]
   }

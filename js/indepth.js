@@ -5,15 +5,15 @@ var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
 var ventana_alto = $(window).height();
+var color = ["#e40047", "#ccc5c5", "#1fe9bb"];
+var p_ganados=0; 
+var p_empatados=0; 
+var p_perdidos=0;
 
 
 $("#indepth_page6").on("click",function() {
 	d3.selectAll("polygon").attr("fill","#e42a2c");
 });
-
-
-
-
 
 var normalize = (function() {
   var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
@@ -38,49 +38,20 @@ var normalize = (function() {
 })();
 
 
-var indepth_circulos = function(component, width, minw, datos, img){
+var indepth_equipos = function(){
 	
-		var ganados=0, perdidos=0, empatados=0;
-		var col_ganados=$("#"+component+ " .indepth_partidos_columna.ganados");
-			var col_empatados=$("#"+component+ " .indepth_partidos_columna.empatados")
-			var col_perdidos=$("#"+component+ " .indepth_partidos_columna.perdidos")
-	
-		$.each(datos.partido, function( i, item ) {
-			
-			
-			var marcador;
-				
-			if(item.tipo=="local"){
-				marcador=item.goles_a_favor+"-"+item.goles_encontra;
-			}else{
-				marcador=item.goles_encontra+"-"+item.goles_a_favor;
-			}
-				
-			var item_col='<div class="partido_item"><div class="indepth_escudo_team"><img src="images/Banderas/'+(normalize(item.equipo)).replace(" ","_")+'.png" ></div><div class="indepth_team_cont_out"><div class="indepth_team_cont"><div class="indepth_nombre_team">'+item.equipo+'</div><div class="indepth_marcador_team">'+marcador+'</div></div></div></div>';
-			
-			//empatados
-			if(item.goles_a_favor==item.goles_encontra){
-				col_empatados.find(".indepth_partidos_container").append(item_col);
-				empatados++;
-			}
-			
-			//ganados
-			if(item.goles_a_favor>item.goles_encontra){
-				col_ganados.find(".indepth_partidos_container").append(item_col);
-				ganados++
-			}
-			
-			//perdidos
-			if(item.goles_a_favor<item.goles_encontra){
-				col_perdidos.find(".indepth_partidos_container").append(item_col);
-				perdidos++
-			}
+	$.getJSON( "js/equipos.json", function( data ) {
+		var equipos=data.equipos;
+		console.log(equipos);
+		$.each(equipos, function( i, item ) {
+			//console.log(item);
+		})
+	});
+}
 
-         	
-         });
-		
-		 
-	
+indepth_equipos();
+
+var indepth_pastel = function(component,entity,diameter,donut_center,color ){
 		var svg = d3.select("#"+component+" .indepth_grafica_partidos").append("svg") 
 		    .attr("xmlns", "http://www.w3.org/2000/svg")
 		    .attr("version", "1.1")
@@ -89,11 +60,6 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		var g=svg.append("g").attr("id","pieChart")
 		.attr("transform", "translate(" + 130 / 2 + "," + 130 / 2 + ")");
 		var initial_entity = JSON.parse('[{"number":"0"},{"number":"1"}]');
-		var color = ["#e82b2c", "#8b8c8f", "#6bdb6b"];
-		var diameter= width;
-		var donut_center= minw;
-		var entity= JSON.parse('[{"number":"'+perdidos+'"},{"number":"'+empatados+'"},{"number":"'+ganados+'"}]');
-		
 		
 		var radius = diameter/2;   //calculate the radius value
 		
@@ -126,8 +92,63 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		  	this._current = i(0);
 		  	return function(t) {
 		    	return arc(i(t));
-		};
-	}
+			};
+		}
+}
+
+
+var indepth_circulos = function(component, width, minw, datos, img){
+	
+		var ganados=0, perdidos=0, empatados=0;
+		var col_ganados=$("#"+component+ " .indepth_partidos_columna.ganados");
+		var col_empatados=$("#"+component+ " .indepth_partidos_columna.empatados");
+		var col_perdidos=$("#"+component+ " .indepth_partidos_columna.perdidos");
+	
+		$.each(datos.partido, function( i, item ) {
+			
+			var local="visitante";
+			var marcador;
+				
+			if((item.tipo).toLowerCase()=="local"){
+				marcador="<span>"+item.goles_a_favor+"</span>"+"-"+item.goles_encontra;
+				 local="local";
+			}else{
+				marcador=item.goles_encontra+"-"+"<span>"+item.goles_a_favor+"</span>";
+			}
+				
+			var item_col='<div class="partido_item '+local+'"><div class="indepth_escudo_team"><img src="images/Banderas/'+(normalize(item.equipo)).replace(" ","_")+'.png" ></div><div class="indepth_team_cont_out"><div class="indepth_team_cont"><div class="indepth_nombre_team">'+item.equipo+'</div><div class="indepth_marcador_team">'+marcador+'</div></div></div></div>';
+			
+			//empatados
+			if(item.goles_a_favor==item.goles_encontra){
+				col_empatados.find(".indepth_partidos_container").append(item_col);
+				empatados++;
+				p_empatados++;
+			}
+			
+			//ganados
+			if(item.goles_a_favor>item.goles_encontra){
+				col_ganados.find(".indepth_partidos_container").append(item_col);
+				ganados++;
+				p_ganados++;
+			}
+			
+			//perdidos
+			if(item.goles_a_favor<item.goles_encontra){
+				col_perdidos.find(".indepth_partidos_container").append(item_col);
+				perdidos++;
+				p_perdidos++;
+			}
+
+         	
+         });
+		
+		var entity= JSON.parse('[{"number":"'+perdidos+'"},{"number":"'+empatados+'"},{"number":"'+ganados+'"}]');
+		var diameter= width;
+		var donut_center= minw;
+		
+		
+		indepth_pastel(component,entity,diameter,donut_center,color );
+		
 	
 		var total=perdidos+empatados+ganados;
 		$("#"+component+" .indepth_grafica_partidos .indepth_grafica_total").html(total);
@@ -196,11 +217,23 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		amistosos=data.amistosos;
       
 		var total=oficiales.partido.length+amistosos.partido.length;
-		$("#indepth_numero_dirigidos").html(total);
+		//$("#indepth_numero_dirigidos").html(total);
       
 		indepth_circulos("grafica_oficiales", 130, 105, oficiales, "Oficiales");
 	
 		indepth_circulos("grafica_amistosos", 130, 105, amistosos, "Amistosos");
+		
+		var entity= JSON.parse('[{"number":"'+p_perdidos+'"},{"number":"'+p_empatados+'"},{"number":"'+p_ganados+'"}]');
+		
+		
+		indepth_pastel("grafica_total",entity,130,105,color );
+		
+		$("#grafica_total .indepth_grafica_partidos .indepth_grafica_total").html(p_perdidos+p_empatados+p_ganados);
+		
+		$("#grafica_total .indepth_partidos_circulo.perdidos .indepth_partido_circulo_num").html(p_perdidos);
+		$("#grafica_total .indepth_partidos_circulo.empatados .indepth_partido_circulo_num").html(p_empatados);
+		$("#grafica_total .indepth_partidos_circulo.ganados .indepth_partido_circulo_num").html(p_ganados);
+		
       
     });
     

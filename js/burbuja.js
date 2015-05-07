@@ -1,8 +1,7 @@
 
 
    
-   
-   var normalize = (function() {
+var normalize = (function() {
   var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
       to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
       mapping = {};
@@ -29,7 +28,6 @@ var diameter = $("#indepth_burbujas_container").width(),
     format = d3.format(",d"),
     color = d3.scale.category20c();
     
-    console.log(diameter);
 
 var bubble = d3.layout.pack()
     .sort(null)
@@ -42,11 +40,15 @@ var svg = d3.select("#indepth_burbujas_container").append("svg")
     .attr("class", "bubble");
 
 d3.json("flare.json", function(error, root) {
-	
+
+	var equipos;
+	$.getJSON( "js/equipos.json", function( data ) {
+	equipos=data.equipos;
+
 	
   var node = svg.selectAll(".node")
       .data(bubble.nodes(classes(root))
-      .filter(function(d) { return !d.children; }))
+      .filter(function(d){  return !d.children; }))
     .enter().append("g")
       .attr("class", "burbuja_equipos")
       .attr("id",function(d) { return "burbuja_"+(normalize(d.className)).replace(/\s/g,"_"); })
@@ -55,20 +57,17 @@ d3.json("flare.json", function(error, root) {
 	  .attr("height", function(d) { return (d.r)*2; });
 
   node.append("title")
-      .text(function(d) { return d.className + ": " + format(d.value); });
+      .text(function(d) {  return d.className + ": " + format(d.value); });
 
-
-node.append("circle")
+	 node.append("circle")
       .attr("r", function(d) { return d.r; })
       .attr("radio_o", function(d) { return d.r; })
       .attr("class","circulo_back")
       .attr("fill","transparent");
-      
-      
 
 node.append("circle")
       .attr("r", 20)
-      .style("fill", "#6b333a")
+      .style("fill", "#1b5175")
       .attr("radio_o", function(d) { return d.r; })
       .attr("class","circulo_in")
       .transition()
@@ -105,10 +104,6 @@ node.append("circle")
 						}
 						}
 		});
-     
-   
-      
-  
 
   node.append("text")
       .attr("dy", ".3em")
@@ -143,10 +138,12 @@ node.append("circle")
 					}
 			}
 			});
-      
+			
+
       
      var jug=node.append("g")
 	  	.attr("id",function(d) { return "jugadores_"+(normalize(d.className)).replace(/\s/g,"_"); })
+	  	.attr("name",function(d) { return (normalize(d.className)).replace(/\s/g,"_"); })
 	  	.attr("class", "jugadores_cont")
 	  	.attr("width", function(d) { return ((d.r)*2)+20; })
 		 .attr("height", function(d) { return ((d.r)*2)+20; })
@@ -157,77 +154,120 @@ node.append("circle")
 		 
 		 var def=d3.select("#indepth_burbujas_container svg").insert("defs",":first-child")
 		 
-		 def.append("pattern")
+		 
+		 
+		 
+		 //var equipo=equipos[""]
+		 
+		$.each(jug[0], function( i, item ) {
+			
+			var c=d3.select(item);
+			
+			var s=(c.attr("name")).toLowerCase();;	
+			
+			
+			var equipo = equipos[s]['jugadores'];
+			
+			
+			
+			$.each(equipo, function( i, item ) {
+				var nombre=	item['nombre'];
+				var apellido = item['apellido'];
+				
+				/*def.append("pattern")
 		 		.attr("width","40px")
 		 		.attr("height","40px")
 		 		.attr("x","20")
 		 		.attr("y","10")
-		 		.attr("id","circle1")
+		 		.attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
 		 		.attr("patternUnits","userSpaceOnUse")
 		 		.append("image")
-		 			.attr("xlink:href","images/Jugadores/1_Oribe-Peralta.png")
+		 			.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
 		 			.attr("x","0")
 		 			.attr("width","40px")
 		 		.attr("height","40px")
 		 			.attr("y","0");
+		 			*/
+		 			
+		 			
+		 			
+		 			console.log(c);
+		 			
+		 	var t=c.append("clipPath").attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
+		 		.append("circle")
+		 		.attr("fill", "white")
+			 	.attr("r","20px");
+			 
+			 	
+			 	if(i==0){
+				 	t.attr("cx",0)
+				 	.attr("cy","-90");
+			 	}
+			 	
+			 	
+			 	if(i==1){
+				 	t.attr("cx",63.63)
+				 	.attr("cy","-63.63");
+			 	}
+			 	
+			 	if(i==2){
+				 	t.attr("cx",90)
+				 	.attr("cy","0");
+			 	}
+			 	
+			 	if(i==3){
+				 	t.attr("cx","63.63")
+				 	.attr("cy","63.63");
+			 	}
+			 	
+			 	if(i==4){
+				 	t.attr("cx",0)
+				 	.attr("cy","90");
+			 	}
+			 	
+			 	if(i==5){
+				 	t.attr("cx","-63.63")
+				 	.attr("cy","63.63");
+			 	}
+			 	
+			 	if(i==6){
+				 	t.attr("cx","-90")
+				 	.attr("cy","0");
+			 	}
+			 	
+			 	if(i==7){
+				 	t.attr("cx",-63.63)
+				 	.attr("cy","-63.63");
+			 	}
+			 	
+			 	c.append("image")
+			 		.attr("clip-path","url(#"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+")")
+		 			.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
+		 			.attr("x","10")
+		 			.attr("width","40px")
+		 			.attr("height","40px")
+		 			.attr("y","10");
+			 	
+			 	
+		 			
+			});
+			
+			
+			
+				
+			
+			 
+			
+		 			
+		});
 		 
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("cx",0)
-		 	.attr("cy","-90")
-		 	.style("fill","url(#circle1)");
-		 	
-		 	
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx",63.63)
-		 	.attr("cy","-63.63");
-		 	
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx",63.63)
-		 	.attr("cy","-63.63");
 		 
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx",90)
-		 	.attr("cy","0");
-		 	
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx","63.63")
-		 	.attr("cy","63.63");
-		 	
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx",0)
-		 	.attr("cy","90");
-
-		 	
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx","-63.63")
-		 	.attr("cy","63.63");
-		 	
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx","-90")
-		 	.attr("cy","0");
-		 	
-		 jug.append("circle")
-		 	.attr("r","20px")
-		 	.attr("fill","white")
-		 	.attr("cx",-63.63)
-		 	.attr("cy","-63.63");
+		
 		 
-		 
+		
+		 	
+		 /**/
+			}); 
 });
 
 // Returns a flattened hierarchy containing all leaf nodes under the root.
@@ -305,7 +345,6 @@ $(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
 	d3.selectAll(".burbuja_equipos").attr("opacity","1");
 	
 	var radio=d3.select(this).attr("radio_o");
-	console.log(radio);
 	var m=d3.select(this.parentNode);
 	
 	m.select(".jugadores_cont").transition().attr("opacity",0);
@@ -321,7 +360,6 @@ $(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
 		
 	text_size=$(this).attr("font_size");
 	
-	console.log(text_size);
 	
 	m.select("text").transition()
 		.style("font-size",text_size);
