@@ -174,79 +174,101 @@ node.append("circle")
 				var nombre=	item['nombre'];
 				var apellido = item['apellido'];
 				
-				/*def.append("pattern")
+			/*def.append("pattern")
 		 		.attr("width","40px")
 		 		.attr("height","40px")
 		 		.attr("x","20")
 		 		.attr("y","10")
 		 		.attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
 		 		.attr("patternUnits","userSpaceOnUse")
-		 		.append("image")
+		 		/*.append("image")
 		 			.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
 		 			.attr("x","0")
 		 			.attr("width","40px")
 		 		.attr("height","40px")
-		 			.attr("y","0");
-		 			*/
+		 			.attr("y","0");*/
 		 			
 		 			
-		 			
-		 			console.log(c);
-		 			
-		 	var t=c.append("clipPath").attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
-		 		.append("circle")
-		 		.attr("fill", "white")
-			 	.attr("r","20px");
-			 
-			 	
-			 	if(i==0){
-				 	t.attr("cx",0)
-				 	.attr("cy","-90");
-			 	}
-			 	
-			 	
-			 	if(i==1){
-				 	t.attr("cx",63.63)
-				 	.attr("cy","-63.63");
-			 	}
-			 	
-			 	if(i==2){
-				 	t.attr("cx",90)
-				 	.attr("cy","0");
-			 	}
-			 	
-			 	if(i==3){
-				 	t.attr("cx","63.63")
-				 	.attr("cy","63.63");
-			 	}
-			 	
-			 	if(i==4){
-				 	t.attr("cx",0)
-				 	.attr("cy","90");
-			 	}
-			 	
-			 	if(i==5){
-				 	t.attr("cx","-63.63")
-				 	.attr("cy","63.63");
-			 	}
-			 	
-			 	if(i==6){
-				 	t.attr("cx","-90")
-				 	.attr("cy","0");
-			 	}
-			 	
-			 	if(i==7){
-				 	t.attr("cx",-63.63)
-				 	.attr("cy","-63.63");
-			 	}
-			 	
-			 	c.append("image")
-			 		.attr("clip-path","url(#"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+")")
-		 			.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
+		 		var t=c.append("image")
+			 		//.attr("clip-path","url(#"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+")")
+		 			//.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
+		 			.attr("xlink:href","images/Jugadores/Luis-Montes.png")
 		 			.attr("x","10")
 		 			.attr("width","40px")
 		 			.attr("height","40px")
 		 			.attr("y","10");
+		 			
+		 				
+		 			
+		 			console.log(c);
+		 			
+		 	/*c.append("clipPath").attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
+		 		.append("circle")
+		 		.attr("fill", "white")
+			 	.attr("r","20px");*/
+			 
+			 	
+			 	if(i==0){
+				 	t.attr("x",-20)
+				 	.attr("y","-110");
+			 	}
+			 	
+			 	
+			 	if(i==1){
+				 	t.attr("x",43.63)
+				 	.attr("y","-83.63");
+			 	}
+			 	
+			 	if(i==2){
+				 	t.attr("x",70)
+				 	.attr("y","-20");
+			 	}
+			 	
+			 	if(i==3){
+				 	t.attr("x","43.63")
+				 	.attr("y","43.63");
+			 	}
+			 	
+			 	if(i==4){
+				 	t.attr("x",-20)
+				 	.attr("y","70");
+			 	}
+			 	
+			 	if(i==5){
+				 	t.attr("x","-83.63")
+				 	.attr("y","43.63");
+			 	}
+			 	
+			 	if(i==6){
+				 	t.attr("x","-110")
+				 	.attr("y","-20");
+			 	}
+			 	
+			 	if(i==7){
+				 	t.attr("x",-83.63)
+				 	.attr("y","-83.63");
+			 	}
+			 	
+			 	
+			 	if(i==8){
+				 	t.attr("x",-20)
+				 	.attr("y","-160");
+			 	}
+			 	
+			 	if(i==9){
+				 	t.attr("x",33.57)
+				 	.attr("y","-146.29");
+			 	}
+			 	
+			 	if(i==10){
+				 	t.attr("x",78.99)
+				 	.attr("y","-118.99");
+			 	}
+			 	
+			 	if(i==11){
+				 	t.attr("x",109.34)
+				 	.attr("y","-73.57");
+			 	}
 			 	
 			 	
 		 			
