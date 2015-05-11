@@ -191,8 +191,8 @@ node.append("circle")
 		 			
 		 		var t=c.append("image")
 			 		//.attr("clip-path","url(#"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+")")
-		 			//.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
-		 			.attr("xlink:href","images/Jugadores/Luis-Montes.png")
+		 			.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
+		 			//.attr("xlink:href","images/Jugadores/Luis-Montes.png")
 		 			.attr("x","10")
 		 			.attr("width","40px")
 		 			.attr("height","40px")
@@ -200,7 +200,6 @@ node.append("circle")
 		 			
 		 				
 		 			
-		 			console.log(c);
 		 			
 		 	/*c.append("clipPath").attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
 		 		.append("circle")
@@ -270,6 +269,21 @@ node.append("circle")
 				 	.attr("y","-73.57");
 			 	}
 			 	
+			 	if(i==12){
+				 	t.attr("x",120)
+				 	.attr("y","-20");
+			 	}
+			 	
+			 	if(i==13){
+				 	t.attr("x",109.34)
+				 	.attr("y","33.37");
+			 	}
+			 	
+			 	if(i==14){
+				 	t.attr("x",78.99)
+				 	.attr("y","78.99");
+			 	}
+			 	
 			 	
 		 			
 			});
@@ -316,7 +330,6 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 	d3.selectAll(".burbuja_equipos").attr("opacity",".4");
 	
 	m.attr("opacity","1");
-	
 	
 	m.select("text").transition()
 		.style("font-size","15px")

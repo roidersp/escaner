@@ -9,6 +9,8 @@ var color = ["#e40047", "#ccc5c5", "#1fe9bb"];
 var p_ganados=0; 
 var p_empatados=0; 
 var p_perdidos=0;
+var goleadores=new Array();
+var mas_min=new Array();
 
 
 $("#indepth_page6").on("click",function() {
@@ -42,11 +44,52 @@ var indepth_equipos = function(){
 	
 	$.getJSON( "js/equipos.json", function( data ) {
 		var equipos=data.equipos;
-		console.log(equipos);
 		$.each(equipos, function( i, item ) {
-			//console.log(item);
+			var jugadores=item.jugadores;
+				$.each(jugadores, function( j, subitem ) {
+					var min=subitem.minutos;
+					var jug_min = new Array();
+					 jug_min['nombre']=subitem.nombre+" "+subitem.apellido;
+					 jug_min['minutos']=subitem.minutos;
+					
+					
+					if(goleadores.length==0){
+						console.log(jug_min);
+						goleadores.push(jug_min);
+						console.log(goleadores);
+						
+					}else{
+						console.log(goleadores[0]['minutos']+"<"+min +" -- " +(goleadores[0]['minutos']<min));
+						if(goleadores[0]['minutos']<min){
+							console.log(jug_min);
+							goleadores.unshift(jug_min);
+						}else{
+							
+							
+							$.each(goleadores, function( k, gol_item ) {
+								min2=gol_item['minutos'];
+								
+								
+								if(min2>=min){
+									goleadores.splice(k-1, 0,jug_min);
+									return false;
+
+								};
+								
+								
+							});
+						}
+					}
+					
+					
+					
+					
+				});
 		})
+		console.log(goleadores);
 	});
+	
+	
 }
 
 indepth_equipos();
