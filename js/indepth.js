@@ -9,8 +9,9 @@ var color = ["#e40047", "#ccc5c5", "#1fe9bb"];
 var p_ganados=0; 
 var p_empatados=0; 
 var p_perdidos=0;
-var goleadores=new Array();
+var ju=0;
 var mas_min=new Array();
+var max_min=1500;
 
 
 $("#indepth_page6").on("click",function() {
@@ -41,54 +42,152 @@ var normalize = (function() {
 
 
 var indepth_equipos = function(){
-	
+	var goleadores=new Array();
+	var gminutos=new Array();
+	var estados= new Array();
+	var goles_total=0;
+	var goles_cabeza=0;
+	var goles_pieder=0;
+	var goles_pieizq=0;
 	$.getJSON( "js/equipos.json", function( data ) {
+		
+		console.log(data);
+		
 		var equipos=data.equipos;
 		$.each(equipos, function( i, item ) {
 			var jugadores=item.jugadores;
 				$.each(jugadores, function( j, subitem ) {
-					var min=subitem.minutos;
+					var min=parseInt(subitem.minutos);
 					var jug_min = new Array();
 					 jug_min['nombre']=subitem.nombre+" "+subitem.apellido;
 					 jug_min['minutos']=subitem.minutos;
 					
+					if(gminutos.length==0){
+						gminutos.push(jug_min);
+					}else{
+						if(parseInt(gminutos[0]['minutos'])<=min){
+							gminutos.unshift(jug_min);
+						}else{
+							var min_l=gminutos[gminutos.length-1]['minutos'];
+							if(parseInt(min_l)>=parseInt(min)){
+								gminutos.push(jug_min);
+							}else{
+								$.each(gminutos, function( k, gol_item ) {
+									min2=parseInt(gol_item['minutos']);
+									if(min2<=min){
+										gminutos.splice(k, 0,jug_min);
+										return false;
+									};
+								});
+							}
+						}
+					}
+					
+					var jug_gol = new Array();
+					jug_gol['nombre']=subitem.nombre+" "+subitem.apellido;
+					var goles=parseInt(subitem.goles.cabeza)+parseInt(subitem.goles.pie_der)+parseInt(subitem.goles.pie_izq);
+					goles_total=goles+goles_total;
+					jug_gol['goles']=goles;
+					jug_gol['cabeza']=subitem.goles.cabeza;
+					jug_gol['pie_der']=subitem.goles.pie_der;
+					jug_gol['pie_izq']=subitem.goles.pie_izq;
+					
+					goles_cabeza=parseInt(jug_gol['cabeza'])+goles_cabeza;
+					goles_pieder=goles_pieder+parseInt(jug_gol['pie_der']);
+					goles_pieizq=goles_pieizq+parseInt(jug_gol['pie_izq']);
+
 					
 					if(goleadores.length==0){
-						console.log(jug_min);
-						goleadores.push(jug_min);
-						console.log(goleadores);
-						
+						goleadores.push(jug_gol);
 					}else{
-						console.log(goleadores[0]['minutos']+"<"+min +" -- " +(goleadores[0]['minutos']<min));
-						if(goleadores[0]['minutos']<min){
-							console.log(jug_min);
-							goleadores.unshift(jug_min);
+						if(parseInt(goleadores[0]['goles'])<=goles){
+							goleadores.unshift(jug_gol);
 						}else{
-							
-							
-							$.each(goleadores, function( k, gol_item ) {
-								min2=gol_item['minutos'];
-								
-								
-								if(min2>=min){
-									goleadores.splice(k-1, 0,jug_min);
-									return false;
-
-								};
-								
-								
-							});
+							var min_l=goleadores[goleadores.length-1]['goles'];
+								if(parseInt(min_l)>=parseInt(goles)){
+									goleadores.push(jug_gol);
+								}else{
+									$.each(goleadores, function( k, gol_item ) {
+										min2=parseInt(gol_item['goles']);
+										if(min2<=goles){
+											goleadores.splice(k, 0,jug_gol);
+											return false;
+										};
+									});
+								}
 						}
 					}
 					
 					
+					var m_estado=subitem.estado;
+					
+					if((estados[m_estado])){
+						console.log(m_estado);
+						console.log(estados[m_estado]);
+						console.log(estados[m_estado]+1);
+						var lo=estados[m_estado]+1;
+						estados[m_estado]=lo;
+						console.log(estados[m_estado]);
+					}else{
+						estados[m_estado]=1;
+						console.log(m_estado);
+						console.log(estados[m_estado]);
+					}
+					
+					console.log(estados);
+						
 					
 					
 				});
-		})
-		console.log(goleadores);
+		});
+				
+		for(var i=0;i<11;i++){
+			var id_div=$("#indepth_barra_jugmin_"+(i+1));
+			var jugador=gminutos[i];
+			var h_jug=(jugador["minutos"]/ max_min)*100;
+			id_div.find(".indepth_jugmin_mins").html(jugador["minutos"]);
+			id_div.find(".indepth_jugmin_foto").attr("src","images/Jugadores/"+normalize(jugador["nombre"]).replace(/\s/g,"-")+".png");
+			id_div.find(".indepth_linea_barra").css("height",h_jug+"%");
+			var id_name=$("#indepth_jugmin_jugador_"+(i+1));
+			id_name.find(".indepth_jugmin_name").html(jugador["nombre"]);
+		};
+		
+		var gol_cont=$("#indepth_goleadores_container");
+		
+		for(var i=0;i<15;i++){
+			var jugador=goleadores[i];
+			var img="images/Jugadores/"+normalize(jugador["nombre"]).replace(/\s/g,"-")+".png"
+			var g=gol_cont.append('<div class="indepth_goleador_circulo" id="indepth_goleador_circulo'+i+'"></div>');
+			var cir=$("#indepth_goleador_circulo"+i);
+			cir.html('<img src="'+img+'">');
+			cir.attr("nombre",jugador["nombre"]);
+			cir.attr("total",jugador["goles"]);
+			cir.attr("cabeza",jugador["cabeza"]);
+			cir.attr("pie_der",jugador["pie_der"]);
+			cir.attr("pie_izq",jugador["pie_izq"]);
+		};
+		
+		gol_cont.append('<div class="indepth_goleador_circulo" id="indepth_goleador_circulo_total"></div>');
+		var cir=$("#indepth_goleador_circulo_total");
+		cir.attr("cabeza", goles_cabeza);
+		cir.attr("pie_der", goles_pieder);
+		cir.attr("pie_izq", goles_pieizq);
+		cir.attr("total",goles_total);
+		cir.attr("nombre","Total");
+		
 	});
 	
+	var goleador=$("#indepth_goleador_container");
+	
+	$(document).on("mouseover",".indepth_goleador_circulo",function(){
+		var gl=$(this);
+		goleador.find(".indepth_barra_nombre_jug div").html(gl.attr("nombre"));
+		goleador.find(".indepth_barra_goles_cont div").html(gl.attr("total"));
+		goleador.find("#indepth_goles_cabeza .indepth_numero_goles div").html(gl.attr("cabeza"));
+		goleador.find("#indepth_goles_derecha .indepth_numero_goles div").html(gl.attr("pie_der"));
+		goleador.find("#indepth_goles_izquierda .indepth_numero_goles div").html(gl.attr("pie_izq"));
+		
+	});
 	
 }
 
