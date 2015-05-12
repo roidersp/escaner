@@ -418,10 +418,12 @@ var indepth_circulos = function(component, width, minw, datos, img){
 	}
 	
 	
-	var indepth_goles = function(tipo,data){
+	var indepth_goles = function(tipo,data,g_pp){
+		var goles=[0,0,0,0,0,0];
 		var container = $(".indepth_graficas_goles."+tipo);
 		g_oficiales=data.oficiales;
 		g_amistosos=data.amistosos;
+		
 		
 		//oficiales
 		
@@ -429,7 +431,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		
 		$.each(g_oficiales, function( i, item ) {
 			o_total=o_total+parseInt(item);
-		})
+		});
 		
 		container.find(".goles_oficiales .indepth_grafica_text span").html(o_total);
 		
@@ -439,6 +441,8 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		container.find(".goles_oficiales #indepth_grafica_numeros_60").html(g_oficiales["60"]);
 		container.find(".goles_oficiales #indepth_grafica_numeros_75").html(g_oficiales["75"]);
 		container.find(".goles_oficiales #indepth_grafica_numeros_90").html(g_oficiales["90"]);
+		
+		
 				
 		
 		//amistosos
@@ -459,11 +463,16 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		container.find(".goles_amistosos #indepth_grafica_numeros_75").html(g_amistosos["75"]);
 		container.find(".goles_amistosos #indepth_grafica_numeros_90").html(g_amistosos["90"]);
 		
-		
+		goles[0]=parseInt(g_oficiales["15"])+parseInt(g_amistosos["15"])+parseInt(goles[0]);
+		goles[1]=parseInt(g_oficiales["30"])+parseInt(g_amistosos["30"])+parseInt(goles[1]);
+		goles[2]=parseInt(g_oficiales["45"])+parseInt(g_amistosos["45"])+parseInt(goles[2]);
+		goles[3]=parseInt(g_oficiales["60"])+parseInt(g_amistosos["60"])+parseInt(goles[3]);
+		goles[4]=parseInt(g_oficiales["75"])+parseInt(g_amistosos["75"])+parseInt(goles[4]);
+		goles[5]=parseInt(g_oficiales["90"])+parseInt(g_amistosos["90"])+parseInt(goles[5]);
 
 		
 
-		
+		return goles;
 		
 	}
 	
@@ -501,8 +510,41 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		goles_encontra=data.goles.en_contra;
 		
 		
-		indepth_goles("favor", goles_afavor);
-		indepth_goles("contra", goles_encontra);
+		var f=indepth_goles("favor", goles_afavor);
+		var co=indepth_goles("contra", goles_encontra);
+		
+
+		var container = $(".indepth_graficas_goles.total");
+		
+		var o_total=0;
+		var a_total=0;
+		
+		$.each(f, function( i, item ) {
+			o_total=o_total+parseInt(item);
+		});
+		
+		container.find(".goles_oficiales .indepth_grafica_text span").html(o_total);
+		
+		container.find(".goles_oficiales #indepth_grafica_numeros_15").html(f[0]);
+		container.find(".goles_oficiales #indepth_grafica_numeros_30").html(f[1]);
+		container.find(".goles_oficiales #indepth_grafica_numeros_45").html(f[2]);
+		container.find(".goles_oficiales #indepth_grafica_numeros_60").html(f[3]);
+		container.find(".goles_oficiales #indepth_grafica_numeros_75").html(f[4]);
+		container.find(".goles_oficiales #indepth_grafica_numeros_90").html(f[5]);
+		
+		
+		$.each(co, function( i, item ) {
+			a_total=a_total+parseInt(item);
+		})
+		
+		container.find(".goles_amistosos .indepth_grafica_text span").html(a_total);
+		
+		container.find(".goles_amistosos #indepth_grafica_numeros_15").html(co[0]);
+		container.find(".goles_amistosos #indepth_grafica_numeros_30").html(co[1]);
+		container.find(".goles_amistosos #indepth_grafica_numeros_45").html(co[2]);
+		container.find(".goles_amistosos #indepth_grafica_numeros_60").html(co[3]);
+		container.find(".goles_amistosos #indepth_grafica_numeros_75").html(co[4]);
+		container.find(".goles_amistosos #indepth_grafica_numeros_90").html(co[5]);
 		
       
     });

@@ -1423,6 +1423,9 @@ position: absolute;
 .indepth_graficas_goles.contra{
 	color:  #c42c2c;
 }
+.indepth_graficas_goles.total{
+	color: #69c5ec;
+}
 
 .indepth_graficas_cont{
 	display: table;
@@ -2100,6 +2103,63 @@ position: absolute;
 	  height: 550px;
 	}
 	
+	#indepth_mono_container,#indepth_barras{
+		display: none;
+	}
+	
+	#indepth_cover #indepth_title{
+		position: initial;
+	}
+	
+	.indepth_cover_content .indepth_cover_conatainer_in{
+		width: 100%;
+	}
+	
+	#indepth_monitor{
+		width: 300px;
+		margin: 40px  auto;
+		position: initial;
+		height: 65px;
+	}
+	
+
+	
+	#indept_monitor_cuadro {
+	  width: 55px;
+	  height: 52px;
+	  margin-right: 7px;
+	  margin-top: 6px;
+	  background-position: 3px 8px;
+	  background-size: 16px auto;
+	}
+	
+	#indepth_monitor_big {
+	  font-size: 22px;
+	  padding-top: 2px;
+	  padding-left: 22px;
+	  line-height: 22px;
+	}
+	
+	.indepth_monitor_num {
+	  font-size: 12px;
+	  padding-left: 20px;
+	  line-height: 12px;
+	}
+	
+	#indepth_monitor_img {
+	  width: 236px;
+	}
+	
+	#indepth_monitor_img img{
+		height: 30px;
+		margin-top: 18px;
+		-webkit-animation: monitor_mov_300 8s infinite; /* Safari 4+ */
+	    -moz-animation:    monitor_mov_300 8s infinite; /* Fx 5+ */
+	    -o-animation:      monitor_mov_300 8s infinite; /* Opera 12+ */
+	    animation:         monitor_mov_300 8s infinite;
+		animation-timing-function: linear;
+	}
+	
 	
 }
 
@@ -2233,6 +2293,12 @@ position: absolute;
 		
 		.indepth_botella_powerade {
 		  height: 500px;
+		}
+		
+		.indepth_mapa_svg{
+			width: 94%;
+			margin-top: 10px;
+			padding-top: 20px;
 		}
 
 		
@@ -2435,6 +2501,10 @@ position: absolute;
 		top: 12px;
 		left: -26px;
 	}
+	
+	.indepth_arrow_cover{
+		margin-top: 20px;
+	}
 		
 }
 
@@ -2447,6 +2517,24 @@ position: absolute;
 		width: 45px;
 		height: 45px;
 	}
+	
+	.indepth_arrow_cover{
+		margin-top: 10px;
+	}
+	
+	.indepth_tltle_text{
+		margin-bottom: 20px;
+	}
+	
+	.indepth_arrow_cover{
+		width: 50px;
+		height: 50px;
+	}
+	
+	#indepth_monitor{
+		margin: 20px auto;
+	}
+	
 }
 
 
@@ -2530,6 +2618,31 @@ position: absolute;
 @keyframes monitor_mov_960 {
     from {transform: translate(0px,0px);}
     to {transform: translate(-569px,0px);}
+}
+
+@keyframes monitor_mov_300 {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-405px,0px);}
+}
+
+@-webkit-keyframes monitor_mov_300 {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-405px,0px);}
+}
+
+@-moz-keyframes monitor_mov_300 {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-405px,0px);}
+}
+
+@-o-keyframes monitor_mov_300 {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-405px,0px);}
+}
+
+@keyframes monitor_mov_300 {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(-405px,0px);}
 }
 
 
