@@ -755,6 +755,7 @@ text{
 	width: 100%;
 	height: 25px;
 	margin-top: 20px;
+	display: none;
 }
 
 
@@ -869,7 +870,7 @@ text{
 #indepth_min_jug_container_movil{
 	display: none;
 	width: 500px;
-	margin: auto;
+	margin: 40px auto;
 }
 
 .indepth_min_jug_nom{
@@ -1086,9 +1087,9 @@ position: absolute;
 
 .indepth_image_cont{
 	position: absolute;
-	transform: translate(0,-66px);
-	-ms-transform: translate(0,-66px); /* IE 9 */
-    -webkit-transform: translate(0,-66px);
+	transform: translate(0,-70%);
+	-ms-transform: translate(0,-70%); /* IE 9 */
+    -webkit-transform: translate(0,-70%);
 	z-index: 2;
 	
 }
@@ -1102,9 +1103,9 @@ position: absolute;
 	display: table-cell;
 	vertical-align: middle;
 	position: absolute;
-	transform: translate(-48px,0px);
-	-ms-transform: translate(-48px,0px); /* IE 9 */
-    -webkit-transform: translate(-48px,-5px);
+	transform: translate(-48px,-9px);
+	-ms-transform: translate(-48px,-9px); /* IE 9 */
+    -webkit-transform: translate(-48px,-9px);
 }
 
 .idnepth_imagen_line div{
@@ -1524,7 +1525,7 @@ position: absolute;
 }
 
 .indepth_mapa_left{
-	width: 150px;
+	width: 160px;
 	float: left;
 	color: white;
 }
@@ -1555,45 +1556,7 @@ position: absolute;
 	margin-left: 10px;
 }
 
-#indepth_edo1 .indepth_edo_box{
-	background-color: #e42a2c;
-}
 
-#indepth_edo2 .indepth_edo_box{
-	background-color: #e46e2d;
-}
-
-#indepth_edo3 .indepth_edo_box{
-	background-color: #e2bd31;
-}
-
-#indepth_edo4 .indepth_edo_box{
-	background-color: #dee334;
-}
-
-#indepth_edo5 .indepth_edo_box{
-	background-color: #a6df34;
-}
-
-#indepth_edo6 .indepth_edo_box{
-	background-color: #a6df34;
-}
-
-#indepth_edo7 .indepth_edo_box{
-	background-color: #71da35;
-}
-
-#indepth_edo8 .indepth_edo_box{
-	background-color: #71da35;
-}
-
-#indepth_edo9 .indepth_edo_box{
-	background-color: #71da35;
-}
-
-#indepth_edo10 .indepth_edo_box{
-	background-color: #71da35;
-}
 
 
 
@@ -1702,6 +1665,28 @@ position: absolute;
 		width: 900px;
 	}
 	
+	#indept_monitor_cuadro {
+	  width: 90px;
+	  height: 85px;
+
+	}
+	
+	#indepth_monitor_img{
+		width: 397px;
+	}
+	
+	#indepth_monitor_big {
+	  font-size: 36px;
+	  padding-left: 40px;
+	  line-height: 35px;
+	}
+	
+	.indepth_monitor_num {
+	  font-size: 14px;
+	  padding-left: 40px;
+	  line-height: 16px;
+	}
+	
 }
 
 
@@ -1761,6 +1746,10 @@ position: absolute;
 	
 	.indepth_grafica{
 		min-width: 390px;
+	}
+	
+	.idnepth_imagen_line{
+		-webkit-transform: translate(-45px,-12px);
 	}
 	
 }
@@ -1830,12 +1819,12 @@ position: absolute;
 	}
 	
 	.indepth_mapa_svg{
-		width: 600px;
+		width: 590px;
 	}
 	
 	.indepth_barra_jugmin, .indepth_jugmin_jugador{
 		width: 64px;
-		font-size: 14px;
+		font-size: 12px;
 	}
 	
 	.indepth_min_cont{
@@ -1849,11 +1838,32 @@ position: absolute;
 	.idnepth_imagen_line {
 	  border-bottom: 4px solid transparent;
 	  border-top: 4px solid transparent;
-	  border-right: 15px solid white;
-	  transform: translate(-40px,0px);
-	  -ms-transform: translate(-40px,0px);
-	  -webkit-transform: translate(-38px,-2px);
+	  border-right: 20px solid white;
+	  transform: translate(-38px,-9px);
+	  -ms-transform: translate(-38px,-9px);
+	  -webkit-transform: translate(-38px,-9px);
 	}
+	
+	
+	#indept_monitor_cuadro {
+	  width: 81px;
+	  height: 77px;
+	  margin-right: 9px;
+	  margin-top: 9px;
+	  background-position: 6px 16px;
+	  background-size: 18px auto;
+	}
+	
+	#indepth_monitor_img {
+	  width: 349px;
+	}
+	
+	#indepth_monitor_big {
+	  font-size: 34px;
+	  padding-left: 30px;
+	  line-height: 35px;
+	}
+
 
 }
 
@@ -1876,9 +1886,9 @@ position: absolute;
 		  border-bottom: 3px solid transparent;
 		  border-top: 3px solid transparent;
 		  border-right: 15px solid white;
-		  transform: translate(-40px,0px);
-		  -ms-transform: translate(-40px,0px);
-		  -webkit-transform: translate(-32px,-2px);
+		  transform: translate(-32px,-9px);
+		  -ms-transform: translate(-32px,-9px);
+		  -webkit-transform: translate(-32px,-9px);
 		}
 		
 		.indepth_mints{
@@ -1967,7 +1977,8 @@ position: absolute;
 		}
 		
 		.indepth_mapa_svg {
-		  width: 550px;
+		  width: 540px;
+		  padding-top: 50px;
 		}
 		
 		#indepth_mapa_container {
@@ -2026,6 +2037,53 @@ position: absolute;
 			margin: 30px auto;
 			display: table;
 		}
+		
+		.indepth_edo_data {
+		  height: 25px;
+		}
+		
+		.indepth_edo_box {
+		  width: 25px;
+		  line-height: 25px;
+		  font-size: 14px;
+		}
+		
+		.indepth_edo_nombre {
+		  line-height: 25px;
+		  font-size: 12px;
+		  margin-left: 7px;
+		}
+		
+		#indepth_break_1 .indepth_parallax_back{
+			width: 100%;
+		}
+		
+		#indepth_break_1{
+			background-position: center;
+		}
+		
+		.indepth_haypower {
+		  width: 300px;
+		  top: 60px;
+		  left: 10px;
+		}
+		
+		.indepth_power_logo {
+		  width: 230px;
+		  left: 40px;
+		  position: absolute;
+		  bottom: 60px;
+		}
+		
+		#indepth_break_1{
+			height: 300px;
+		}
+		
+		.indepth_botella_powerade {
+		  height: 600px;
+		}
+		
+		
 }
 
 @media screen and (max-width:600px) {
@@ -2038,10 +2096,26 @@ position: absolute;
 		width: auto;
 	}
 	
+	.indepth_botella_powerade {
+	  height: 550px;
+	}
+	
+	
 }
 
 @media screen and (max-width:560px) {
-	
+		
+		#grafica_total{
+			width: 100%;
+		}
+		
+		.indepth_partidos_tabla{
+			width: auto;
+		}
+		
+		.indepth_partido_circulo_text{
+			font-size: 14px;
+		}
 		
 		.indepth_mapa_left {
 		  width: 420px;
@@ -2058,38 +2132,36 @@ position: absolute;
 		}
 		
 		#indepth_min_jug_container_movil{
-			width: 400px;
-			margin: auto;
+			width: 370px;
 		}
 		
-		.indepth_min_jug_nom{
-			width: 160px;
-			height: auto;
-			font-size: 26px;
-			text-align: right;
-			padding-right: 20px;
-			float: left;
-			line-height: 28px;
+		.indepth_min_jug_nom {
+		  width: 100px;
+		  height: auto;
+		  font-size: 20px;
+		  text-align: right;
+		  padding-right: 15px;
+		  float: left;
+		  line-height: 20px;
 		}
 		
-		.indepth_min_jug_mins{
-			width: 100px;
-			float: right;
-			padding-right: 20px;
-			line-height: 60px;
-			height: 100%;
-			text-align: right;
-			font-size: 30px;
-			
+		.indepth_min_jug_mins {
+		  width: 60px;
+		  float: right;
+		  padding-right: 20px;
+		  line-height: 60px;
+		  height: 100%;
+		  text-align: right;
+		  font-size: 24px;
+		}
+
+		.indepth_min_jug_bar {
+		  width: 170px;
+		  float: left;
+		  height: 100%;
+		  display: table;
 		}
 		
-		
-		.indepth_min_jug_bar{
-			width: 200px;
-			float: left;
-			height: 100%;
-			display: table;
-		}
 		
 		.indepth_min_jug_bar_cont{
 			display: table-cell;
@@ -2139,6 +2211,28 @@ position: absolute;
 			margin: 3px auto;
 			border-radius: 50%;
 			
+		}
+		
+		
+		.indepth_haypower {
+		  width: 250px;
+		  top: 50px;
+		  left: 10px;
+		}
+		
+		.indepth_power_logo {
+		  width: 200px;
+		  left: 30px;
+		  position: absolute;
+		  bottom: 60px;
+		}
+		
+		#indepth_break_1{
+			height: 250px;
+		}
+		
+		.indepth_botella_powerade {
+		  height: 500px;
 		}
 
 		
@@ -2223,32 +2317,125 @@ position: absolute;
 	  width: 185px;
 	}
 	
+	.indepth_haypower {
+		  width: 200px;
+		  top: 50px;
+		  left: 10px;
+		}
+		
+		.indepth_power_logo {
+		  width: 150px;
+		  left: 30px;
+		  position: absolute;
+		  bottom: 50px;
+		}
+		
+		#indepth_break_1{
+			height: 250px;
+		}
+		
+		.indepth_botella_powerade {
+		  height: 500px;
+		}
+	
 }
 
 @media screen and (max-width:385px) {
 	
 	
-	#indepth_cover .indepth_titlle_container{
-		margin-top: 200px;
-	}
+	.indepth_haypower {
+
+		  display: none;
+		}
+		
+		.indepth_power_logo {
+
+		  display: none;
+		}
 	
-	#indepth_cover{
-		height: 500px;
-	}
+
 	
-	#ficha5{
-		display: none;
-	}
-	#indepth_page3 .indepth_disponible_title_line {
-width: 5%;
+	.indepth_botella_powerade {
+		  height: 700px;
+		}
+	
+	
+	
 }
 
-#indepth_cover .indepth_parallax_back {
-background-size: 250px auto, cover;
-background-position: center 125px, 50% 0px;
-background-attachment: scroll;
-}
+@media screen and (max-width:360px) {
+
+	#indepth_min_jug_container_movil{
+		width: 310px;
+	}
 	
+	.indepth_min_jug_nom {
+		  width: 80px;
+		  height: auto;
+		  font-size: 16px;
+		  text-align: right;
+		  padding-right: 10px;
+		  float: left;
+		  line-height: 18px;
+	}
+	
+	.indepth_min_jug_mins {
+	  width: 50px;
+	  float: right;
+	  padding-right: 10px;
+	  line-height: 60px;
+	  height: 100%;
+	  text-align: right;
+	  font-size: 20px;
+	}
+
+	.indepth_min_jug_bar {
+	  width: 160px;
+	  float: left;
+	  height: 100%;
+	  display: table;
+	}
+	
+	.indepth_tiempos.primero,.indepth_tiempos.segundo{
+		width: 200px;
+		float: none;
+		margin: 10px auto;
+	}
+	
+	.indepth_grafica_image{
+		width: 250px;
+	}
+	
+	#indepth_grafica_numeros_15{
+		top: 12px;
+		right: -26px;
+	}
+	
+	#indepth_grafica_numeros_30{
+		top:104px;
+		right: -26px;
+	}
+	
+	#indepth_grafica_numeros_45{
+		bottom: 26px;
+		right: -26px;
+	}
+	
+	#indepth_grafica_numeros_60{
+		bottom: 26px;
+		left: -26px;
+	}
+	
+	#indepth_grafica_numeros_75{
+		top: 104px;
+		left: -26px;
+	}
+	
+	#indepth_grafica_numeros_90{
+		top: 12px;
+		left: -26px;
+	}
+		
 }
 
 @media screen and (max-width:320px) {

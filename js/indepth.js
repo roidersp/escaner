@@ -183,11 +183,8 @@ var indepth_equipos = function(){
 		
 		var estado_max=estados_n[0]['numero'];
 		var estado_min=estados_n[estados_n.length-1]['numero'];
-		console.log(estado_max);
-		console.log(estado_min);
 		var rango=estado_max-estado_min;
 		var k=Math.round(Math.sqrt(estados_n.length));
-		console.log(estados_n.length);
 		var amplitud=rango/k;
 		
 		
@@ -197,15 +194,41 @@ var indepth_equipos = function(){
 			var nombre=normalize(estado['nombre']).replace(/\s/g,"_").toLowerCase();
 			
 			
-			for( i=0;i<=k;i++){
-				if(num>=(estado_min+(i*amplitud)) && num<=(estado_min+((i+1)*amplitud)) ){
-					console.log(nombre);
-					console.log(num);
-					console.log(i);
-					color=colores[i];
+			for( j=0;j<=k;j++){
+				if(num>=(estado_min+(j*amplitud)) && num<=(estado_min+((j+1)*amplitud)) ){
+					color=colores[j];
 				}
 			}
 			
+			var indepth_mapa=$("#indepth_mapa_estados");
+			
+			if(i<15){
+				
+				/*<div class="indepth_edo_data" id="indepth_edo1">
+					<div class="indepth_edo_box">10</div>
+					<div class="indepth_edo_nombre">Jalisco</div>
+				</div>*/
+				/*var indepth_tabla_item=(document.createElement('div')).addClass('indepth_edo_data').css("background-color",color);
+				.append(indepth_tabla_item)*/
+				
+				indepth_mapa.append(createDiv('indepth_edo'+i, 'indepth_edo_data','none'));
+				
+				 var cont=$('#indepth_edo'+i);
+				 cont.append(createDiv('', 'indepth_edo_box',color));
+				 var mapa_num_estado= $('#indepth_edo'+i+" .indepth_edo_box");
+				 mapa_num_estado.html(num);
+				 cont.append(createDiv('', 'indepth_edo_nombre',''));
+				 var mapa_nombre_estado= $('#indepth_edo'+i+" .indepth_edo_nombre");
+				 mapa_nombre_estado.html(estado['nombre']);
+				
+				
+				
+				/*<div class="indepth_edo_data" id="indepth_edo1">
+									<div class="indepth_edo_box">10</div>
+									<div class="indepth_edo_nombre">Jalisco</div>
+								</div>*/
+				
+			}			
 			$("#"+nombre).css("fill",color);
 		});
 						
@@ -218,6 +241,13 @@ var indepth_equipos = function(){
 			id_div.find(".indepth_linea_barra").css("height",h_jug+"%");
 			var id_name=$("#indepth_jugmin_jugador_"+(i+1));
 			id_name.find(".indepth_jugmin_name").html(jugador["nombre"]);
+			
+			var id_div_movil=$("#indepth_min_jug_item"+(i+1));
+			id_div_movil.find(".indepth_min_jug_nom").html(jugador["nombre"]);
+			id_div_movil.find(".indepth_min_jug_mins").html(jugador["minutos"]);
+			id_div_movil.find(".indepth_min_jug_bar_in").css("width",h_jug+"%")
+			
+			
 		};
 		
 		var gol_cont=$("#indepth_goleadores_container");
@@ -268,6 +298,16 @@ var indepth_equipos = function(){
 }
 
 indepth_equipos();
+
+ var createDiv = function(newid, newclass,color) {
+				    return $('<div/>', {
+				              id: newid,
+				              class: newclass,
+				              css:{
+				                 backgroundColor: color
+				              }
+				            });
+				 } 
 
 var indepth_pastel = function(component,entity,diameter,donut_center,color ){
 		var svg = d3.select("#"+component+" .indepth_grafica_partidos").append("svg") 
