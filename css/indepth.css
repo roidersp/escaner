@@ -767,6 +767,7 @@ text{
 	display: table;
 	color: white;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .indepth_partido_circulo_cont{
@@ -804,7 +805,7 @@ text{
 }
 
 .partido_item.local{
-	  border-left: 2px solid green;
+	  border-left: 2px solid #37383e;
 }
 
 .indepth_escudo_team{
