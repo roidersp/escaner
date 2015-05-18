@@ -373,6 +373,8 @@ var indepth_circulos = function(component, width, minw, datos, img){
 			}else{
 				marcador=item.goles_encontra+"-"+"<span>"+item.goles_a_favor+"</span>";
 			}
+			
+			marcador="<span>"+item.goles_a_favor+"</span>"+"-"+item.goles_encontra;
 				
 			var item_col='<div class="partido_item '+local+'"><div class="indepth_escudo_team"><img src="images/Banderas/'+(normalize(item.equipo)).replace(" ","_")+'.png" ></div><div class="indepth_team_cont_out"><div class="indepth_team_cont"><div class="indepth_nombre_team">'+item.equipo+'</div><div class="indepth_marcador_team">'+marcador+'</div></div></div></div>';
 			

@@ -44,7 +44,67 @@ d3.json("flare.json", function(error, root) {
 	var equipos;
 	$.getJSON( "js/equipos.json", function( data ) {
 	equipos=data.equipos;
-
+	
+	
+	var equipos_num=new Array();
+	
+	$.each(equipos, function( i, item ) {
+		
+		min=item.jugadores.length;
+		
+		var t= new Array();
+		t['id']=i;
+		t['nombre']=item.nombre;
+		t['jugadores']=item.jugadores;
+		t['num']=min;
+		
+		
+		if(equipos_num.length==0){
+			equipos_num.push(t);
+		}else{
+			if(parseInt(equipos_num[0]['num'])<=min){
+				equipos_num.unshift(t);
+			}else{
+				var min_l=equipos_num[equipos_num.length-1]['num'];
+				if(parseInt(min_l)>=parseInt(min)){
+					equipos_num.push(t);
+				}else{
+					$.each(equipos_num, function( k, gol_item ) {
+						min2=parseInt(gol_item['num']);
+						if(min2<=min){
+							equipos_num.splice(k, 0,t);
+							return false;
+						};
+					});
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+	});
+	
+	
+	var container_movil=$("#indepth_jugadores_movil");
+	
+	$.each(equipos_num, function( i, item ) {
+		console.log(item);
+		container_movil.append(createDiv("item_jugadores_"+item['id'], "indepth_jugadores_movil_item","none"));
+		var item_movil=container_movil.find("#item_jugadores_"+item['id']);
+		item_movil.append(createDiv("", "indepth_jugadores_bar","none"));
+		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_team","none"));
+		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_num","none"));
+		
+		item_movil.find(".indepth_jugadores_bar_team").append(item['nombre']);
+		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_num","none"));
+		
+		
+			
+	});
+	
 	
   var node = svg.selectAll(".node")
       .data(bubble.nodes(classes(root))

@@ -3,15 +3,10 @@
  "children": [
 	   {"name": "Santos", "size": 6},
 	  {"name": "Tijuana", "size": 4},
-	 
 	   {"name": "Europa", "size": 15},
 	    {"name": "Tigres", "size": 3},
 	    {"name": "Querétaro", "size": 3},
 	     {"name": "América", "size": 3},
-      
-     
-     
-      
       {"name": "Pachuca", "size": 5},
        {"name": "Cruz Azul", "size": 5},
 	  {"name": "Chivas", "size": 7},
