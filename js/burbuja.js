@@ -79,30 +79,19 @@ d3.json("flare.json", function(error, root) {
 				}
 			}
 		}
-		
-		
-		
-		
-		
-		
 	});
 	
 	
 	var container_movil=$("#indepth_jugadores_movil");
 	
 	$.each(equipos_num, function( i, item ) {
-		console.log(item);
 		container_movil.append(createDiv("item_jugadores_"+item['id'], "indepth_jugadores_movil_item","none"));
 		var item_movil=container_movil.find("#item_jugadores_"+item['id']);
 		item_movil.append(createDiv("", "indepth_jugadores_bar","none"));
 		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_team","none"));
 		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_num","none"));
-		
 		item_movil.find(".indepth_jugadores_bar_team").append(item['nombre']);
 		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_num","none"));
-		
-		
-			
 	});
 	
 	
@@ -221,46 +210,36 @@ node.append("circle")
 		 
 		$.each(jug[0], function( i, item ) {
 			
-			var c=d3.select(item);
+			var c=d3.select(item);			
 			
 			var s=(c.attr("name")).toLowerCase();;	
 			
-			
 			var equipo = equipos[s]['jugadores'];
 			
+			$("#item_jugadores_"+s).append(createDiv("", "indepth_jugadores_fotos_cont",""));
 			
+			var mov=$("#item_jugadores_"+s+ " .indepth_jugadores_fotos_cont");
+			console.log(mov);
 			
 			$.each(equipo, function( i, item ) {
 				var nombre=	item['nombre'];
 				var apellido = item['apellido'];
 				
-			/*def.append("pattern")
-		 		.attr("width","40px")
-		 		.attr("height","40px")
-		 		.attr("x","20")
-		 		.attr("y","10")
-		 		.attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
-		 		.attr("patternUnits","userSpaceOnUse")
-		 		/*.append("image")
-		 			.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
-		 			.attr("x","0")
-		 			.attr("width","40px")
-		 		.attr("height","40px")
-		 			.attr("y","0");*/
-		 			
+				var image="images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png";
+				
+				mov.append('<div class="indepth_jugadores_fotos_item"><img src="'+image+'" alt="'+normalize(nombre).replace(/\s/g,"_")+" "+normalize(apellido).replace(/\s/g,"_")+'"></div>');
+				
+				var item_movil=container_movil.find("#item_jugadores_"+item['id']);
 		 			
 		 		var t=c.append("image")
 			 		//.attr("clip-path","url(#"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+")")
-		 			.attr("xlink:href","images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png")
+		 			.attr("xlink:href",image)
 		 			//.attr("xlink:href","images/Jugadores/Luis-Montes.png")
 		 			.attr("x","10")
 		 			.attr("width","40px")
 		 			.attr("height","40px")
 		 			.attr("y","10");
-		 			
-		 				
-		 			
-		 			
+
 		 	/*c.append("clipPath").attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
 		 		.append("circle")
 		 		.attr("fill", "white")
