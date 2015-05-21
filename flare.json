@@ -1,27 +1,21 @@
 {
  "name": "flare",
  "children": [
-	   {"name": "Santos", "size": 6},
+	  {"name": "Santos", "size": 6},
 	  {"name": "Tijuana", "size": 4},
-	   {"name": "Europa", "size": 15},
-	    {"name": "Tigres", "size": 3},
-	    {"name": "Querétaro", "size": 3},
-	     {"name": "América", "size": 3},
+	  {"name": "Europa", "size": 15},
+	  {"name": "Tigres", "size": 3},
+	  {"name": "Querétaro", "size": 3},
+	  {"name": "América", "size": 3},
       {"name": "Pachuca", "size": 5},
-       {"name": "Cruz Azul", "size": 5},
+      {"name": "Cruz Azul", "size": 5},
 	  {"name": "Chivas", "size": 7},
       {"name": "Atlas", "size": 5},
       {"name": "Toluca", "size": 4},
       {"name": "Monterrey", "size": 3},
-       {"name": "Chiapas", "size": 1},
-       {"name": "Veracruz", "size": 1},
-       {"name": "Pumas", "size": 1},
+      {"name": "Chiapas", "size": 1},
+      {"name": "Veracruz", "size": 1},
+      {"name": "Pumas", "size": 1},
       {"name": "León", "size": 4}
-         
-	 
-       
-     
-      
-    
     ]
 }

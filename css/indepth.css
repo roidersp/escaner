@@ -18,9 +18,13 @@ text{
 	
 #indepth_burbujas_container{
 	display: table;
-	margin: auto;
+	margin: 40px auto;
 	max-width: 1000px;
 	width: 100%;
+}
+
+#indepth_burbujas_container svg{
+	overflow: visible;
 }
 	
 .jugadores_cont{
