@@ -91,7 +91,8 @@ d3.json("flare.json", function(error, root) {
 		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_team","none"));
 		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_num","none"));
 		item_movil.find(".indepth_jugadores_bar_team").append(item['nombre']);
-		item_movil.find(".indepth_jugadores_bar").append(createDiv("", "indepth_jugadores_bar_num","none"));
+		item_movil.find(".indepth_jugadores_bar_num").append(item['jugadores'].length);
+		
 	});
 	
 	
@@ -225,7 +226,7 @@ node.append("circle")
 				var nombre=	item['nombre'];
 				var apellido = item['apellido'];
 				
-				var image="images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+".png";
+				var image="images/Jugadores/"+normalize(nombre).replace(/\s/g,"_")+"_"+normalize(apellido).replace(/\s/g,"_")+".png";
 				
 				mov.append('<div class="indepth_jugadores_fotos_item"><img src="'+image+'" alt="'+normalize(nombre).replace(/\s/g,"_")+" "+normalize(apellido).replace(/\s/g,"_")+'"></div>');
 				

@@ -237,7 +237,7 @@ var indepth_equipos = function(){
 			var jugador=gminutos[i];
 			var h_jug=(jugador["minutos"]/ max_min)*100;
 			id_div.find(".indepth_jugmin_mins").html(jugador["minutos"]);
-			id_div.find(".indepth_jugmin_foto").attr("src","images/Jugadores/"+normalize(jugador["nombre"]).replace(/\s/g,"-")+".png");
+			id_div.find(".indepth_jugmin_foto").attr("src","images/Jugadores/"+normalize(jugador["nombre"]).replace(/\s/g,"_")+".png");
 			id_div.find(".indepth_linea_barra").css("height",h_jug+"%");
 			var id_name=$("#indepth_jugmin_jugador_"+(i+1));
 			id_name.find(".indepth_jugmin_name").html(jugador["nombre"]);
@@ -254,7 +254,7 @@ var indepth_equipos = function(){
 		
 		for(var i=0;i<15;i++){
 			var jugador=goleadores[i];
-			var img="images/Jugadores/"+normalize(jugador["nombre"]).replace(/\s/g,"-")+".png"
+			var img="images/Jugadores/"+normalize(jugador["nombre"]).replace(/\s/g,"_")+".png"
 			var g=gol_cont.append('<div class="indepth_goleador_circulo" id="indepth_goleador_circulo'+i+'"></div>');
 			var cir=$("#indepth_goleador_circulo"+i);
 			cir.html('<img src="'+img+'">');
@@ -271,7 +271,8 @@ var indepth_equipos = function(){
 		cir.attr("pie_der", goles_pieder);
 		cir.attr("pie_izq", goles_pieizq);
 		cir.attr("total",goles_total);
-		cir.attr("nombre","Total");
+		cir.attr("nombre","Total")
+		.html("TOTAL");
 		
 		var goleador=$("#indepth_goleador_container");
 		

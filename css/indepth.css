@@ -843,10 +843,14 @@ text{
 
 }
 
-.indepth_jugadores_movil{
+#indepth_jugadores_movil{
 	display: none;
 	width: 96%;
 	margin: 30px auto;
+}
+
+.indepth_jugadores_fotos_cont{
+	padding: 10px 0;
 }
 
 .indepth_jugadores_bar{
@@ -868,7 +872,7 @@ text{
 
 
 .indepth_jugadores_fotos_item{
-	width: 35px;
+	width: 40px;
 	display: inline-block;
 	margin: 0 3px;
 }
@@ -1293,6 +1297,14 @@ position: absolute;
 	border-radius: 50%;
 	cursor: pointer;
 	overflow: hidden;
+	text-align: center;
+}
+
+#indepth_goleador_circulo_total{
+	line-height: 80px;
+	background-color: #1b5275;
+	color: #149eee;
+	font-size: 18px;
 }
 
 .indepth_goleador_circulo:hover{
@@ -2014,6 +2026,11 @@ position: absolute;
 			height: 60px;
 		}
 		
+		#indepth_goleador_circulo_total{
+			line-height: 60px;
+			font-size: 16px;
+		}
+		
 		#indepth_goleadores{
 			width: 640px;
 			
@@ -2192,8 +2209,12 @@ position: absolute;
 		margin: auto;
 	}
 	
-	.indepth_jugadores_movil{
+	#indepth_jugadores_movil{
 		display: block;
+	}
+	
+	#indepth_burbujas_container{
+		display: none;
 	}
 	
 	#indepth_goleadores{
@@ -2621,6 +2642,12 @@ position: absolute;
 	.indepth_goleador_circulo{
 		width: 45px;
 		height: 45px;
+	}
+	
+	#indepth_goleador_circulo_total{
+		line-height: 45px;
+
+		font-size: 12px;
 	}
 	
 	.indepth_arrow_cover{
