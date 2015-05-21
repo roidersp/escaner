@@ -806,7 +806,7 @@ text{
 }
 
 .partido_item.local{
-	  border-left: 2px solid #37383e;
+	  border-left: 2px solid #78797D;
 }
 
 .partido_item .indepth_marcador_team span{
@@ -888,7 +888,7 @@ text{
 .indepth_partidos_encasa div{
 	width: 5px;
 	height: 10px;
-	background-color: #38383f;
+	background-color: #78797D;
 	margin-right: 10px;
 }
 
@@ -1805,6 +1805,80 @@ position: absolute;
 	
 }
 
+@media screen and (max-height:700px) {
+	.indepth_cover_content .indepth_cover_conatainer_in{
+		width: 800px;
+		height: 505px;
+	}	
+	
+	#indepth_mono_container {
+	  width: 230px;
+	  height: 500px;
+	}
+	
+	#indepth_monitor{
+		width: 500px;
+		height: 110px;
+	}
+	
+	#indepth_monitor_img img{
+		height: 50px;
+		-webkit-animation: monitor_mov_960 8s infinite; /* Safari 4+ */
+		-moz-animation:    monitor_mov_960 8s infinite; /* Fx 5+ */
+		-o-animation:      monitor_mov_960 8s infinite; /* Opera 12+ */
+		animation:         monitor_mov_960 8s infinite;
+	}
+	
+	#indepth_barras {
+	  width: 200px;
+	  height: 360px;
+	}
+	
+	#indepth_cover #indepth_title{
+		left: 240px;
+	}
+	
+	#barras_container{
+		width: 172px;
+		margin-top: 30px;
+		
+	}
+	
+	#barras_container li{
+		height: 28px;
+	}
+	
+	.indepth_mono img{
+		height: 80%;
+	}
+	
+	#indepth_min_jug_container{
+		width: 900px;
+	}
+	
+	#indept_monitor_cuadro {
+	  width: 90px;
+	  height: 85px;
+
+	}
+	
+	#indepth_monitor_img{
+		width: 397px;
+	}
+	
+	#indepth_monitor_big {
+	  font-size: 36px;
+	  padding-left: 40px;
+	  line-height: 35px;
+	}
+	
+	.indepth_monitor_num {
+	  font-size: 14px;
+	  padding-left: 40px;
+	  line-height: 16px;
+	}
+
+}
 
 @media screen and (max-width:880px) {
 	
@@ -1870,6 +1944,122 @@ position: absolute;
 	
 }
 
+
+@media screen and (max-height:620px) {
+	
+	.indepth_cover_content .indepth_cover_conatainer_in{
+		width: 700px;
+		height: 440px;
+	}
+	
+	.indepth_arrow_cover{
+		margin-top: 0;
+	}
+	
+	#indepth_mono_container {
+	  width: 200px;
+	  height: 440px;
+	  background-repeat: no-repeat;
+	}
+	
+	#indepth_monitor{
+		width: 440px;
+		height: 95px;
+	}
+	
+	#indepth_monitor_img img{
+		height: 50px;
+		-webkit-animation: monitor_mov_960 8s infinite; /* Safari 4+ */
+		-moz-animation:    monitor_mov_960 8s infinite; /* Fx 5+ */
+		-o-animation:      monitor_mov_960 8s infinite; /* Opera 12+ */
+		animation:         monitor_mov_960 8s infinite;
+	}
+	
+	#indepth_barras {
+	  width: 160px;
+	  height: 290px;
+	}
+	
+	#indepth_cover #indepth_title{
+		left: 245px;
+	}
+	
+	#barras_container {
+	  width: 138px;
+	  margin-top: 20px;
+	}
+	
+	#barras_container li{
+		height: 22px;
+	}
+	
+	.indepth_tltle_text{
+		font-size: 46px;
+		line-height: 50px;
+	}
+	
+	#indepth_cover #indepth_title{
+		height: 260px;
+		width: 260px;
+	}
+	
+	.indepth_grafica{
+		float: none;
+		margin-bottom: 40px;
+	}
+	
+	#indepth_mapa_container{
+		width: 750px;
+	}
+	
+	.indepth_mapa_svg{
+		width: 590px;
+	}
+	
+	.indepth_barra_jugmin, .indepth_jugmin_jugador{
+		width: 64px;
+		font-size: 12px;
+	}
+	
+	.indepth_min_cont{
+		width: 704px;
+	}
+	
+	#indepth_min_jug_container{
+		width: 780px;
+	}
+	
+	.idnepth_imagen_line {
+	  border-bottom: 4px solid transparent;
+	  border-top: 4px solid transparent;
+	  border-right: 20px solid white;
+	  transform: translate(-38px,-9px);
+	  -ms-transform: translate(-38px,-9px);
+	  -webkit-transform: translate(-38px,-9px);
+	}
+	
+	
+	#indept_monitor_cuadro {
+	  width: 81px;
+	  height: 77px;
+	  margin-right: 9px;
+	  margin-top: 9px;
+	  background-position: 6px 16px;
+	  background-size: 18px auto;
+	}
+	
+	#indepth_monitor_img {
+	  width: 349px;
+	}
+	
+	#indepth_monitor_big {
+	  font-size: 34px;
+	  padding-left: 30px;
+	  line-height: 35px;
+	}
+
+
+}
 
 @media screen and (max-width:830px) {
 	
