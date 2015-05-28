@@ -1,6 +1,6 @@
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
-var disqus_url="626afd40-91b2-4c1d-b95e-8e298ed39c2f";
+var disqus_url="concentradora";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
@@ -375,7 +375,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 				marcador=item.goles_encontra+"-"+"<span>"+item.goles_a_favor+"</span>";
 			}
 			
-			marcador="<span>"+item.goles_a_favor+"</span>"+"-"+item.goles_encontra;
+			//marcador="<span>"+item.goles_a_favor+"</span>"+"-"+item.goles_encontra;
 				
 			var item_col='<div class="partido_item '+local+'"><div class="indepth_escudo_team"><img src="images/Banderas/'+(normalize(item.equipo)).replace(" ","_")+'.png" ></div><div class="indepth_team_cont_out"><div class="indepth_team_cont"><div class="indepth_nombre_team">'+item.equipo+'</div><div class="indepth_marcador_team">'+marcador+'</div></div></div></div>';
 			
