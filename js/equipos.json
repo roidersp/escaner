@@ -293,9 +293,9 @@
             "minutos": "991",
             "goles": 
               {
-                "cabeza": "0",
-                "pie_der": "1",
-                "pie_izq": "0"
+                "cabeza": "1",
+                "pie_der": "3",
+                "pie_izq": "3"
               }
           }
         ]
