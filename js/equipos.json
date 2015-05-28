@@ -641,7 +641,7 @@
             "goles": 
               {
                 "cabeza": "0",
-                "pie_der": "0",
+                "pie_der": "1",
                 "pie_izq": "0"
               }
           }
