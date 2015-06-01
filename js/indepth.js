@@ -119,6 +119,8 @@ var indepth_equipos = function(){
 					
 					var m_estado=subitem.estado;
 					
+					
+					
 					if((estados[m_estado])){
 
 						var lo=estados[m_estado]+1;
@@ -126,28 +128,6 @@ var indepth_equipos = function(){
 					}else{
 						estados[m_estado]=1;
 					}
-					
-					/*if(goleadores.length==0){
-						goleadores.push(jug_gol);
-					}else{
-						if(parseInt(goleadores[0]['goles'])<=goles){
-							goleadores.unshift(jug_gol);
-						}else{
-							var min_l=goleadores[goleadores.length-1]['goles'];
-								if(parseInt(min_l)>=parseInt(goles)){
-									goleadores.push(jug_gol);
-								}else{
-									$.each(goleadores, function( k, gol_item ) {
-										min2=parseInt(gol_item['goles']);
-										if(min2<=goles){
-											goleadores.splice(k, 0,jug_gol);
-											return false;
-										};
-									});
-								}
-						}
-					}*/
-
 				});
 		});
 				
@@ -160,6 +140,8 @@ var indepth_equipos = function(){
 			
 			datos['numero']=estados[estado];
 			datos['nombre']=estado;
+			
+			console.log(estado);
 			
 			if(estados_n.length==0){
 				estados_n.push(datos);
@@ -203,6 +185,7 @@ var indepth_equipos = function(){
 			}
 			
 			var indepth_mapa=$("#indepth_mapa_estados");
+			
 			
 			if(i<15){
 				
@@ -411,7 +394,6 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		
 		
 		indepth_pastel(component,entity,diameter,donut_center,color );
-		
 	
 		var total=perdidos+empatados+ganados;
 		$("#"+component+" .indepth_grafica_partidos .indepth_grafica_total").html(total);
@@ -429,7 +411,6 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		g_oficiales=data.oficiales;
 		g_amistosos=data.amistosos;
 		
-		
 		//oficiales
 		
 		var o_total=0;
@@ -439,16 +420,13 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		});
 		
 		container.find(".goles_oficiales .indepth_grafica_text span").html(o_total);
-		
 		container.find(".goles_oficiales #indepth_grafica_numeros_15").html(g_oficiales["15"]);
 		container.find(".goles_oficiales #indepth_grafica_numeros_30").html(g_oficiales["30"]);
 		container.find(".goles_oficiales #indepth_grafica_numeros_45").html(g_oficiales["45"]);
 		container.find(".goles_oficiales #indepth_grafica_numeros_60").html(g_oficiales["60"]);
 		container.find(".goles_oficiales #indepth_grafica_numeros_75").html(g_oficiales["75"]);
 		container.find(".goles_oficiales #indepth_grafica_numeros_90").html(g_oficiales["90"]);
-		
-		
-				
+
 		
 		//amistosos
 		
