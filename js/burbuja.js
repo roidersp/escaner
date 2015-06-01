@@ -221,7 +221,6 @@ node.append("circle")
 			$("#item_jugadores_"+s).append(createDiv("", "indepth_jugadores_fotos_cont",""));
 			
 			var mov=$("#item_jugadores_"+s+ " .indepth_jugadores_fotos_cont");
-			console.log(mov);
 			
 			$.each(equipo, function( i, item ) {
 				var nombre=	item['nombre'];

@@ -141,7 +141,6 @@ var indepth_equipos = function(){
 			datos['numero']=estados[estado];
 			datos['nombre']=estado;
 			
-			console.log(estado);
 			
 			if(estados_n.length==0){
 				estados_n.push(datos);
