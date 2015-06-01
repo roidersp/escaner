@@ -55,8 +55,8 @@
       },
       {
         "equipo": "Ecuador",
-        "goles_a_favor": "1",
-        "goles_encontra": "0",
+        "goles_a_favor": "3",
+        "goles_encontra": "1",
         "tipo": "local"
       },
       {
@@ -118,6 +118,18 @@
         "goles_a_favor": "2",
         "goles_encontra": "3",
         "tipo": "Visitante"
+      },
+      {
+        "equipo": "Ecuador",
+        "goles_a_favor": "1",
+        "goles_encontra": "0",
+        "tipo": "local"
+      },
+      {
+        "equipo": "Paraguay",
+        "goles_a_favor": "1",
+        "goles_encontra": "0",
+        "tipo": "local"
       },
       {
         "equipo": "EEUU",
