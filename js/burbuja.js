@@ -366,6 +366,12 @@ d3.select(self.frameElement).style("height", diameter + "px");
 var text_size;
 
 $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
+	
+	$(".burbuja_equipos").each(function (index) 
+        { 
+            ocultar(this);
+        });
+	
 	var m=d3.select(this.parentNode);
 	var radio=d3.select(this).attr("radio_o");
 	
@@ -467,6 +473,10 @@ $(document).on("mouseout",".burbuja_equipos .jugadores_cont .jugadores_cont_imag
 	m.select("text").text(m.attr("equipo"));
 });
 
+$(document).on("mouseout",".burbuja_equipos .jugadores_cont ",function(){
+	
+});
+
 /*$(document).on("mouseenter",".burbuja_equipos .circulo_out ",function(){
 	var radio=d3.select(this).parentNode.select("circulo_in").attr("radio_o");
 	console.log(radio);
@@ -477,7 +487,37 @@ $(document).on("mouseout",".burbuja_equipos .jugadores_cont .jugadores_cont_imag
 
 
 
-$(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
+/*$(document).on("mouseout",".burbuja_equipos .jugadores_cont",function(){
+	d3.selectAll(".burbuja_equipos").attr("opacity","1");
+	
+	var m=d3.select(this.parentNode);
+	var radio=d3.select(this.parentNode).attr("radio_o");
+	
+	
+	m.select(".jugadores_cont").transition().attr("opacity",0);
+	
+	m.select(".circulo_in").transition()
+		.attr("r",radio);
+	
+	m.select(".circulo_out").transition()
+		.attr("r",radio);
+		
+	m.select(".circulo_back").transition()
+		.attr("r",radio);
+		
+	text_size=$(this).attr("font_size");
+	
+	
+	m.select("text").transition()
+		.style("font-size",text_size);
+		
+	m.select(".circulo_back")
+		.attr("fill","transparent");
+
+
+});*/
+
+/*$(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
 	d3.selectAll(".burbuja_equipos").attr("opacity","1");
 	
 	var radio=d3.select(this).attr("radio_o");
@@ -509,6 +549,37 @@ $(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
 	
 
 });
+*/
+function ocultar(h){
+	//console.log(h);
+	
+	d3.selectAll(".burbuja_equipos").attr("opacity","1");
+	
+	var radio=$(h).find(".circulo_out").attr("radio_o");
+	var m=d3.select(h);
+		console.log(m);
+
+	
+	m.select(".jugadores_cont").transition().attr("opacity",0);
+	
+	m.select(".circulo_in").transition()
+		.attr("r",radio);
+	
+	m.select(".circulo_out").transition()
+		.attr("r",radio);
+		
+	m.select(".circulo_back").transition()
+		.attr("r",radio);
+		
+	text_size=$(h).find(".circulo_out").attr("font_size");
+	
+	
+	m.select("text").transition()
+		.style("font-size",text_size);
+		
+	m.select(".circulo_back")
+		.attr("fill","transparent");
+}
 
 d3.selection.prototype.moveToBack = function() { 
     return this.each(function() { 
