@@ -8,7 +8,7 @@
             "nombre": "Rafael",
             "apellido": "Márquez",
             "estado": "Michoacán",
-            "minutos": "897",
+            "minutos": "1080",
             "goles": 
               {
                 "cabeza": "3",
@@ -21,7 +21,7 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-            "minutos": "1085",
+            "minutos": "1445",
             "goles": 
               {
                 "cabeza": "0",
@@ -34,7 +34,7 @@
             "nombre": "Raúl",
             "apellido": "Jiménez",
             "estado": "Hidalgo",
-            "minutos": "521",
+            "minutos": "660",
             "goles": 
               {
                 "cabeza": "1",
@@ -47,7 +47,7 @@
             "nombre": "Diego",
             "apellido": "Reyes",
             "estado": "Ciudad de México",
-            "minutos": "470",
+            "minutos": "875",
             "goles": 
               {
                 "cabeza": "0",
@@ -60,7 +60,7 @@
             "nombre": "Alan",
             "apellido": "Pulido",
             "estado": "Tamaulipas",
-            "minutos": "341",
+            "minutos": "287",
             "goles": 
               {
                 "cabeza": "0",
@@ -86,7 +86,7 @@
             "nombre": "Andrés",
             "apellido": "Guardado",
             "estado": "Jalisco",
-            "minutos": "897",
+            "minutos": "974",
             "goles": 
               {
                 "cabeza": "0",
@@ -99,7 +99,7 @@
             "nombre": "Héctor",
             "apellido": "Moreno",
             "estado": "Sinaloa",
-            "minutos": "630",
+            "minutos": "720",
             "goles": 
               {
                 "cabeza": "0",
@@ -188,7 +188,7 @@
             "goles": 
               {
                 "cabeza": "0",
-                "pie_der": "0",
+                "pie_der": "1",
                 "pie_izq": "0"
               }
           }
@@ -201,7 +201,7 @@
             "nombre": "Juan Carlos",
             "apellido": "Valenzuela",
             "estado": "Michoacán",
-            "minutos": "315",
+            "minutos": "345",
             "goles": 
               {
                 "cabeza": "0",
@@ -213,7 +213,7 @@
             "nombre": "Juan Carlos",
             "apellido": "Medina",
             "estado": "Coahuila",
-            "minutos": "289",
+            "minutos": "379",
             "goles": 
               {
                 "cabeza": "0",

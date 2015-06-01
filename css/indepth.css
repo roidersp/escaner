@@ -27,8 +27,8 @@ text{
 	overflow: visible;
 }
 	
-.jugadores_cont{
-	pointer-events: none;
+.jugadores_cont {
+	//pointer-events: none;
 }
 
 .indepth_pages{
