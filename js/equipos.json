@@ -8,7 +8,7 @@
             "nombre": "Rafael",
             "apellido": "Márquez",
             "estado": "Michoacán",
-            "minutos": "1080",
+            "minutos": "900",
             "goles": 
               {
                 "cabeza": "3",
@@ -21,7 +21,7 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-            "minutos": "1445",
+            "minutos": "1275",
             "goles": 
               {
                 "cabeza": "0",
@@ -34,7 +34,7 @@
             "nombre": "Raúl",
             "apellido": "Jiménez",
             "estado": "Hidalgo",
-            "minutos": "660",
+            "minutos": "568",
             "goles": 
               {
                 "cabeza": "1",
@@ -47,7 +47,7 @@
             "nombre": "Diego",
             "apellido": "Reyes",
             "estado": "Ciudad de México",
-            "minutos": "875",
+            "minutos": "650",
             "goles": 
               {
                 "cabeza": "0",
@@ -112,7 +112,7 @@
             "nombre": "Héctor",
             "apellido": "Herrera",
             "estado": "Baja California Sur",
-            "minutos": "1135",
+            "minutos": "1072",
             "goles": 
               {
                 "cabeza": "0",
@@ -124,7 +124,7 @@
             "nombre": "Javier",
             "apellido": "Hernández",
             "estado": "Jalisco",
-            "minutos": "573",
+            "minutos": "667",
             "goles": 
               {
                 "cabeza": "1",
@@ -136,7 +136,7 @@
             "nombre": "Javier",
             "apellido": "Aquino",
             "estado": "Oaxaca",
-            "minutos": "209",
+            "minutos": "223",
             "goles": 
               {
                 "cabeza": "0",
@@ -148,7 +148,7 @@
             "nombre": "Giovani",
             "apellido": "dos Santos",
             "estado": "Ciudad de México",
-            "minutos": "579",
+            "minutos": "712",
             "goles": 
               {
                 "cabeza": "0",
@@ -160,7 +160,7 @@
             "nombre": "Jonathan",
             "apellido": "dos Santos",
             "estado": "Nuevo León",
-            "minutos": "88",
+            "minutos": "166",
             "goles": 
               {
                 "cabeza": "0",
@@ -172,7 +172,7 @@
             "nombre": "Carlos",
             "apellido": "Vela",
             "estado": "Quintana Roo",
-            "minutos": "0",
+            "minutos": "96",
             "goles": 
               {
                 "cabeza": "0",
@@ -184,7 +184,7 @@
             "nombre": "Jesús",
             "apellido": "Corona",
             "estado": "Sonora",
-            "minutos": "0",
+            "minutos": "128",
             "goles": 
               {
                 "cabeza": "0",
@@ -213,7 +213,7 @@
             "nombre": "Juan Carlos",
             "apellido": "Medina",
             "estado": "Coahuila",
-            "minutos": "379",
+            "minutos": "464",
             "goles": 
               {
                 "cabeza": "0",
@@ -278,7 +278,7 @@
             "nombre": "Paul",
             "apellido": "Aguilar",
             "estado": "Sinaloa",
-            "minutos": "1366",
+            "minutos": "1432",
             "goles": 
               {
                 "cabeza": "0",
@@ -319,7 +319,7 @@
             "nombre": "Miguel Ángel",
             "apellido": "Ponce",
             "estado": "California, EEUU",
-            "minutos": "315",
+            "minutos": "332",
             "goles": 
               {
                 "cabeza": "0",
@@ -331,7 +331,7 @@
             "nombre": "Isaac",
             "apellido": "Brizuela",
             "estado": "California, EEUU",
-            "minutos": "217",
+            "minutos": "251",
             "goles": 
               {
                 "cabeza": "0",
@@ -343,7 +343,7 @@
             "nombre": "Erick",
             "apellido": "Torres",
             "estado": "Jalisco",
-            "minutos": "111",
+            "minutos": "201",
             "goles": 
               {
                 "cabeza": "0",
@@ -354,7 +354,7 @@
           {
             "nombre": "Carlos",
             "apellido": "Salcedo",
-            "estado": "Jalisco",
+            "estado": "105",
             "minutos": "315",
             "goles": 
               {
@@ -367,7 +367,7 @@
             "nombre": "Marco",
             "apellido": "Fabián",
             "estado": "Jalisco",
-            "minutos": "526",
+            "minutos": "556",
             "goles": 
               {
                 "cabeza": "0",
@@ -379,7 +379,7 @@
             "nombre": "Carlos",
             "apellido": "Salcido",
             "estado": "Jalisco",
-            "minutos": "284",
+            "minutos": "283",
             "goles": 
               {
                 "cabeza": "0",
@@ -403,6 +403,18 @@
                 "pie_der": "0",
                 "pie_izq": "0"
               }
+          },
+          {
+            "nombre": "Matías",
+            "apellido": "Vuoso",
+            "estado": "Buenos Aires",
+            "minutos": "60",
+            "goles": 
+              {
+                "cabeza": "0",
+                "pie_der": "0",
+                "pie_izq": "0"
+              }
           }
         ]
       },
@@ -413,7 +425,7 @@
             "nombre": "Francisco",
             "apellido": "Rodríguez",
             "estado": "Sinaloa",
-            "minutos": "1058",
+            "minutos": "1119",
             "goles": 
               {
                 "cabeza": "0",
@@ -425,7 +437,7 @@
             "nombre": "Jose de Jesús",
             "apellido": "Corona",
             "estado": "Jalisco",
-            "minutos": "118",
+            "minutos": "253",
             "goles": 
               {
                 "cabeza": "0",
@@ -437,7 +449,7 @@
             "nombre": "Rogelio",
             "apellido": "Chávez",
             "estado": "Hidalgo",
-            "minutos": "27",
+            "minutos": "63",
             "goles": 
               {
                 "cabeza": "0",
@@ -449,7 +461,7 @@
             "nombre": "Julio César",
             "apellido": "Domínguez",
             "estado": "Chiapas",
-            "minutos": "188",
+            "minutos": "402",
             "goles": 
               {
                 "cabeza": "0",
@@ -461,7 +473,7 @@
             "nombre": "Gerardo",
             "apellido": "Flores",
             "estado": "Morelos",
-            "minutos": "29",
+            "minutos": "134",
             "goles": 
               {
                 "cabeza": "0",
@@ -478,7 +490,7 @@
             "nombre": "Luis",
             "apellido": "Montes",
             "estado": "Chihuahua",
-            "minutos": "305",
+            "minutos": "406",
             "goles": 
               {
                 "cabeza": "0",
@@ -490,7 +502,7 @@
             "nombre": "Carlos",
             "apellido": "Peña",
             "estado": "Tamaulipas",
-            "minutos": "353",
+            "minutos": "389",
             "goles": 
               {
                 "cabeza": "0",
@@ -514,7 +526,7 @@
             "nombre": "José Juan",
             "apellido": "Vázquez",
             "estado": "Guanajuato",
-            "minutos": "791",
+            "minutos": "795",
             "goles": 
               {
                 "cabeza": "0",
@@ -543,24 +555,24 @@
             "nombre": "Hiram",
             "apellido": "Mier",
             "estado": "Nuevo León",
-            "minutos": "90",
+            "minutos": "135",
             "goles": 
               {
                 "cabeza": "0",
                 "pie_der": "0",
-                "pie_izq": "1"
+                "pie_izq": "0"
               }
           },
           {
             "nombre": "Efraín",
             "apellido": "Velarde",
             "estado": "Ciudad de México",
-            "minutos": "90",
+            "minutos": "180",
             "goles": 
               {
                 "cabeza": "0",
                 "pie_der": "0",
-                "pie_izq": "1"
+                "pie_izq": "0"
               }
           }
         ]
@@ -605,18 +617,6 @@
               }
           },
           {
-            "nombre": "Hugo",
-            "apellido": "Rodríguez",
-            "estado": "Jalisco",
-            "minutos": "92",
-            "goles": 
-              {
-                "cabeza": "0",
-                "pie_der": "0",
-                "pie_izq": "0"
-              }
-          },
-          {
             "nombre": "Jürgen",
             "apellido": "Damm",
             "estado": "Veracruz",
@@ -637,11 +637,11 @@
             "nombre": "Eduardo",
             "apellido": "Herrera",
             "estado": "Ciudad de México",
-            "minutos": "59",
+            "minutos": "208",
             "goles": 
               {
                 "cabeza": "0",
-                "pie_der": "1",
+                "pie_der": "3",
                 "pie_izq": "0"
               }
           }
@@ -719,7 +719,7 @@
             "nombre": "Adrián",
             "apellido": "Aldrete",
             "estado": "Jalisco",
-            "minutos": "90",
+            "minutos": "120",
             "goles": 
               {
                 "cabeza": "0",
@@ -743,7 +743,7 @@
             "nombre": "Oswaldo",
             "apellido": "Alanís",
             "estado": "Michoacán",
-            "minutos": "276",
+            "minutos": "411",
             "goles": 
               {
                 "cabeza": "1",
@@ -772,7 +772,7 @@
             "nombre": "Hugo",
             "apellido": "Ayala",
             "estado": "Michoacán",
-            "minutos": "219",
+            "minutos": "410",
             "goles": 
               {
                 "cabeza": "0",
@@ -784,7 +784,7 @@
             "nombre": "Jorge",
             "apellido": "Torres Nilo",
             "estado": "Baja California Norte",
-            "minutos": "45",
+            "minutos": "105",
             "goles": 
               {
                 "cabeza": "0",
@@ -796,7 +796,31 @@
             "nombre": "Jesús",
             "apellido": "Dueñas",
             "estado": "Michoacán",
-            "minutos": "180",
+            "minutos": "90",
+            "goles": 
+              {
+                "cabeza": "0",
+                "pie_der": "0",
+                "pie_izq": "0"
+              }
+          },
+          {
+            "nombre": "Enrique",
+            "apellido": "Esqueda",
+            "estado": "Querétaro",
+            "minutos": "0",
+            "goles": 
+              {
+                "cabeza": "0",
+                "pie_der": "0",
+                "pie_izq": "0"
+              }
+          },
+          {
+            "nombre": "Hugo",
+            "apellido": "Rodríguez",
+            "estado": "Jalisco",
+            "minutos": "91",
             "goles": 
               {
                 "cabeza": "0",
@@ -813,7 +837,7 @@
 	        "nombre": "Javier",
 	        "apellido": "Güemez",
 	        "estado": "Sinaloa",
-	        "minutos": "113",
+	        "minutos": "309",
 	        "goles": 
 	          {
 	            "cabeza": "0",
@@ -854,7 +878,7 @@
 	        "nombre": "Antonio",
 	        "apellido": "Ríos",
 	        "estado": "Guerrero",
-	        "minutos": "170",
+	        "minutos": "180",
 	        "goles": 
 	          {
 	            "cabeza": "0",
@@ -895,7 +919,7 @@
             "nombre": "Melitón",
             "apellido": "Hernández",
             "estado": "Veracruz",
-            "minutos": "90",
+            "minutos": "135",
             "goles": 
               {
                 "cabeza": "0",

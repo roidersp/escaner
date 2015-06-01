@@ -124,6 +124,12 @@
         "goles_a_favor": "0",
         "goles_encontra": "2",
         "tipo": "Visitante"
+      },
+       {
+        "equipo": "Guatemala",
+        "goles_a_favor": "3",
+        "goles_encontra": "0",
+        "tipo": "Local"
       }
     ]
   }
