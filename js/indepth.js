@@ -12,7 +12,7 @@ var p_perdidos=0;
 var ju=0;
 var mas_min=new Array();
 var max_min=1500;
-var colores=['#24a3dc','#65d4f7','#33e7bd','#f53176','#ea154f','#c2124e'];
+var colores=['#0090D5','#28ACE0','#6FD9F8','#8FEFF9','#4CFCD2','#36BF9E','#F73981','#B71557','#8E1652','#8E1652'];
 
 $("#indepth_page6").on("click",function() {
 	d3.selectAll("polygon").attr("fill","#e42a2c");
@@ -167,7 +167,7 @@ var indepth_equipos = function(){
 		var estado_max=estados_n[0]['numero'];
 		var estado_min=estados_n[estados_n.length-1]['numero'];
 		var rango=estado_max-estado_min;
-		var k=Math.round(Math.sqrt(estados_n.length));
+		var k=9;
 		var amplitud=rango/k;
 		
 		
@@ -177,10 +177,16 @@ var indepth_equipos = function(){
 			var nombre=normalize(estado['nombre']).replace(/\s/g,"_").toLowerCase();
 			
 			
-			for( j=0;j<=k;j++){
+			/*for( j=0;j<=k;j++){
 				if(num>=(estado_min+(j*amplitud)) && num<=(estado_min+((j+1)*amplitud)) ){
 					color=colores[j];
 				}
+			}*/
+			
+			if(num>10){
+				color=colores[9];
+			}else{
+				color=colores[num-1];
 			}
 			
 			var indepth_mapa=$("#indepth_mapa_estados");
