@@ -143,6 +143,19 @@
         "goles_encontra": "0",
         "tipo": "Local"
       }
+      ,
+       {
+        "equipo": "Peru",
+        "goles_a_favor": "1",
+        "goles_encontra": "1",
+        "tipo": "Visitante"
+      },
+      {
+        "equipo": "Brasil",
+        "goles_a_favor": "0",
+        "goles_encontra": "2",
+        "tipo": "Visitante"
+      }
     ]
   }
 }
