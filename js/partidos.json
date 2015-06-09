@@ -126,6 +126,12 @@
         "tipo": "local"
       },
       {
+        "equipo": "Finlandia",
+        "goles_a_favor": "4",
+        "goles_encontra": "2",
+        "tipo": "local"
+      },
+      {
         "equipo": "Paraguay",
         "goles_a_favor": "1",
         "goles_encontra": "0",

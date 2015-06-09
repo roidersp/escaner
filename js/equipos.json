@@ -8,10 +8,10 @@
             "nombre": "Rafael",
             "apellido": "Márquez",
             "estado": "Michoacán",
-            "minutos": "1035",
+            "minutos": "1102",
             "goles": 
               {
-                "cabeza": "3",
+                "cabeza": "4",
                 "pie_der": "0",
                 "pie_izq": "0"
               }
@@ -21,7 +21,7 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-            "minutos": "1275",
+            "minutos": "1345",
             "goles": 
               {
                 "cabeza": "0",
@@ -34,7 +34,7 @@
             "nombre": "Raúl",
             "apellido": "Jiménez",
             "estado": "Hidalgo",
-            "minutos": "720",
+            "minutos": "765",
             "goles": 
               {
                 "cabeza": "1",
@@ -201,7 +201,7 @@
             "nombre": "Juan Carlos",
             "apellido": "Valenzuela",
             "estado": "Michoacán",
-            "minutos": "435",
+            "minutos": "525",
             "goles": 
               {
                 "cabeza": "1",
@@ -213,7 +213,7 @@
             "nombre": "Juan Carlos",
             "apellido": "Medina",
             "estado": "Coahuila",
-            "minutos": "545",
+            "minutos": "635",
             "goles": 
               {
                 "cabeza": "0",
@@ -266,7 +266,7 @@
             "nombre": "Moisés",
             "apellido": "Muñoz",
             "estado": "Michoacán",
-            "minutos": "315",
+            "minutos": "360",
             "goles": 
               {
                 "cabeza": "0",
@@ -278,7 +278,7 @@
             "nombre": "Paul",
             "apellido": "Aguilar",
             "estado": "Sinaloa",
-            "minutos": "1432",
+            "minutos": "1522",
             "goles": 
               {
                 "cabeza": "0",
@@ -290,11 +290,11 @@
             "nombre": "Oribe",
             "apellido": "Peralta",
             "estado": "Coahuila",
-            "minutos": "991",
+            "minutos": "1081",
             "goles": 
               {
                 "cabeza": "1",
-                "pie_der": "3",
+                "pie_der": "4",
                 "pie_izq": "3"
               }
           }
@@ -307,7 +307,7 @@
             "nombre": "Aldo",
             "apellido": "de Nigris",
             "estado": "Nuevo León",
-            "minutos": "57",
+            "minutos": "102",
             "goles": 
               {
                 "cabeza": "0",
@@ -425,7 +425,7 @@
             "nombre": "Francisco",
             "apellido": "Rodríguez",
             "estado": "Sinaloa",
-            "minutos": "1119",
+            "minutos": "1209",
             "goles": 
               {
                 "cabeza": "0",
@@ -437,7 +437,7 @@
             "nombre": "Jose de Jesús",
             "apellido": "Corona",
             "estado": "Jalisco",
-            "minutos": "343",
+            "minutos": "388",
             "goles": 
               {
                 "cabeza": "0",
@@ -490,7 +490,7 @@
             "nombre": "Luis",
             "apellido": "Montes",
             "estado": "Chihuahua",
-            "minutos": "444",
+            "minutos": "499",
             "goles": 
               {
                 "cabeza": "0",
@@ -502,11 +502,11 @@
             "nombre": "Carlos",
             "apellido": "Peña",
             "estado": "Tamaulipas",
-            "minutos": "389",
+            "minutos": "450",
             "goles": 
               {
                 "cabeza": "0",
-                "pie_der": "1",
+                "pie_der": "2",
                 "pie_izq": "0"
               }
           },
@@ -514,7 +514,7 @@
             "nombre": "Edwin",
             "apellido": "Hernández",
             "estado": "Hidalgo",
-            "minutos": "0",
+            "minutos": "23",
             "goles": 
               {
                 "cabeza": "0",
@@ -555,7 +555,7 @@
             "nombre": "Hiram",
             "apellido": "Mier",
             "estado": "Nuevo León",
-            "minutos": "135",
+            "minutos": "158",
             "goles": 
               {
                 "cabeza": "0",
@@ -663,10 +663,10 @@
               }
           },
           {
-            "nombre": "Sinha",
-            "apellido": "",
+            "nombre": "Naelson",
+            "apellido": "Sinha",
             "estado": "Río Grande del Norte, Brasil",
-            "minutos": "45",
+            "minutos": "80",
             "goles": 
               {
                 "cabeza": "0",
@@ -695,12 +695,12 @@
             "nombre": "Jesús Alonso",
             "apellido": "Escoboza",
             "estado": "Sinaloa",
-            "minutos": "58",
+            "minutos": "88",
             "goles": 
               {
                 "cabeza": "0",
                 "pie_der": "0",
-                "pie_izq": "0"
+                "pie_izq": "1"
               }
           },
           {
