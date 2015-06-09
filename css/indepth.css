@@ -1251,12 +1251,13 @@ position: absolute;
 .indepth_boteLla_cont{
 	position: absolute;
 	right: 0px;
-	bottom: 20px;
+	bottom: 0px;
 	display: table;
+	width: 305px;
 }
 
 .indepth_botella_powerade{
-	height: 700px;
+	width: 100%;
 	position: relative;
 }
 
