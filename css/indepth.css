@@ -8,6 +8,31 @@ polygon{
 	display: none;
 }
 
+#pbarra{
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	background-image: url(../images/Barra/Texto_Barra.png);
+	background-position: left 10% center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	background-repeat: no-repeat;
+	background-size: auto 25px;
+}
+
+.indepth_powe_barra_img{
+	width: 170px;
+	height: 180px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-image: url(../images/Barra/Powerade_Barra.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 text{
 	color: white;
 	fill: white;
@@ -58,8 +83,8 @@ text{
 
 .indepth_share{
 	position: fixed;
-	right: 15px;
-	bottom: 20px;
+	left: 15px;
+	bottom: 60px;
 	z-index: 2000;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -2418,6 +2443,17 @@ position: absolute;
 }
 
 @media screen and (max-width:600px) {
+	
+	#pbarra{
+		background-size: auto 15px;
+		height: 30px;
+	}
+	
+	.indepth_powe_barra_img{
+		width: 100px;
+		height: 104px;
+	}
+	
 	.indepth_page_content .indepth_title{
 		width: 94%;
 		margin: auto;
@@ -2769,6 +2805,16 @@ position: absolute;
 	.indepth_botella_powerade {
 		  height: 700px;
 		}
+		
+	#pbarra{
+		background-size: auto 14px;
+		height: 30px;
+	}
+	
+	.indepth_powe_barra_img{
+		width: 80px;
+		height: 80px;
+	}
 	
 	
 	
@@ -2778,6 +2824,16 @@ position: absolute;
 
 	#indepth_min_jug_container_movil{
 		width: 310px;
+	}
+	
+	#pbarra{
+		background-size: auto 12px;
+		height: 30px;
+	}
+	
+	.indepth_powe_barra_img{
+		width: 70px;
+		height: 70px;
 	}
 	
 	.indepth_min_jug_nom {
