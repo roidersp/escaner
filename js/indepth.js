@@ -14,9 +14,7 @@ var mas_min=new Array();
 var max_min=1500;
 var colores=['#0090D5','#28ACE0','#6FD9F8','#8FEFF9','#4CFCD2','#36BF9E','#F73981','#B71557','#8E1652','#8E1652'];
 
-$("#indepth_page6").on("click",function() {
-	d3.selectAll("polygon").attr("fill","#e42a2c");
-});
+
 
 $("#indepth_menu").hover(
 	function(){
@@ -90,9 +88,15 @@ var indepth_menu=function(){
 	
 	$(document).on("click",".indepth_menu_item",function(){
 		 var num_menu=$(this).attr("num");
-		 var position = $("#indepth_page"+num_menu).position();
+		 var position = $("#indepth_page"+num_menu).offset();
+		 console.log(position);
 		 
-			 f_top=position.top+60;
+			 f_top=position.top;
+			 
+			 if(num_menu==4)
+			 	f_top=f_top-100;
+			 
+			 console.log(f_top);
 	
 		$('html, body').animate({
 			scrollTop: f_top
