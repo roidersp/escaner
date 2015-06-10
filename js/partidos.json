@@ -41,6 +41,12 @@
   },
   "amistosos": {
     "partido": [
+	   {
+        "equipo": "Finlandia",
+        "goles_a_favor": "4",
+        "goles_encontra": "2",
+        "tipo": "local"
+      },
       {
         "equipo": "Corea",
         "goles_a_favor": "4",
@@ -123,12 +129,6 @@
         "equipo": "Ecuador",
         "goles_a_favor": "1",
         "goles_encontra": "0",
-        "tipo": "local"
-      },
-      {
-        "equipo": "Finlandia",
-        "goles_a_favor": "4",
-        "goles_encontra": "2",
         "tipo": "local"
       },
       {

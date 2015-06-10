@@ -1,5 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
+.indepth_mensaje{
+	color: white;
+	margin: 15px auto;
+	max-width: 800px;
+	font-size: 12px;
+}
+
 polygon{
 	fill: #5B5C66;
 }
@@ -27,9 +34,16 @@ polygon{
 }
 
 .indepth_menu_item{
-	height: 26px;
+	height: 28px;
 	margin-bottom: 5px;
 	cursor: pointer;
+	overflow: hidden;
+	width: 17px;
+}
+
+.indepth_menu_item_in{
+	width: 150px;
+	height: 100%;
 }
 
 .indepth_ball{
@@ -42,7 +56,7 @@ polygon{
 	
 }
 
-.indepth_ball.active{
+.active .indepth_ball{
 	background-color: #149ce9;
 }
 
@@ -657,12 +671,12 @@ text{
 
 #indepth_cover #indepth_title{
 	width: 360px;
-	height: 360px;
 	margin: auto;
 	text-align: center;
 	position: absolute;
 	bottom: 0;
 	left: 320px;
+	display: table;
 	
 }
 
@@ -674,10 +688,16 @@ text{
 	line-height: 66px;
 	font-weight: 900;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	;
 }
 
-
+.indepth_subtitle_text{
+	font-size: 28px;
+	color: #919597;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 20px
+}
 
 .indepth_pesentado{
 	color: white;
@@ -685,14 +705,23 @@ text{
 	margin-bottom: 10px;
 }
 
+.indepth_logo_powerade{
+	width: 360px;
+}
+
+.indepth_logo_powerade img{
+	width: 100%;
+}
+
 .indepth_arrow_cover{
 	width: 70px;
-	height: 70px;
+	height: 71px;
 	background-image: url(../images/Arrow_1-01.svg);
 	margin: auto;
-	margin-top: 40px;
+	margin-top: 20px;
 	cursor: pointer;
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .indepth_arrow_cover:hover{
