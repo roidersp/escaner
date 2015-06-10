@@ -8,6 +8,77 @@ polygon{
 	display: none;
 }
 
+#indepth_menu{
+	position: fixed;
+	top: 10%;
+	left: 1%;
+	z-index: 10;
+	color: white;
+	display: none;
+}
+
+.indepth_menu_title{
+	width: 140px;
+	display: table;
+}
+
+.indepth_menu_title img{
+	width: 100%;
+}
+
+.indepth_menu_item{
+	height: 26px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.indepth_ball{
+	width: 14px;
+	height: 14px;
+	border: 2px solid #149ce9;
+	float: left;
+	border-radius: 50%;
+	margin-top: 5px;
+	
+}
+
+.indepth_ball.active{
+	background-color: #149ce9;
+}
+
+.indepth_ball:hover{
+	background-color: #149ce9;
+}
+
+.indepth_menu_line{
+	width: 7px;
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.indepth_menu_line_in{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.indepth_menu_line_in div{
+	border-top: 1px solid #149ce9;
+}
+
+.indepth_menu_box{
+	width: 110px;
+  height: 24px;
+  border: 2px solid #149ce9;
+  float: left;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+
 #pbarra{
 	width: 100%;
 	height: 50px;
@@ -20,6 +91,7 @@ polygon{
 	z-index: 10;
 	background-repeat: no-repeat;
 	background-size: auto 25px;
+	display: none;
 }
 
 .indepth_powe_barra_img{
@@ -1288,9 +1360,9 @@ position: absolute;
 
 .indepth_power_logo{
 	width: 270px;
-	left: 120px;
+	left: 180px;
 	position: absolute;
-	bottom: 80px;
+	bottom: 50px;
 }
 
 .indepth_haypower{

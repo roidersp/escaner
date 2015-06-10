@@ -18,7 +18,78 @@ $("#indepth_page6").on("click",function() {
 	d3.selectAll("polygon").attr("fill","#e42a2c");
 });
 
+var indepth_menu=function(){
+	$('.indepth_cover').waypoint(function(direction) {
+		$("#indepth_menu").fadeOut();
+		$(".indepth_share").fadeOut();
+	});
+	
+	 $('#indepth_page1').waypoint(function(direction) {
+		 if(direction=='down'){
+			 $("#indepth_menu").fadeIn("slow");
+			 $(".indepth_share").fadeIn("slow");
+			 $("#pbarra").fadeIn("slow");
+		 }else{
+			  $("#indepth_menu").fadeOut();
+			  $("#pbarra").fadeOut();
+			   $(".indepth_share").fadeOut();
+			   
+		 }
+		 
+		 $("#indepth_menu").show();
+		  $(".indepth_share").show();
+		 $(".indepth_menu").removeClass("active");
+		 var num_menu=$(this).attr("num");
+		 $("#indepth_menu_0").addClass("active");
+		 
+		
+	},{offset: '50%'});
+	
+	 $('#indepth_footer').waypoint(function(direction) {
+		 if(direction=='down'){
+			 $("#indepth_menu").fadeOut();
+			 $(".indepth_share").fadeOut("slow");
+			  $("#pbarra").css("position","initial");
+		 }else{
+			  $("#indepth_menu").fadeIn("slow");
+			  $(".indepth_share").fadeIn("slow");
+			  $("#pbarra").css("position","fixed");
+		 }
+		 
+		
+	},{offset: 'top-in-view'});
+	
+	
+	
+	
+	$(".indepth_page_content").waypoint(function(direction){
+		 $("#indepth_menu").show();
+		 $(".indepth_share").show();
+		 $("#pbarra").show();
+		 $(".indepth_menu_item").removeClass("active");
+		 var num_menu=$(this).attr("num");
+		 $("#indepth_menu_"+num_menu).addClass("active");		 
+	},{offset: '70px'});
+	
+	$(".indepth_page_content").waypoint(function(direction){
+		 $("#indepth_menu").show();
+		 $(".indepth_share").show();
+		 $("#pbarra").show();
+		 $(".indepth_menu_item").removeClass("active");
+		 var num_menu=$(this).attr("num");
+		 $("#indepth_menu_"+num_menu).addClass("active");
+		 
+	},{offset: 'bottom-in-view'});
+	
+	$("#indepth_page_content").waypoint(function(direction){
+		$(".indepth_menu_item").removeClass("active");
+		 $("#indepth_menu_0").addClass("active");
+	},{offset: 'bottom-in-view'});
+	
+	 $("#indepth_menu").hide();
+}
 
+indepth_menu();
 
 var normalize = (function() {
   var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
