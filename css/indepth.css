@@ -2095,6 +2095,7 @@ position: absolute;
 	}
 	
 	
+	
 	.indepth_arrow_cover{
 		margin-top: 0;
 	}
@@ -2205,6 +2206,8 @@ position: absolute;
 }
 
 @media screen and (max-width:830px) {
+	
+	
 	
 	.indepth_cover_content .indepth_cover_conatainer_in{
 		width: 700px;
@@ -2536,14 +2539,29 @@ position: absolute;
 			height: 300px;
 		}
 		
-		.indepth_botella_powerade {
-		  height: 600px;
+		.indepth_boteLla_cont {
+		  width: 230px;
 		}
 		
 		
 }
 
 @media screen and (max-width:600px) {
+	
+	.indepth_boteLla_cont{
+		display: none;
+	}
+	
+	.indepth_haypower{
+		width: 300px;
+		top: 20px;
+	}
+	
+	.indepth_power_logo{
+		left: auto;
+		right: 20px;
+		bottom: 40px;
+	}
 	
 	#pbarra{
 		background-size: auto 15px;
@@ -2572,9 +2590,7 @@ position: absolute;
 		width: auto;
 	}
 	
-	.indepth_botella_powerade {
-	  height: 550px;
-	}
+
 	
 	#indepth_mono_container,#indepth_barras{
 		display: none;
@@ -2752,26 +2768,12 @@ position: absolute;
 		}
 		
 		
-		.indepth_haypower {
-		  width: 250px;
-		  top: 50px;
-		  left: 10px;
-		}
-		
-		.indepth_power_logo {
-		  width: 200px;
-		  left: 30px;
-		  position: absolute;
-		  bottom: 60px;
-		}
-		
+				
 		#indepth_break_1{
 			height: 250px;
 		}
 		
-		.indepth_botella_powerade {
-		  height: 500px;
-		}
+
 		
 		.indepth_mapa_svg{
 			width: 94%;
@@ -2779,9 +2781,57 @@ position: absolute;
 			padding-top: 20px;
 		}
 
+		.indepth_menu_title{
+			float: left;
+		}
+		
+		.indepth_menu_item {
+		  overflow: hidden;
+		  margin:  3px 5px;
+		  width: 14px;
+		  height: 14px;
+		  border: 2px solid #149ce9;
+		  float: left;
+		  border-radius: 50%;
+		}
+		
+		.indepth_menu_item_in{
+			display: none;
+		}
+		
+		#indepth_menu{
+			top: 0;
+			left: 0;
+			background: black;
+			height: 26px;
+			overflow: hidden;
+			padding-right: 10px;
+			width: 100%;
+		}
+		
+		.active  {
+		  background-color: #149ce9;
+		}
+		
+		.indepth_mensaje{
+			width: 60%;
+			margin-bottom: 40px;
+		}
+		
+		.indepth_share{
+			bottom: 30px;
+			left: 5px;
+		}
+		
+		.indepth_logo_powerade{
+			width: 300px;
+		}
+		
+		.indepth_cover_content .indepth_cover_conatainer_in{
+			height: auto;
+		}
 		
 		
-	
 }
 
 
@@ -2866,46 +2916,29 @@ position: absolute;
 	}
 	
 	.indepth_haypower {
-		  width: 200px;
-		  top: 50px;
-		  left: 10px;
+		  width: 260px;
 		}
 		
 		.indepth_power_logo {
-		  width: 150px;
-		  left: 30px;
-		  position: absolute;
-		  bottom: 50px;
-		}
+		  width: 200px;
+ 		}
 		
 		#indepth_break_1{
 			height: 250px;
 		}
 		
-		.indepth_botella_powerade {
-		  height: 500px;
-		}
+
 	
 }
 
 @media screen and (max-width:385px) {
 	
 	
-	.indepth_haypower {
 
-		  display: none;
-		}
-		
-		.indepth_power_logo {
-
-		  display: none;
-		}
 	
 
 	
-	.indepth_botella_powerade {
-		  height: 700px;
-		}
+
 		
 	#pbarra{
 		background-size: auto 14px;
@@ -2925,6 +2958,10 @@ position: absolute;
 
 	#indepth_min_jug_container_movil{
 		width: 310px;
+	}
+	
+	.indepth_page_content .indepth_title{
+		font-size: 30px;
 	}
 	
 	#pbarra{
@@ -3007,10 +3044,23 @@ position: absolute;
 	.indepth_arrow_cover{
 		margin-top: 20px;
 	}
+	
+	.indepth_tltle_text {
+	  font-size: 40px;
+	  line-height: 40px;
+	}
+	
+	.indepth_tltle_text{
+	margin-bottom: 10px;	
+	}
 		
 }
 
 @media screen and (max-width:320px) {
+	.indepth_logo_powerade{
+		width: 220px;
+	}
+	
 	.indepth_goleadores_cont.izq{
 		width: 236px;
 	}

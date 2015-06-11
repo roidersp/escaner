@@ -13,20 +13,26 @@ var ju=0;
 var mas_min=new Array();
 var max_min=1500;
 var colores=['#0090D5','#28ACE0','#6FD9F8','#8FEFF9','#4CFCD2','#36BF9E','#F73981','#B71557','#8E1652','#8E1652'];
+var ventana_ancho;
 
 
 
 $("#indepth_menu").hover(
 	function(){
-		
-		$(".indepth_menu_item").animate({
-			width: "146px"
-		},500);
+		ventana_ancho = $(window).width();
+		if(ventana_ancho>600){
+			$(".indepth_menu_item").animate({
+				width: "146px"
+			},500);
+		}
 	},
 	function(){
-		$(".indepth_menu_item").animate({
-			width: "18px"
-		},500);
+		ventana_ancho = $(window).width();
+		if(ventana_ancho>600){
+			$(".indepth_menu_item").animate({
+				width: "18px"
+			},500);
+		}
 		
 		
 	}
