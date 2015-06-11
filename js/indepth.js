@@ -405,14 +405,14 @@ var indepth_equipos = function(){
 indepth_equipos();
 
  var createDiv = function(newid, newclass,color) {
-				    return $('<div/>', {
-				              id: newid,
-				              class: newclass,
-				              css:{
-				                 backgroundColor: color
-				              }
-				            });
-				 } 
+    return $('<div/>', {
+              id: newid,
+              class: newclass,
+              css:{
+                 backgroundColor: color
+              }
+            });
+ } 
 
 var indepth_pastel = function(component,entity,diameter,donut_center,color ){
 		var svg = d3.select("#"+component+" .indepth_grafica_partidos").append("svg") 
