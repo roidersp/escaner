@@ -2094,7 +2094,9 @@ position: absolute;
 		height: 440px;
 	}
 	
-	
+	#indepth_button_ver{
+		display: none;
+	}
 	
 	.indepth_arrow_cover{
 		margin-top: 0;
