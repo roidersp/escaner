@@ -683,9 +683,9 @@ text{
 
 .indepth_tltle_text{
 	color: #00adef;
-	font-size: 56px;
+	font-size: 54px;
 	text-align: center;
-	line-height: 66px;
+	line-height: 58px;
 	font-weight: 900;
 	text-transform: uppercase;
 	;
@@ -696,7 +696,7 @@ text{
 	color: #919597;
 	text-transform: uppercase;
 	font-weight: 900;
-	margin-bottom: 20px
+	margin-bottom: 5px
 }
 
 .indepth_pesentado{
