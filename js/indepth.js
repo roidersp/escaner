@@ -14,18 +14,20 @@ var mas_min=new Array();
 var max_min=1500;
 var colores=['#0090D5','#28ACE0','#6FD9F8','#8FEFF9','#4CFCD2','#36BF9E','#F73981','#B71557','#8E1652','#8E1652'];
 var ventana_ancho;
-var oculto=true;
+var oculto=[true,true];
 
 $(".indepth_partidos_boton").on("click",function(){
+	
+	console.log()
 	nume=$(this).attr("num");
-	if(oculto){
+	if(oculto[nume-1]){
 		$("#indepth_tabla_"+nume).show();
 		$(this).addClass("menos");
-		oculto=false;
+		oculto[nume-1]=false;
 	}else{
 		$("#indepth_tabla_"+nume).hide();
 		$(this).removeClass("menos");
-		oculto=true;
+		oculto[nume-1]=true;
 	}
 	
 	
