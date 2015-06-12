@@ -2669,11 +2669,14 @@ position: absolute;
 		display: block;
 		width: 100%;
 		height: 26px;
-		background-image: url(../images/lineas.png);
+		background-image: url(../images/cruz.png);
 		background-position: center center;
 		background-repeat: no-repeat;
-		background-size: 500px auto; 
+		background-size:  auto 80%; 
 		cursor: pointer;
+		background-color: #2D2C33;
+		border-top: 1px solid #32313a;
+		
 	}	
 	
 }
