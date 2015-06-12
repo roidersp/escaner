@@ -20,9 +20,11 @@ $(".indepth_partidos_boton").on("click",function(){
 	nume=$(this).attr("num");
 	if(oculto){
 		$("#indepth_tabla_"+nume).show();
+		$(this).addClass("menos");
 		oculto=false;
 	}else{
 		$("#indepth_tabla_"+nume).hide();
+		$(this).removeClass("menos");
 		oculto=true;
 	}
 	
