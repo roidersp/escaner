@@ -39,10 +39,10 @@ var svg = d3.select("#indepth_burbujas_container").append("svg")
     .attr("height", h)
     .attr("class", "bubble");
 
-d3.json("flare.json", function(error, root) {
+d3.json(urlIndepth+"js/flare.json", function(error, root) {
 
 	var equipos;
-	$.getJSON( "js/equipos.json", function( data ) {
+	$.getJSON( urlIndepth+"js/equipos.json", function( data ) {
 	equipos=data.equipos;
 	
 	
@@ -117,15 +117,10 @@ d3.json("flare.json", function(error, root) {
       .attr("fill","transparent");
 
 node.append("circle")
-      .attr("r", 20)
+      .attr("r",function(d) { return d.r; })
       .style("fill", "#1b5175")
       .attr("radio_o", function(d) { return d.r; })
-      .attr("class","circulo_in")
-      .transition()
-      	.attr("r",function(d) { return d.r; })
-      	.delay(800)
-      	.duration(1500)
-      	;
+      .attr("class","circulo_in").attr("r",function(d) { return d.r; });
 
   node.append("circle")
       .attr("r", function(d) { return d.r; })
@@ -162,9 +157,7 @@ node.append("circle")
       .style("opacity","0")
       .style("font-size","12px") 
       .text(function(d) { return d.className.substring(0, d.r / 3); })
-		.transition()
-	      	.delay(1500)
-	      	.duration(2000)
+		
 	      	.style("opacity","1")
 	      	.style("font-size",function(d) { if(d.r>150){ 
 		      	return "40px";
@@ -226,16 +219,14 @@ node.append("circle")
 				var nombre=	item['nombre'];
 				var apellido = item['apellido'];
 				
-				var image="images/Jugadores2/"+normalize(nombre).replace(/\s/g,"_")+"_"+normalize(apellido).replace(/\s/g,"_")+".png";
+				var image=urlIndepth+"images/Jugadores2/"+normalize(nombre).replace(/\s/g,"_")+"_"+normalize(apellido).replace(/\s/g,"_")+".png";
 				
 				mov.append('<div class="indepth_jugadores_fotos_item"><img src="'+image+'" alt="'+normalize(nombre).replace(/\s/g,"_")+" "+normalize(apellido).replace(/\s/g,"_")+'"></div>');
 				
 				var item_movil=container_movil.find("#item_jugadores_"+item['id']);
 		 			
 		 		var t=c.append("image")
-			 		//.attr("clip-path","url(#"+normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_")+")")
 		 			.attr("xlink:href",image)
-		 			//.attr("xlink:href","images/Jugadores/Luis-Montes.png")
 		 			.attr("x","10")
 		 			.attr("width","40px")
 		 			.attr("height","40px")
@@ -243,12 +234,6 @@ node.append("circle")
 		 			.attr("nombre",apellido)
 		 			.attr("class","jugadores_cont_image");
 
-		 	/*c.append("clipPath").attr("id",normalize(nombre).replace(/\s/g,"_")+"-"+normalize(apellido).replace(/\s/g,"_"))
-		 		.append("circle")
-		 		.attr("fill", "white")
-			 	.attr("r","20px");*/
-			 
-			 	
 			 	if(i==0){
 				 	t.attr("x",-20)
 				 	.attr("y","-110");
@@ -338,14 +323,10 @@ node.append("circle")
 			
 		 			
 		});
-		 
-		 
-		
-		 
-		
-		 	
-		 /**/
+
 			}); 
+			
+			
 });
 
 // Returns a flattened hierarchy containing all leaf nodes under the root.
@@ -365,6 +346,11 @@ d3.select(self.frameElement).style("height", diameter + "px");
 
 var text_size;
 
+
+eventos();
+
+function eventos(){
+
 $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 	
 	$(".burbuja_equipos").each(function (index) 
@@ -379,19 +365,19 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 	
 	m.attr("opacity","1");
 	
-	m.select("text").transition()
+	m.select("text")
 		.style("font-size","15px")
 		.style("opacity",1);
 	if(radio>80){
 		
-		m.select(".circulo_in").transition()
+		m.select(".circulo_in")
 		.attr("r",60);
 	}else{
 		//m.moveToFront();		
-		m.select(".circulo_in").transition()
+		m.select(".circulo_in")
 		.attr("r",60);
 		
-		m.select(".circulo_out").transition()
+		m.select(".circulo_out")
 		.attr("r","120px");
 		m.select(".circulo_back")
 		
@@ -403,7 +389,7 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 		
 	}
 
-	m.select(".jugadores_cont").transition().delay(300).attr("opacity",1);
+	m.select(".jugadores_cont").attr("opacity",1);
 	
 	m.moveToFront();
 	
@@ -418,24 +404,24 @@ $(document).on("mouseenter",".burbuja_equipos .circulo_out",function(){
 $(document).on("mouseenter",".burbuja_equipos .jugadores_cont",function(){
 	var m=d3.select(this.parentNode);
 	var radio=d3.select(this.parentNode).attr("radio_o");
-	m.select(".jugadores_cont").transition().delay(0).attr("opacity",1);
+	m.select(".jugadores_cont").attr("opacity",1);
 	d3.selectAll(".burbuja_equipos").attr("opacity",".4");
 	
 	m.attr("opacity","1");
 	
-	m.select("text").transition()
+	m.select("text")
 		.style("font-size","15px")
 		.style("opacity",1);
 	if(radio>80){
 		
-		m.select(".circulo_in").transition()
+		m.select(".circulo_in")
 		.attr("r",60);
 	}else{
 		//m.moveToFront();		
-		m.select(".circulo_in").transition()
+		m.select(".circulo_in")
 		.attr("r",60);
 		
-		m.select(".circulo_out").transition()
+		m.select(".circulo_out")
 		.attr("r","120px");
 		m.select(".circulo_back")
 		
@@ -443,7 +429,6 @@ $(document).on("mouseenter",".burbuja_equipos .jugadores_cont",function(){
 		
 		m.select(".circulo_back")
 		.attr("r",62);
-		
 		
 	}
 
@@ -477,81 +462,10 @@ $(document).on("mouseout",".burbuja_equipos .jugadores_cont ",function(){
 	
 });
 
-/*$(document).on("mouseenter",".burbuja_equipos .circulo_out ",function(){
-	var radio=d3.select(this).parentNode.select("circulo_in").attr("radio_o");
-	console.log(radio);
-	d3.select(this).parentNode.select("circulo_in").transition()
-		.attr("r",80);
-
-});*/
+}
 
 
-
-/*$(document).on("mouseout",".burbuja_equipos .jugadores_cont",function(){
-	d3.selectAll(".burbuja_equipos").attr("opacity","1");
-	
-	var m=d3.select(this.parentNode);
-	var radio=d3.select(this.parentNode).attr("radio_o");
-	
-	
-	m.select(".jugadores_cont").transition().attr("opacity",0);
-	
-	m.select(".circulo_in").transition()
-		.attr("r",radio);
-	
-	m.select(".circulo_out").transition()
-		.attr("r",radio);
-		
-	m.select(".circulo_back").transition()
-		.attr("r",radio);
-		
-	text_size=$(this).attr("font_size");
-	
-	
-	m.select("text").transition()
-		.style("font-size",text_size);
-		
-	m.select(".circulo_back")
-		.attr("fill","transparent");
-
-
-});*/
-
-/*$(document).on("mouseout",".burbuja_equipos .circulo_out",function(){
-	d3.selectAll(".burbuja_equipos").attr("opacity","1");
-	
-	var radio=d3.select(this).attr("radio_o");
-	var m=d3.select(this.parentNode);
-	
-	m.select(".jugadores_cont").transition().attr("opacity",0);
-	
-	m.select(".circulo_in").transition()
-		.attr("r",radio);
-	
-	m.select(".circulo_out").transition()
-		.attr("r",radio);
-		
-	m.select(".circulo_back").transition()
-		.attr("r",radio);
-		
-	text_size=$(this).attr("font_size");
-	
-	
-	m.select("text").transition()
-		.style("font-size",text_size);
-		
-	m.select(".circulo_back")
-		.attr("fill","transparent");
-	
-	
-	
-		
-	
-
-});
-*/
 function ocultar(h){
-	//console.log(h);
 	
 	d3.selectAll(".burbuja_equipos").attr("opacity","1");
 	
@@ -560,21 +474,21 @@ function ocultar(h){
 		console.log(m);
 
 	
-	m.select(".jugadores_cont").transition().attr("opacity",0);
+	m.select(".jugadores_cont").attr("opacity",0);
 	
-	m.select(".circulo_in").transition()
+	m.select(".circulo_in")
 		.attr("r",radio);
 	
-	m.select(".circulo_out").transition()
+	m.select(".circulo_out")
 		.attr("r",radio);
 		
-	m.select(".circulo_back").transition()
+	m.select(".circulo_back")
 		.attr("r",radio);
 		
 	text_size=$(h).find(".circulo_out").attr("font_size");
 	
 	
-	m.select("text").transition()
+	m.select("text")
 		.style("font-size",text_size);
 		
 	m.select(".circulo_back")

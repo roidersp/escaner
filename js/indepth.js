@@ -188,7 +188,7 @@ var indepth_equipos = function(){
 	var goles_cabeza=0;
 	var goles_pieder=0;
 	var goles_pieizq=0;
-	$.getJSON( "js/equipos.json", function( data ) {
+	$.getJSON( urlIndepth+"js/equipos.json", function( data ) {
 		
 		var equipos=data.equipos;
 		$.each(equipos, function( i, item ) {
@@ -364,7 +364,7 @@ var indepth_equipos = function(){
 			var jugador=gminutos[i];
 			var h_jug=(jugador["minutos"]/ max_min)*100;
 			id_div.find(".indepth_jugmin_mins").html(jugador["minutos"]);
-			id_div.find(".indepth_jugmin_foto").attr("src","images/Jugadores2/"+normalize(jugador["nombre"]).replace(/\s/g,"_")+".png");
+			id_div.find(".indepth_jugmin_foto").attr("src",urlIndepth+"images/Jugadores2/"+normalize(jugador["nombre"]).replace(/\s/g,"_")+".png");
 			id_div.find(".indepth_linea_barra").css("height",h_jug+"%");
 			var id_name=$("#indepth_jugmin_jugador_"+(i+1));
 			id_name.find(".indepth_jugmin_name").html(jugador["nombre"]);
@@ -381,7 +381,7 @@ var indepth_equipos = function(){
 		
 		for(var i=0;i<15;i++){
 			var jugador=goleadores[i];
-			var img="images/Jugadores2/"+normalize(jugador["nombre"]).replace(/\s/g,"_")+".png"
+			var img=urlIndepth+"images/Jugadores2/"+normalize(jugador["nombre"]).replace(/\s/g,"_")+".png"
 			var g=gol_cont.append('<div class="indepth_goleador_circulo" id="indepth_goleador_circulo'+i+'"></div>');
 			var cir=$("#indepth_goleador_circulo"+i);
 			cir.html('<img src="'+img+'">');
@@ -504,7 +504,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 			
 			//marcador="<span>"+item.goles_a_favor+"</span>"+"-"+item.goles_encontra;
 				
-			var item_col='<div class="partido_item '+local+'"><div class="indepth_escudo_team"><img src="images/Banderas/'+(normalize(item.equipo)).replace(" ","_")+'.png" ></div><div class="indepth_team_cont_out"><div class="indepth_team_cont"><div class="indepth_nombre_team">'+item.equipo+'</div><div class="indepth_marcador_team">'+marcador+'</div></div></div></div>';
+			var item_col='<div class="partido_item '+local+'"><div class="indepth_escudo_team"><img src="'+urlIndepth+'images/Banderas/'+(normalize(item.equipo)).replace(" ","_")+'.png" ></div><div class="indepth_team_cont_out"><div class="indepth_team_cont"><div class="indepth_nombre_team">'+item.equipo+'</div><div class="indepth_marcador_team">'+marcador+'</div></div></div></div>';
 			
 			//empatados
 			if(item.goles_a_favor==item.goles_encontra){
@@ -604,7 +604,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 	var oficiales;
 	var amistosos;
 	
-	$.getJSON( "js/partidos.json", function( data ) {
+	$.getJSON( urlIndepth+"js/partidos.json", function( data ) {
 		oficiales=data.oficiales;
 		amistosos=data.amistosos;
       
@@ -630,7 +630,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
     });
     
     
-    $.getJSON( "js/goles.json", function( data ) {
+    $.getJSON( urlIndepth+"js/goles.json", function( data ) {
 		goles_afavor=data.goles.a_favor;
 		goles_encontra=data.goles.en_contra;
 		
