@@ -36,6 +36,12 @@
         "goles_a_favor": "1",
         "goles_encontra": "2",
         "tipo": "Visitante"
+      },
+      {
+        "equipo": "Bolivia",
+        "goles_a_favor": "0",
+        "goles_encontra": "0",
+        "tipo": "Local"
       }
     ]
   },
