@@ -16,9 +16,20 @@ var colores=['#0090D5','#28ACE0','#6FD9F8','#8FEFF9','#4CFCD2','#36BF9E','#F7398
 var ventana_ancho;
 var oculto=[true,true];
 
+$(document).on("click","#indepth_boton_mas_edo",function(){
+	
+	if($(this).hasClass("menos")){
+		$(this).removeClass("menos");
+		$("#indepth_edo_oculto").hide();
+		
+	}else{
+		$(this).addClass("menos");
+		$("#indepth_edo_oculto").show();
+	}
+})
+
 $(".indepth_partidos_boton").on("click",function(){
 	
-	console.log()
 	nume=$(this).attr("num");
 	if(oculto[nume-1]){
 		$("#indepth_tabla_"+nume).show();
@@ -306,7 +317,10 @@ var indepth_equipos = function(){
 		var rango=estado_max-estado_min;
 		var k=9;
 		var amplitud=rango/k;
-		
+		var numero_v=14;
+		var naturalizado=false;
+		var indepth_mapa=$("#indepth_mapa_estados");
+		var estado_nat; 
 		
 		$.each(estados_n, function( i, estado ) {
 			var color;
@@ -326,10 +340,19 @@ var indepth_equipos = function(){
 				color=colores[num-1];
 			}
 			
-			var indepth_mapa=$("#indepth_mapa_estados");
+			if(i==numero_v){
+				indepth_mapa.append(createDiv('indepth_edo_oculto', '','none'));
+				indepth_mapa.append(createDiv('indepth_boton_mas_edo', '',''));
+			}
 			
 			
-			if(i<15){
+			if(normalize(estado['nombre']).replace(/\s/g,"_").toLowerCase()=="naturalizado"){
+				numero_v=15;
+				estado_nat=i;
+				naturalizado=true;
+				
+			}else{
+				if(i<numero_v){
 				
 				/*<div class="indepth_edo_data" id="indepth_edo1">
 					<div class="indepth_edo_box">10</div>
@@ -350,14 +373,47 @@ var indepth_equipos = function(){
 				
 				
 				
+				
 				/*<div class="indepth_edo_data" id="indepth_edo1">
 									<div class="indepth_edo_box">10</div>
 									<div class="indepth_edo_nombre">Jalisco</div>
 								</div>*/
 				
-			}			
+				}else{
+				
+				$("#indepth_edo_oculto").append(createDiv('indepth_edo'+i, 'indepth_edo_data','none'));
+				
+				 var cont=$('#indepth_edo'+i);
+				 cont.append(createDiv('', 'indepth_edo_box',color));
+				 var mapa_num_estado= $('#indepth_edo'+i+" .indepth_edo_box");
+				 mapa_num_estado.html(num);
+				 cont.append(createDiv('', 'indepth_edo_nombre',''));
+				 var mapa_nombre_estado= $('#indepth_edo'+i+" .indepth_edo_nombre");
+				 mapa_nombre_estado.html(estado['nombre']);
+				}
+			}
+			
+			
+			
 			$("#"+nombre).css("fill",color);
 		});
+		
+		
+		if(naturalizado){
+				indepth_mapa.append(createDiv('indepth_edox', 'indepth_edo_data edo_last','none'));
+				
+				var cont=$('#indepth_edox');
+				 cont.append(createDiv('', 'indepth_edo_box',"#bbb6b7"));
+				 var mapa_num_estado= $('#indepth_edox .indepth_edo_box');
+				 mapa_num_estado.html(estados_n[estado_nat]["numero"]);
+				 cont.append(createDiv('', 'indepth_edo_nombre',''));
+				 var mapa_nombre_estado= $('#indepth_edox .indepth_edo_nombre');
+				 mapa_nombre_estado.html("Naturalizados");
+				 cont.append(createDiv('', 'indepth_edo_text',""));
+				 $("#indepth_edox .indepth_edo_text").html("<div>"+"* Brasil, Argentina"+"</div>");
+				 
+				 
+			}
 						
 		for(var i=0;i<11;i++){
 			var id_div=$("#indepth_barra_jugmin_"+(i+1));
@@ -675,11 +731,6 @@ var indepth_circulos = function(component, width, minw, datos, img){
     });
 	
 	//var p_oficiales=
-	
-	
-	
-	
-	
 
 
 var indepth_mono_gira = function(){

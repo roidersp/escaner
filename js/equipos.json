@@ -407,7 +407,8 @@
           {
             "nombre": "Matías",
             "apellido": "Vuoso",
-            "estado": "Buenos Aires",
+            "estado": "Naturalizado",
+            "naturalizado":"Argentina",
             "minutos": "175",
             "goles": 
               {
@@ -665,7 +666,8 @@
           {
             "nombre": "Naelson",
             "apellido": "Sinha",
-            "estado": "Río Grande del Norte, Brasil",
+            "estado": "Naturalizado",
+            "naturalizado":"Brasil",
             "minutos": "80",
             "goles": 
               {

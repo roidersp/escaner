@@ -2,6 +2,42 @@
 #recommended-wrapper{
 	display: none;
 }
+.edo_last{
+	margin-top: 20px;
+}
+
+.indepth_edo_text{
+	font-size: 10px;
+	display: table-row;
+	
+}
+
+#indepth_boton_mas_edo{
+	height: 20px;
+	width: 100%;
+	background-image: url(../images/Cruz.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	display: table;
+	margin-top: 10px;
+	
+}
+
+#indepth_boton_mas_edo.menos{
+	background-image: url(../images/menos.png);
+}
+
+#indepth_edo_oculto{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+
+.indepth_edo_text div{
+	padding-top: 5px;
+	padding-left: 40px;
+}
 
 .indepth_mensaje{
 	color: white;
@@ -1793,7 +1829,7 @@ position: absolute;
 }
 
 .indepth_mapa_left{
-	width: 160px;
+	width: 170px;
 	float: left;
 	color: white;
 }
@@ -2487,7 +2523,7 @@ position: absolute;
 		}
 		
 		.indepth_edo_data{
-			width: 140px;
+			width: 150px;
 			margin-bottom: 8px;
 		}
 		
@@ -2558,6 +2594,10 @@ position: absolute;
 		  width: 230px;
 		}
 		
+		
+		.indepth_edo_text div{
+			margin-left: 30px;
+		}
 		
 }
 
@@ -2707,9 +2747,11 @@ position: absolute;
 		}
 		
 		.indepth_edo_data{
-			width: 140px;
+			width: 150px;
 			margin-bottom: 8px;
 		}
+		
+		
 		
 		.indepth_min_jug_item{
 			width: 100%;
@@ -2873,7 +2915,7 @@ position: absolute;
 
 @media screen and (max-width:420px) {
 	.indepth_mapa_left {
-		  width: 280px;
+		  width: 300px;
 		}
 		
 		.indepth_arrow_cover{
