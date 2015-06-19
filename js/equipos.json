@@ -21,7 +21,7 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-            "minutos": "1345",
+            "minutos": "1342",
             "goles": 
               {
                 "cabeza": "0",
@@ -34,10 +34,10 @@
             "nombre": "Raúl",
             "apellido": "Jiménez",
             "estado": "Hidalgo",
-            "minutos": "794",
+            "minutos": "884",
             "goles": 
               {
-                "cabeza": "1",
+                "cabeza": "2",
                 "pie_der": "2",
                 "pie_izq": "0"
               }
@@ -184,7 +184,7 @@
             "nombre": "Jesús",
             "apellido": "Corona",
             "estado": "Sonora",
-            "minutos": "716",
+            "minutos": "395",
             "goles": 
               {
                 "cabeza": "0",
@@ -201,7 +201,7 @@
             "nombre": "Juan Carlos",
             "apellido": "Valenzuela",
             "estado": "Michoacán",
-            "minutos": "525",
+            "minutos": "615",
             "goles": 
               {
                 "cabeza": "1",
@@ -213,7 +213,7 @@
             "nombre": "Juan Carlos",
             "apellido": "Medina",
             "estado": "Coahuila",
-            "minutos": "635",
+            "minutos": "780",
             "goles": 
               {
                 "cabeza": "0",
@@ -355,7 +355,7 @@
             "nombre": "Carlos",
             "apellido": "Salcedo",
             "estado": "Jalisco",
-            "minutos": "150",
+            "minutos": "169",
             "goles": 
               {
                 "cabeza": "0",
@@ -409,12 +409,12 @@
             "apellido": "Vuoso",
             "estado": "Naturalizado",
             "naturalizado":"Argentina",
-            "minutos": "175",
+            "minutos": "265",
             "goles": 
               {
                 "cabeza": "0",
-                "pie_der": "0",
-                "pie_izq": "0"
+                "pie_der": "1",
+                "pie_izq": "1"
               }
           }
         ]
@@ -438,7 +438,7 @@
             "nombre": "Jose de Jesús",
             "apellido": "Corona",
             "estado": "Jalisco",
-            "minutos": "478",
+            "minutos": "568",
             "goles": 
               {
                 "cabeza": "0",
@@ -462,7 +462,7 @@
             "nombre": "Julio César",
             "apellido": "Domínguez",
             "estado": "Chiapas",
-            "minutos": "672",
+            "minutos": "762",
             "goles": 
               {
                 "cabeza": "0",
@@ -474,7 +474,7 @@
             "nombre": "Gerardo",
             "apellido": "Flores",
             "estado": "Morelos",
-            "minutos": "359",
+            "minutos": "449",
             "goles": 
               {
                 "cabeza": "0",
@@ -680,7 +680,7 @@
             "nombre": "Mario",
             "apellido": "Osuna",
             "estado": "Sinaloa",
-            "minutos": "135",
+            "minutos": "148",
             "goles": 
               {
                 "cabeza": "0",
@@ -721,7 +721,7 @@
             "nombre": "Adrián",
             "apellido": "Aldrete",
             "estado": "Jalisco",
-            "minutos": "300",
+            "minutos": "371",
             "goles": 
               {
                 "cabeza": "0",
@@ -774,7 +774,7 @@
             "nombre": "Hugo",
             "apellido": "Ayala",
             "estado": "Michoacán",
-            "minutos": "590",
+            "minutos": "680",
             "goles": 
               {
                 "cabeza": "0",
@@ -839,7 +839,7 @@
 	        "nombre": "Javier",
 	        "apellido": "Güemez",
 	        "estado": "Sinaloa",
-	        "minutos": "498",
+	        "minutos": "588",
 	        "goles": 
 	          {
 	            "cabeza": "0",
