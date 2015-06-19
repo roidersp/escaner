@@ -43,6 +43,20 @@
         "goles_encontra": "0",
         "tipo": "Local"
       }
+      ,
+      {
+        "equipo": "Chile",
+        "goles_a_favor": "3",
+        "goles_encontra": "3",
+        "tipo": "Visitante"
+      }
+      ,
+      {
+        "equipo": "Ecuador",
+        "goles_a_favor": "1",
+        "goles_encontra": "2",
+        "tipo": "Local"
+      }
     ]
   },
   "amistosos": {
