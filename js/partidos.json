@@ -181,6 +181,12 @@
         "goles_a_favor": "0",
         "goles_encontra": "2",
         "tipo": "Visitante"
+      },
+      {
+        "equipo": "Costa Rica",
+        "goles_a_favor": "2",
+        "goles_encontra": "2",
+        "tipo": "Local"
       }
     ]
   }

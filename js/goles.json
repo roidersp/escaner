@@ -1,5 +1,5 @@
 {
-  "goles": {
+    "goles": {
     "a_favor": {
       "oficiales": {
         "15": "1",
@@ -13,16 +13,16 @@
         "15": "4",
         "30": "4",
         "45": "5",
-        "60": "4",
+        "60": "6",
         "75": "9",
         "90": "5"
       }
     },
     "en_contra": {
       "oficiales": {
-        "15": "0",
+        "15": "1",
         "30": "2",
-        "45": "1",
+        "45": "2",
         "60": "2",
         "75": "0",
         "90": "6"
@@ -36,5 +36,129 @@
         "90": "3"
       }
     }
-  }
+  },
+    "zonas":[
+	    {
+		    "area":"chica",
+		    "lado":"izquierda",
+		    "goles":0
+	    },
+	    {
+		    "area":"grande",
+		    "lado":"izquierda",
+		    "goles":0
+	    },
+	    {
+		    "area":"fuera",
+		    "lado":"izquierda",
+		    "goles":2
+	    },
+	    {
+		    "area":"chica",
+		    "lado":"centro",
+		    "goles":10
+	    },
+	    {
+		    "area":"grande",
+		    "lado":"centro",
+		    "goles":28
+	    },
+	    {
+		    "area":"fuera",
+		    "lado":"centro",
+		    "goles":6
+	    },
+	    {
+		    "area":"chica",
+		    "lado":"derecha",
+		    "goles":0
+	    },
+	    {
+		    "area":"grande",
+		    "lado":"derecha",
+		    "goles":4
+	    },
+	    {
+		    "area":"fuera",
+		    "lado":"derecha",
+		    "goles":0
+	    }
+    ],
+    "penales":{
+	    "amistosos":{
+		    "recibidos":0,
+		    "anotados":0
+	    },
+	    "oficiales":{
+		    "recibidos":1,
+		    "anotados":3
+	    }
+    },
+    "por_equipo":[
+	    {
+		    "nombre":"América",
+		    "goles":5
+	    },
+	    {
+		    "nombre":"Atlas",
+		    "goles":1
+	    },
+	    {
+		    "nombre":"Atlético de Madrid",
+		    "goles":4
+	    },
+	    {
+		    "nombre":"Bayer Leverkusen",
+		    "goles":1
+	    },
+	    {
+		    "nombre":"Chiapas",
+		    "goles":2
+	    },
+	    {
+		    "nombre":"Chivas USA",
+		    "goles":1
+	    },
+	    {
+		    "nombre":"Cruz Azul",
+		    "goles":2
+	    },
+	    {
+		    "nombre":"León",
+		    "goles":1
+	    },
+	    {
+		    "nombre":"Manchester United",
+		    "goles":1
+	    },
+	    {
+		    "nombre":"Pumas",
+		    "goles":3
+	    },
+	    {
+		    "nombre":"Real Madrid",
+		    "goles":4
+	    },
+	    {
+		    "nombre":"Real Sociedad",
+		    "goles":2
+	    },
+	    {
+		    "nombre":"Santos",
+		    "goles":10
+	    },
+	    {
+		    "nombre":"Tigres",
+		    "goles":4
+	    },
+	    {
+		    "nombre":"Twente",
+		    "goles":1
+	    },
+	    {
+		    "nombre":"Villarreal",
+		    "goles":2
+	    }
+    ]
+    	
 }

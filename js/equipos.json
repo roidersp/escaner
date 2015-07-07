@@ -9,7 +9,8 @@
             "apellido": "Márquez",
             "estado": "Michoacán",
             "minutos": "1166",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "4",
                 "pie_der": "0",
@@ -21,8 +22,9 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-            "minutos": "1342",
-            "goles": 
+            "minutos": "1432",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "3",
@@ -35,7 +37,8 @@
             "apellido": "Jiménez",
             "estado": "Hidalgo",
             "minutos": "974",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "2",
                 "pie_der": "3",
@@ -47,8 +50,9 @@
             "nombre": "Diego",
             "apellido": "Reyes",
             "estado": "Ciudad de México",
-            "minutos": "650",
-            "goles": 
+            "minutos": "740",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -61,7 +65,8 @@
             "apellido": "Pulido",
             "estado": "Tamaulipas",
             "minutos": "287",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "2",
@@ -73,21 +78,49 @@
             "nombre": "Guillermo",
             "apellido": "Ochoa",
             "estado": "Jalisco",
-            "minutos": "872",
-            "goles": 
-              {
-                "cabeza": "0",
-                "pie_der": "0",
-                "pie_izq": "0"
-              }
+            "minutos": "962",
+            "tipo":"portero",
+            "goles_recibidos":[
+	            	{
+		            	"pais":"Holanda",
+		            	"goles":"2"
+	            	},
+	            	{
+		            	"pais":"Portugal",
+		            	"goles":"1"
+	            	},
+	            	{
+		            	"pais":"Croacia",
+		            	"goles":"1"
+	            	},
+	            	{
+		            	"pais":"Ecuador",
+		            	"goles":"1"
+	            	},
+	            	{
+		            	"pais":"Holanda",
+		            	"goles":"2"
+	            	},
+	            	{
+		            	"pais":"Costa Rica",
+		            	"goles":"2"
+	            	}
+            ],
+            "goles":  
+	          {
+	            "cabeza": "0",
+	            "pie_der": "0",
+	            "pie_izq": "0"
+	          }
             
           },
           {
             "nombre": "Andrés",
             "apellido": "Guardado",
             "estado": "Jalisco",
-            "minutos": "974",
-            "goles": 
+            "minutos": "1054",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -99,8 +132,9 @@
             "nombre": "Héctor",
             "apellido": "Moreno",
             "estado": "Sinaloa",
-            "minutos": "720",
-            "goles": 
+            "minutos": "765",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -112,8 +146,9 @@
             "nombre": "Héctor",
             "apellido": "Herrera",
             "estado": "Baja California Sur",
-            "minutos": "1072",
-            "goles": 
+            "minutos": "1150",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -124,10 +159,11 @@
             "nombre": "Javier",
             "apellido": "Hernández",
             "estado": "Jalisco",
-            "minutos": "667",
-            "goles": 
+            "minutos": "757",
+            "tipo":"jugador",
+            "goles":  
               {
-                "cabeza": "1",
+                "cabeza": "2",
                 "pie_der": "2",
                 "pie_izq": "1"
               }
@@ -137,7 +173,8 @@
             "apellido": "Aquino",
             "estado": "Oaxaca",
             "minutos": "412",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -148,11 +185,12 @@
             "nombre": "Giovani",
             "apellido": "dos Santos",
             "estado": "Ciudad de México",
-            "minutos": "712",
-            "goles": 
+            "minutos": "792",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
-                "pie_der": "0",
+                "pie_der": "1",
                 "pie_izq": "1"
               }
           },
@@ -160,8 +198,9 @@
             "nombre": "Jonathan",
             "apellido": "dos Santos",
             "estado": "Nuevo León",
-            "minutos": "166",
-            "goles": 
+            "minutos": "178",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -172,8 +211,9 @@
             "nombre": "Carlos",
             "apellido": "Vela",
             "estado": "Quintana Roo",
-            "minutos": "96",
-            "goles": 
+            "minutos": "141",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -185,7 +225,8 @@
             "apellido": "Corona",
             "estado": "Sonora",
             "minutos": "457",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "1",
@@ -202,7 +243,8 @@
             "apellido": "Valenzuela",
             "estado": "Michoacán",
             "minutos": "705",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "1",
                 "pie_der": "0",
@@ -214,7 +256,8 @@
             "apellido": "Medina",
             "estado": "Coahuila",
             "minutos": "870",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -226,7 +269,8 @@
             "apellido": "Pérez",
             "estado": "Michoacán",
             "minutos": "125",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -238,7 +282,8 @@
             "apellido": "Venegas",
             "estado": "San Luis Potosi",
             "minutos": "315",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -250,7 +295,8 @@
             "apellido": "González",
             "estado": "Tamaulipas",
             "minutos": "123",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -267,7 +313,22 @@
             "apellido": "Muñoz",
             "estado": "Michoacán",
             "minutos": "360",
-            "goles": 
+            "tipo":"portero",
+            "goles_recibidos":[
+	            	{
+		            	"pais":"Finlandia",
+		            	"goles":"1"
+	            	},
+	            	{
+		            	"pais":"EEUU",
+		            	"goles":"2"
+	            	},
+	            	{
+		            	"pais":"Nueva Zelanda",
+		            	"goles":"3"
+	            	}
+            ],
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -278,8 +339,9 @@
             "nombre": "Paul",
             "apellido": "Aguilar",
             "estado": "Sinaloa",
-            "minutos": "1522",
-            "goles": 
+            "minutos": "1612",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "1",
@@ -290,8 +352,9 @@
             "nombre": "Oribe",
             "apellido": "Peralta",
             "estado": "Coahuila",
-            "minutos": "1081",
-            "goles": 
+            "minutos": "1091",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "1",
                 "pie_der": "4",
@@ -308,7 +371,8 @@
             "apellido": "de Nigris",
             "estado": "Nuevo León",
             "minutos": "102",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -320,7 +384,8 @@
             "apellido": "Ponce",
             "estado": "California, EEUU",
             "minutos": "332",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -332,7 +397,8 @@
             "apellido": "Brizuela",
             "estado": "California, EEUU",
             "minutos": "251",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -344,7 +410,8 @@
             "apellido": "Torres",
             "estado": "Jalisco",
             "minutos": "201",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "1",
@@ -356,7 +423,8 @@
             "apellido": "Salcedo",
             "estado": "Jalisco",
             "minutos": "169",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -368,7 +436,8 @@
             "apellido": "Fabián",
             "estado": "Jalisco",
             "minutos": "705",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -380,7 +449,8 @@
             "apellido": "Salcido",
             "estado": "Jalisco",
             "minutos": "283",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -397,7 +467,8 @@
             "apellido": "Rodríguez",
             "estado": "Nuevo León",
             "minutos": "29",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -410,7 +481,8 @@
             "estado": "Naturalizado",
             "naturalizado":"Argentina",
             "minutos": "355",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "1",
@@ -426,8 +498,9 @@
             "nombre": "Francisco",
             "apellido": "Rodríguez",
             "estado": "Sinaloa",
-            "minutos": "1209",
-            "goles": 
+            "minutos": "1299",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -439,7 +512,26 @@
             "apellido": "Corona",
             "estado": "Jalisco",
             "minutos": "658",
-            "goles": 
+            "tipo":"portero",
+            "goles_recibidos":[
+	            	{
+		            	"pais":"Finlandia",
+		            	"goles":"1"
+	            	},
+	            	{
+		            	"pais":"Brasil",
+		            	"goles":"2"
+	            	},
+	            	{
+		            	"pais":"Chile",
+		            	"goles":"3"
+	            	},
+	            	{
+		            	"pais":"Ecuador",
+		            	"goles":"2"
+	            	}
+            ],
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -451,7 +543,8 @@
             "apellido": "Chávez",
             "estado": "Hidalgo",
             "minutos": "63",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -463,7 +556,8 @@
             "apellido": "Domínguez",
             "estado": "Chiapas",
             "minutos": "852",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -475,7 +569,8 @@
             "apellido": "Flores",
             "estado": "Morelos",
             "minutos": "399",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -492,7 +587,8 @@
             "apellido": "Montes",
             "estado": "Chihuahua",
             "minutos": "508",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -504,7 +600,8 @@
             "apellido": "Peña",
             "estado": "Tamaulipas",
             "minutos": "450",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "2",
@@ -516,7 +613,8 @@
             "apellido": "Hernández",
             "estado": "Hidalgo",
             "minutos": "23",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -527,8 +625,9 @@
             "nombre": "José Juan",
             "apellido": "Vázquez",
             "estado": "Guanajuato",
-            "minutos": "795",
-            "goles": 
+            "minutos": "840",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -545,7 +644,8 @@
             "apellido": "Zavala",
             "estado": "Nuevo León",
             "minutos": "80",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -557,7 +657,8 @@
             "apellido": "Mier",
             "estado": "Nuevo León",
             "minutos": "158",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -569,7 +670,8 @@
             "apellido": "Velarde",
             "estado": "Ciudad de México",
             "minutos": "315",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -586,7 +688,8 @@
             "apellido": "Salinas",
             "estado": "Tlaxcala",
             "minutos": "0",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -598,7 +701,8 @@
             "apellido": "Herrera",
             "estado": "Michoacán",
             "minutos": "241",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -610,7 +714,8 @@
             "apellido": "Pizarro",
             "estado": "Tamaulipas",
             "minutos": "237",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -622,7 +727,8 @@
             "apellido": "Damm",
             "estado": "Veracruz",
             "minutos": "6",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -639,7 +745,8 @@
             "apellido": "Herrera",
             "estado": "Ciudad de México",
             "minutos": "406",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "3",
@@ -656,7 +763,8 @@
             "apellido": "Corral",
             "estado": "Estado de México",
             "minutos": "70",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -669,7 +777,8 @@
             "estado": "Naturalizado",
             "naturalizado":"Brasil",
             "minutos": "80",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -681,7 +790,8 @@
             "apellido": "Osuna",
             "estado": "Sinaloa",
             "minutos": "148",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -698,7 +808,8 @@
             "apellido": "Escoboza",
             "estado": "Sinaloa",
             "minutos": "88",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -710,7 +821,8 @@
             "apellido": "Molina",
             "estado": "Sonora",
             "minutos": "9",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -722,7 +834,8 @@
             "apellido": "Aldrete",
             "estado": "Jalisco",
             "minutos": "371",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -734,7 +847,8 @@
             "apellido": "Mendoza",
             "estado": "Nuevo León",
             "minutos": "0",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -746,7 +860,8 @@
             "apellido": "Alanís",
             "estado": "Michoacán",
             "minutos": "411",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "1",
                 "pie_der": "0",
@@ -758,7 +873,8 @@
             "apellido": "Orozco",
             "estado": "Guanajuato",
             "minutos": "167",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -775,7 +891,8 @@
             "apellido": "Ayala",
             "estado": "Michoacán",
             "minutos": "770",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -786,8 +903,9 @@
             "nombre": "Jorge",
             "apellido": "Torres Nilo",
             "estado": "Baja California Norte",
-            "minutos": "105",
-            "goles": 
+            "minutos": "115",
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -799,7 +917,8 @@
             "apellido": "Dueñas",
             "estado": "Michoacán",
             "minutos": "90",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -811,7 +930,8 @@
             "apellido": "Esqueda",
             "estado": "Querétaro",
             "minutos": "71",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -823,7 +943,8 @@
             "apellido": "Rodríguez",
             "estado": "Jalisco",
             "minutos": "91",
-            "goles": 
+            "tipo":"jugador",
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
@@ -840,7 +961,8 @@
 	        "apellido": "Güemez",
 	        "estado": "Sinaloa",
 	        "minutos": "640",
-	        "goles": 
+	        "tipo":"jugador",
+            "goles":  
 	          {
 	            "cabeza": "0",
 	            "pie_der": "0",
@@ -852,7 +974,14 @@
 	        "apellido": "Saucedo",
 	        "estado": "Michoacán",
 	        "minutos": "90",
-	        "goles": 
+	        "tipo":"portero",
+            "goles_recibidos":[
+	            	{
+		            	"pais":"EEUU",
+		            	"goles":"2"
+	            	}            
+	        ],
+            "goles":  
 	          {
 	            "cabeza": "0",
 	            "pie_der": "0",
@@ -869,7 +998,22 @@
 	        "apellido": "Talavera",
 	        "estado": "Jalisco",
 	        "minutos": "495",
-	        "goles": 
+	        "tipo":"portero",
+            "goles_recibidos":[
+	            	{
+		            	"pais":"Perú",
+		            	"goles":"1"
+	            	},
+	            	{
+		            	"pais":"Bosnia",
+		            	"goles":"1"
+	            	},
+	            	{
+		            	"pais":"Bielorrusia",
+		            	"goles":"3"
+	            	}
+            ],
+            "goles":  
 	          {
 	            "cabeza": "0",
 	            "pie_der": "0",
@@ -881,7 +1025,8 @@
 	        "apellido": "Ríos",
 	        "estado": "Guerrero",
 	        "minutos": "180",
-	        "goles": 
+	        "tipo":"jugador",
+            "goles":  
 	          {
 	            "cabeza": "0",
 	            "pie_der": "0",
@@ -892,8 +1037,9 @@
 	        "nombre": "Carlos",
 	        "apellido": "Esquivel",
 	        "estado": "Michoacán",
-	        "minutos": "90",
-	        "goles": 
+	        "minutos": "135",
+	        "tipo":"jugador",
+            "goles":  
 	          {
 	            "cabeza": "0",
 	            "pie_der": "0",
@@ -905,7 +1051,8 @@
 	        "apellido": "Bueno",
 	        "estado": "Sinaloa",
 	        "minutos": "7",
-	        "goles": 
+	        "tipo":"jugador",
+            "goles":  
 	          {
 	            "cabeza": "0",
 	            "pie_der": "0",
@@ -922,7 +1069,9 @@
             "apellido": "Hernández",
             "estado": "Veracruz",
             "minutos": "135",
-            "goles": 
+            "tipo":"portero",
+            "goles_recibidos":0,
+            "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
