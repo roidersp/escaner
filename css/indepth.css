@@ -1861,9 +1861,19 @@ position: absolute;
 	margin-left: 10px;
 }
 
+.indepth_goles_recibidos_cont{
+	width: 999px;
+	padding: 13px 0px;
+	background-color: #2e3c53;
+	height: 300px;
+	margin: auto;
+	margin-top: 70px;
+}
 
 
-
+#indepth_page7{
+	background-color: #292833;
+}
 
 @media screen and (max-width:1023px) {
 	.indepth_page_body{
