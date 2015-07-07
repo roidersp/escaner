@@ -159,6 +159,43 @@
 		    "nombre":"Villarreal",
 		    "goles":2
 	    }
+    ],
+    "jerseys":[
+	    {
+			"nombre":"Verde",
+			"img":"/5Uniformes/Cuadro_Verde.png",
+			"partidos":{
+				"ganados":5,
+				"empatados":2,
+				"perdidos":1
+			}
+	    }, 
+	    {
+			"nombre":"Roja",
+			"img":"/5Uniformes/Cuadro_Roja.png",
+			"partidos":{
+				"ganados":3,
+				"empatados":2,
+				"perdidos":1
+			}
+	    },
+	     {
+			"nombre":"Negro",
+			"img":"/5Uniformes/Cuadro_Negro.png",
+			"partidos":{
+				"ganados":2,
+				"empatados":1,
+				"perdidos":1
+			}
+	    }, 
+	    {
+			"nombre":"Blanco",
+			"img":"/5Uniformes/Cuadro_Blanco.png",
+			"partidos":{
+				"ganados":1,
+				"empatados":2,
+				"perdidos":1
+			}
+	    }
     ]
-    	
 }

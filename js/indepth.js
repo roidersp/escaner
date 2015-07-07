@@ -199,6 +199,8 @@ var indepth_equipos = function(){
 	var goles_cabeza=0;
 	var goles_pieder=0;
 	var goles_pieizq=0;
+	var porteros = new Array();
+	
 	$.getJSON( urlIndepth+"js/equipos.json", function( data ) {
 		
 		var equipos=data.equipos;
@@ -212,7 +214,8 @@ var indepth_equipos = function(){
 					
 					if(gminutos.length==0){
 						gminutos.push(jug_min);
-					}else{
+					}
+					else{
 						if(parseInt(gminutos[0]['minutos'])<=min){
 							gminutos.unshift(jug_min);
 						}else{
@@ -246,7 +249,8 @@ var indepth_equipos = function(){
 
 					if(goleadores.length==0){
 						goleadores.push(jug_gol);
-					}else{
+					}
+					else{
 						if(parseInt(goleadores[0]['goles'])<=goles){
 							goleadores.unshift(jug_gol);
 						}else{
@@ -276,8 +280,51 @@ var indepth_equipos = function(){
 					}else{
 						estados[m_estado]=1;
 					}
+					
+					if( subitem.tipo == "portero" ){
+						var portero=new Array();
+						portero["nombre"]=subitem.nombre+" "+subitem.apellido;
+						portero["minutos"]=parseInt(subitem.minutos)
+						portero["goles_recibidos"]=subitem.goles_recibidos;
+						var num_goles_r=0;
+						$.each(subitem.goles_recibidos,function(l,goles_r){
+							num_goles_r=num_goles_r+parseInt(goles_r.goles);
+						});
+						portero["goles"]=num_goles_r;
+						
+						console.log(portero);
+						
+						if(porteros.length==0){
+							porteros.push(portero);
+						}
+						else{
+							if(parseInt(porteros[0]['goles'])<=num_goles_r){
+								porteros.unshift(portero);
+							}else{
+								var min_l=porteros[porteros.length-1]['goles'];
+								if(parseInt(min_l)>=parseInt(num_goles_r)){
+									porteros.push(portero);
+								}else{
+									$.each(porteros, function( k, gol_item ) {
+										min2=parseInt(gol_item['goles']);
+										if(min2<=num_goles_r){
+											porteros.splice(k, 0,portero);
+											return false;
+										};
+									});
+								}
+							}
+						}
+						
+					}
+					
+					
 				});
+				
+				
 		});
+		
+		console.log(porteros);
 				
 		estados=estados.sort();
 		

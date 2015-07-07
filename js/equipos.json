@@ -1070,7 +1070,7 @@
             "estado": "Veracruz",
             "minutos": "135",
             "tipo":"portero",
-            "goles_recibidos":0,
+            "goles_recibidos":[],
             "goles":  
               {
                 "cabeza": "0",
