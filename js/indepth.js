@@ -323,8 +323,8 @@ var indepth_equipos = function(){
 				
 				
 		});
-		
-		console.log(porteros);
+				
+		llenar_porteros(porteros)
 				
 		estados=estados.sort();
 		
@@ -465,7 +465,8 @@ var indepth_equipos = function(){
 		for(var i=0;i<11;i++){
 			var id_div=$("#indepth_barra_jugmin_"+(i+1));
 			var jugador=gminutos[i];
-			var h_jug=(jugador["minutos"]/ max_min)*100;
+			var h_jug=(((jugador["minutos"]-500)/ max_min)*100);
+			console.log(h_jug);
 			id_div.find(".indepth_jugmin_mins").html(jugador["minutos"]);
 			id_div.find(".indepth_jugmin_foto").attr("src",urlIndepth+"images/Jugadores2/"+normalize(jugador["nombre"]).replace(/\s/g,"_")+".png");
 			id_div.find(".indepth_linea_barra").css("height",h_jug+"%");
@@ -763,7 +764,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		
 		$.each(co, function( i, item ) {
 			a_total=a_total+parseInt(item);
-		})
+		});
 		
 		container.find(".goles_amistosos .indepth_grafica_text span").html(a_total);
 		
@@ -774,10 +775,81 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		container.find(".goles_amistosos #indepth_grafica_numeros_75").html(co[4]);
 		container.find(".goles_amistosos #indepth_grafica_numeros_90").html(co[5]);
 		
+		var zonas=data.zonas;
+		var a_chica=parseInt(data.zonas[0].goles)+parseInt(data.zonas[1].goles)+parseInt(data.zonas[2].goles);
+		$("#area_chica").html(a_chica);
+		
+		$.each(zonas, function( i, item ) {
+			if(i>2){
+				$("#area_"+item.area+"_"+item.lado).html(item.goles)
+			}
+			
+		});
+		
+		var penales=data.penales;
+		
+		$("#indepth_penales_amistosos_anotados").html(penales.amistosos.anotados);
+		$("#indepth_penales_amistosos_recibidos").html(penales.amistosos.recibidos);
+		$("#indepth_penales_oficiales_anotados").html(penales.oficiales.anotados);
+		$("#indepth_penales_oficiales_recibidos").html(penales.oficiales.recibidos);
+				
+				
+		var por_eq= new Array();
+		
+		$.each(data.por_equipo, function( i, item ) {
+			
+			if(por_eq.length==0){
+					por_eq.push(item);
+				}
+				else{
+					if(parseInt(por_eq[0]['goles'])<=item['goles']){
+						por_eq.unshift(item);
+					}else{
+						var min_l=por_eq[por_eq.length-1]['goles'];
+						if(parseInt(min_l)>=parseInt(item['goles'])){
+							por_eq.push(item);
+						}else{
+							$.each(por_eq, function( k, gol_item ) {
+								min2=parseInt(gol_item['goles']);
+								if(min2<=item['goles']){
+									por_eq.splice(k, 0,item);
+									return false;
+								};
+							});
+						}
+					}
+				}	
+			
+		});
+				
+		indeppth_por_equipos(por_eq);
+
       
     });
 	
 	//var p_oficiales=
+	
+var indeppth_por_equipos = function(data){
+	var equipo_total=20;
+	var por_quipo_cont=$(".indepth_grafica_barras_der");
+	var por_eq_im=$(".indepth_grafica_equipos_l");
+	
+	for(i=0;i<16;i++){
+		var equipo=data[i];
+		var porcent=(parseInt(equipo["goles"])/equipo_total)*100;
+		var div_equipo='<div class="indepth_grafico_barra" id="indepth_grafico_barra"'+i+'><div class="indepth_grafico_barra_in" style="height:'+porcent+'%;"><div class="indepth_grafico_barra_color" ><div class="indepth_barra_num">'+equipo["goles"]+'</div></div></div></div>';
+		
+		por_quipo_cont.append(div_equipo);
+		
+		var div_eq_img=urlIndepth+"images/4GolesporEquipo/Escudos/"+normalize(equipo["nombre"]).replace(/\s/g,"_")+".png";
+		var div_eq='<div class="indepth_grafica_equipos_img"><img src="'+div_eq_img+'"></div>'
+		por_eq_im.append(div_eq);
+		
+	}
+	
+	/*
+	*/
+}
 
 
 var indepth_mono_gira = function(){
@@ -796,10 +868,39 @@ var indepth_mono_gira = function(){
 		
 }
 
+var llenar_porteros= function(data){
+	
+	var portero_cont=$(".indepth_goles_recibidos_cont");
+	
+	var portero_goles=0;
+
+	$.each(data, function( i, portero ) {
+		var url_img=urlIndepth+"images/Jugadores2/"+normalize(portero["nombre"]).replace(/\s/g,"_")+".png";
+		var div = '<div class="indepth_goles_r_item" id="indepth_goles_r_item'+i+'"><div class="indepth_goles_r_foto"><img src="'+url_img+'"></div><div class="indepth_goles_r_nombre">'+portero["nombre"]+'</div><div class="indepth_goles_r_num">'+portero["goles"]+'</div><div class="indepth_paises_container"><div class="indepth_paises">Países</div><div class="indepth_goles_r_paises_cont"></div></div></div>';
+		
+		portero_cont.append(div);
+		
+		var pais_cont=$("#indepth_goles_r_item"+i+" .indepth_goles_r_paises_cont");
+		
+		
+		$.each(portero["goles_recibidos"], function( i, pais ) {
+			var img_pais=urlIndepth+"images/Banderas/"+normalize(pais["pais"]).replace(/\s/g,"_")+".png";
+			var vf='<div class="indepth_paises_item"><img src="'+img_pais+'">'+pais["goles"]+'</div>';
+			portero_goles=portero_goles+ parseInt(pais["goles"]);
+			pais_cont.append(vf);
+		})
+		
+		
+		
+	});
+	
+	
+	$("#indepth_goles_totales span").html(portero_goles);
+							
+							
+}
+
 indepth_mono_gira();
-
-
-
 
 
  function loadDisqus(source, identifier, url) {
