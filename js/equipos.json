@@ -22,7 +22,7 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-            "minutos": "1522",
+            "minutos": "1612",
             "tipo":"jugador",
             "goles":  
               {
@@ -50,7 +50,7 @@
             "nombre": "Diego",
             "apellido": "Reyes",
             "estado": "Ciudad de México",
-            "minutos": "830",
+            "minutos": "920",
             "tipo":"jugador",
             "goles":  
               {
@@ -78,7 +78,7 @@
             "nombre": "Guillermo",
             "apellido": "Ochoa",
             "estado": "Jalisco",
-            "minutos": "1052",
+            "minutos": "1142",
             "tipo":"portero",
             "goles_recibidos":[
 	            	{
@@ -114,11 +114,11 @@
             "nombre": "Andrés",
             "apellido": "Guardado",
             "estado": "Jalisco",
-            "minutos": "1142",
+            "minutos": "1214",
             "tipo":"jugador",
             "goles":  
               {
-                "cabeza": "0",
+                "cabeza": "1",
                 "pie_der": "0",
                 "pie_izq": "1"
               }
@@ -142,7 +142,7 @@
             "nombre": "Héctor",
             "apellido": "Herrera",
             "estado": "Baja California Sur",
-            "minutos": "1213",
+            "minutos": "1303",
             "tipo":"jugador",
             "goles":  
               {
@@ -181,20 +181,20 @@
             "nombre": "Giovani",
             "apellido": "dos Santos",
             "estado": "Ciudad de México",
-            "minutos": "825",
+            "minutos": "858",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "1",
-                "pie_izq": "1"
+                "pie_izq": "2"
               }
           },
           {
             "nombre": "Jonathan",
             "apellido": "dos Santos",
             "estado": "Nuevo León",
-            "minutos": "192",
+            "minutos": "242",
             "tipo":"jugador",
             "goles":  
               {
@@ -207,20 +207,20 @@
             "nombre": "Carlos",
             "apellido": "Vela",
             "estado": "Quintana Roo",
-            "minutos": "198",
+            "minutos": "270",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
-                "pie_izq": "2"
+                "pie_izq": "3"
               }
           },
           {
             "nombre": "Jesús",
             "apellido": "Corona",
             "estado": "Sonora",
-            "minutos": "484",
+            "minutos": "502",
             "tipo":"jugador",
             "goles":  
               {
@@ -336,7 +336,7 @@
             "nombre": "Paul",
             "apellido": "Aguilar",
             "estado": "Sinaloa",
-            "minutos": "1702",
+            "minutos": "1792",
             "tipo":"jugador",
             "goles":  
               {
@@ -349,13 +349,13 @@
             "nombre": "Oribe",
             "apellido": "Peralta",
             "estado": "Coahuila",
-            "minutos": "1140",
+            "minutos": "1230",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "1",
-                "pie_der": "4",
-                "pie_izq": "3"
+                "pie_der": "6",
+                "pie_izq": "4"
               }
           }
         ]
@@ -495,7 +495,7 @@
             "nombre": "Francisco",
             "apellido": "Rodríguez",
             "estado": "Sinaloa",
-            "minutos": "1389",
+            "minutos": "1479",
             "tipo":"jugador",
             "goles":  
               {
@@ -1021,7 +1021,7 @@
 	        "nombre": "Antonio",
 	        "apellido": "Ríos",
 	        "estado": "Guerrero",
-	        "minutos": "180",
+	        "minutos": "270",
 	        "tipo":"jugador",
             "goles":  
 	          {
@@ -1034,7 +1034,7 @@
 	        "nombre": "Carlos",
 	        "apellido": "Esquivel",
 	        "estado": "Michoacán",
-	        "minutos": "211",
+	        "minutos": "229",
 	        "tipo":"jugador",
             "goles":  
 	          {
