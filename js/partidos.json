@@ -56,7 +56,20 @@
         "goles_a_favor": "1",
         "goles_encontra": "2",
         "tipo": "Local"
+      },
+      {
+        "equipo": "Cuba",
+        "goles_a_favor": "6",
+        "goles_encontra": "0",
+        "tipo": "Local"
+      },
+      {
+        "equipo": "Guatemala",
+        "goles_a_favor": "0",
+        "goles_encontra": "0",
+        "tipo": "Visitante"
       }
+      
     ]
   },
   "amistosos": {

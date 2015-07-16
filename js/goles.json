@@ -3,10 +3,10 @@
     "a_favor": {
       "oficiales": {
         "15": "1",
-        "30": "3",
-        "45": "3",
+        "30": "5",
+        "45": "5",
         "60": "2",
-        "75": "5",
+        "75": "7",
         "90": "4"
       },
       "amistosos": {
@@ -56,7 +56,7 @@
 	    {
 		    "area":"grande",
 		    "lado":"izquierda",
-		    "goles":0
+		    "goles":1
 	    },
 	    {
 		    "area":"fuera",
@@ -67,7 +67,7 @@
 	    {
 		    "area":"grande",
 		    "lado":"centro",
-		    "goles":28
+		    "goles":33
 	    },
 	    {
 		    "area":"fuera",
@@ -99,7 +99,7 @@
     "por_equipo":[
 	    {
 		    "nombre":"América",
-		    "goles":5
+		    "goles":8
 	    },
 	    {
 		    "nombre":"Atlas",
@@ -143,7 +143,7 @@
 	    },
 	    {
 		    "nombre":"Real Sociedad",
-		    "goles":2
+		    "goles":3
 	    },
 	    {
 		    "nombre":"Santos",
@@ -160,7 +160,12 @@
 	    {
 		    "nombre":"Villarreal CF",
 		    "goles":2
+	    },
+	    {
+		    "nombre":"PSV",
+		    "goles":3
 	    }
+	    
     ],
     "jerseys":[
 	    {
