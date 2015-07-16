@@ -22,7 +22,7 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-            "minutos": "1612",
+            "minutos": "1792",
             "tipo":"jugador",
             "goles":  
               {
@@ -50,7 +50,7 @@
             "nombre": "Diego",
             "apellido": "Reyes",
             "estado": "Ciudad de México",
-            "minutos": "920",
+            "minutos": "1100",
             "tipo":"jugador",
             "goles":  
               {
@@ -78,13 +78,18 @@
             "nombre": "Guillermo",
             "apellido": "Ochoa",
             "estado": "Jalisco",
-            "minutos": "1142",
+            "minutos": "1322",
             "tipo":"portero",
             "goles_recibidos":[
 	            	{
 		            	"pais":"Holanda",
 		            	"goles":"4"
 	            	},
+	            	{
+		            	"pais":"TyT",
+		            	"goles":"4"
+	            	}
+,
 	            	{
 		            	"pais":"Costa Rica",
 		            	"goles":"2"
@@ -100,8 +105,8 @@
 	            	{
 		            	"pais":"Ecuador",
 		            	"goles":"1"
-	            	}
-            ],
+	            	}            
+	            ],
             "goles":  
 	          {
 	            "cabeza": "0",
@@ -114,13 +119,13 @@
             "nombre": "Andrés",
             "apellido": "Guardado",
             "estado": "Jalisco",
-            "minutos": "1214",
+            "minutos": "1394",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "1",
                 "pie_der": "0",
-                "pie_izq": "1"
+                "pie_izq": "2"
               }
             
           },
@@ -142,7 +147,7 @@
             "nombre": "Héctor",
             "apellido": "Herrera",
             "estado": "Baja California Sur",
-            "minutos": "1303",
+            "minutos": "1483",
             "tipo":"jugador",
             "goles":  
               {
@@ -181,7 +186,7 @@
             "nombre": "Giovani",
             "apellido": "dos Santos",
             "estado": "Ciudad de México",
-            "minutos": "858",
+            "minutos": "1000",
             "tipo":"jugador",
             "goles":  
               {
@@ -194,7 +199,7 @@
             "nombre": "Jonathan",
             "apellido": "dos Santos",
             "estado": "Nuevo León",
-            "minutos": "242",
+            "minutos": "315",
             "tipo":"jugador",
             "goles":  
               {
@@ -207,12 +212,12 @@
             "nombre": "Carlos",
             "apellido": "Vela",
             "estado": "Quintana Roo",
-            "minutos": "270",
+            "minutos": "450",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "0",
-                "pie_der": "0",
+                "pie_der": "1",
                 "pie_izq": "3"
               }
           },
@@ -220,7 +225,7 @@
             "nombre": "Jesús",
             "apellido": "Corona",
             "estado": "Sonora",
-            "minutos": "502",
+            "minutos": "523",
             "tipo":"jugador",
             "goles":  
               {
@@ -336,12 +341,12 @@
             "nombre": "Paul",
             "apellido": "Aguilar",
             "estado": "Sinaloa",
-            "minutos": "1792",
+            "minutos": "1965",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "0",
-                "pie_der": "1",
+                "pie_der": "2",
                 "pie_izq": "0"
               }
           },
@@ -349,7 +354,7 @@
             "nombre": "Oribe",
             "apellido": "Peralta",
             "estado": "Coahuila",
-            "minutos": "1230",
+            "minutos": "1365",
             "tipo":"jugador",
             "goles":  
               {
@@ -495,7 +500,7 @@
             "nombre": "Francisco",
             "apellido": "Rodríguez",
             "estado": "Sinaloa",
-            "minutos": "1479",
+            "minutos": "1659",
             "tipo":"jugador",
             "goles":  
               {
@@ -622,7 +627,7 @@
             "nombre": "José Juan",
             "apellido": "Vázquez",
             "estado": "Guanajuato",
-            "minutos": "930",
+            "minutos": "997",
             "tipo":"jugador",
             "goles":  
               {
@@ -869,7 +874,7 @@
             "nombre": "Javier",
             "apellido": "Orozco",
             "estado": "Guanajuato",
-            "minutos": "167",
+            "minutos": "170",
             "tipo":"jugador",
             "goles":  
               {
@@ -1034,7 +1039,7 @@
 	        "nombre": "Carlos",
 	        "apellido": "Esquivel",
 	        "estado": "Michoacán",
-	        "minutos": "229",
+	        "minutos": "264",
 	        "tipo":"jugador",
             "goles":  
 	          {
