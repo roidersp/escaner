@@ -1358,7 +1358,6 @@ position: absolute;
 	height: 100%;
 	margin: auto;
 	border-left: 2px dashed rgba(161, 161, 161, 0.4);
-	display: none;
 }
 
 .indepth_jugmin_jugador_imagen{
@@ -1433,10 +1432,10 @@ position: absolute;
 
 .indepth_boteLla_cont{
 	position: absolute;
-	right: -50px;
-	bottom: -5px;
+	right: 0px;
+	bottom: 0px;
 	display: table;
-	width: 450px;
+	width: 305px;
 }
 
 .indepth_botella_powerade{
@@ -1578,7 +1577,7 @@ position: absolute;
 .indepth_goles{
 	position: absolute;
 	height: 50px;
-	  min-width: 160px;
+	  min-width: 150px;
 
 }
 
@@ -1619,14 +1618,14 @@ position: absolute;
 }
 
 #indepth_goles_izquierda{
-	right: -120px;
+	right: -110px;
 	bottom: -10px;
 	
 	
 }
 
 #indepth_goles_derecha{
-	left: -120px;
+	left: -110px;
 	bottom: -10px;
 	text-align: right;
 }
@@ -2095,7 +2094,7 @@ position: absolute;
 }
 
 .indepth_penales_cir_cont{
-	display: inline-flex;
+	display: table;
 }
 
 .indepth_penales_cir_item{
@@ -2242,105 +2241,6 @@ margin: auto;
 	background-color: #373642;
 }
 
-.indepth_uniformes_cont{
-	display: table;
-	margin: auto;
-}
-
-.indepth_uniformes_item{
-	width: 165px;
-	margin: 20px;
-	background-color: #2c2c36;
-	box-shadow: 7px -7px 10px 2px rgba(0, 0, 0, 0.44);;
-	height: 420px;
-	border-radius: 8px;
-	float: left;
-}
-
-.indepth_uniforme_img_cont{
-	height: 255px;
-	background-image: url(../images/5Uniformes/Cuadro.png);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.indepth_uniforme_img{
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 132px;
-	width: 100%;
-	height: 230px;
-}
-
-#indepth_uniforme_img_blanca{
-	background-image: url(../images/5Uniformes/Camisas/Camisa_Blanca.png);
-}
-
-#indepth_uniforme_img_verde{
-	background-image: url(../images/5Uniformes/Camisas/Camisa_Verde.png);
-}
-
-#indepth_uniforme_img_roja{
-	background-image: url(../images/5Uniformes/Camisas/Camisa_Roja.png);
-}
-
-#indepth_uniforme_img_negra{
-	background-image: url(../images/5Uniformes/Camisas/Camisa_Negra.png);
-}
-
-.indepth_uniformes_circulos{
-	width: auto;
-	display: table;
-	margin: 10px auto;
-}
-
-.indepth_uniformes_cirulos_item{
-	width: 28px;
-	height: 28px;
-	border-radius: 50%;
-	margin: 0 9px;
-	float: left;
-	text-align: center;
-	line-height: 28px;
-	color: white;
-	font-size: 16px;
-	font-weight: 700;
-}
-
-.uniformes_ganados{
-	border: 2px solid #5bebc8;
-}
-
-.uniformes_perdidos{
-	border: 2px solid #ec1057;
-}
-
-.uniformes_empatados{
-	border: 2px solid #d4cece;
-}
-
-.indepth_uniformes_title{
-	color: white;
-	text-align: center;
-	font-size: 18px;
-	margin: 10px 0px;
-	font-weight: 700;
-}
-
-.indepth_uniformes_total{
-	font-size: 26px;
-	width: 45px;
-	height: 45px;
-	line-height: 45px;
-	font-weight: 700;
-	color: white;
-	text-align: center;
-	margin:  10px auto;
-	border: 1px solid white;
-	border-radius: 50%;
-}
-
 @media screen and (max-width:1023px) {
 	.indepth_page_body{
 		width: 100%;
@@ -2469,8 +2369,6 @@ margin: auto;
 	}
 	
 }
-
-
 
 @media screen and (max-height:700px) {
 	.indepth_cover_content .indepth_cover_conatainer_in{
@@ -2612,92 +2510,6 @@ margin: auto;
 		transform: translate(-45px,-12px);
 	}
 	
-	.indepth_goles_recibidos_cont{
-		width: 443px;
-	}
-	
-	.indepth_goles_r_item{
-		width: 141px;
-	}
-	.indepth_cancha_zonas{
-		width: 700px;
-	}
-	.indepth_circulo_zona{
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		font-size: 22px;
-	}
-	
-	#area_chica{
-		top: 13px;
-		left: 330px;
-	}
-	
-	#area_grande_izquierda{
-		left: 170px;
-		top: 120px;
-	}
-	
-	#area_grande_centro{
-		left: 330px;
-		top: 120px;
-	}
-	
-	#area_grande_derecha{
-		right: 200px;
-		top: 120px;
-	}
-	
-	#area_fuera_izquierda{
-		top:260px;
-		left: 170px;
-	}
-	
-	#area_fuera_centro{
-		left: 330px;
-		top: 260px;
-	}
-	
-	#area_fuera_derecha{
-		right: 170px;
-		top: 260px;
-	}
-
-	.indepth_penales_lado{
-		margin: 0 15px;
-	}
-	
-	.indepth_penales_cir_item{
-		margin: 0 10px;
-	}
-	
-	.indepth_grafica_barras_der{
-		
-	}
-	
-	.indepth_grafica_barras{
-		display: block;
-	}
-	
-	.indepth_grafica_b_cont{
-		width: 930px;
-		display: block
-	}
-	
-	.indepth_overflow{
-		width: 700px;
-		margin: auto;
-		overflow: hidden;
-	}
-	
-	.indepth_grafica_equipos_l{
-		padding-left: 15px;
-	}
-	
-	.indepth_uniformes_cont{
-		width: 420px;
-	}
 }
 
 
@@ -2818,8 +2630,6 @@ margin: auto;
 	  padding-left: 30px;
 	  line-height: 35px;
 	}
-	
-	
 
 
 }
@@ -3579,103 +3389,13 @@ margin: auto;
 			height: 250px;
 		}
 		
-.indepth_goles_recibidos_cont{
-	width: 285px;
-}
-
-.indepth_cancha_zonas{
-	width: 300px;
-}
-
-.indepth_circulo_zona {
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 12px;
-}
-
-#area_chica{
-	top: 5px;
-	left: 140px;
-}
-
-#area_grande_izquierda{
-	left: 70px;
-	top: 45px;
-}
-
-#area_grande_centro{
-	left: 140px;
-	top: 45px;
-}
-
-#area_grande_derecha{
-	right: 70px;
-	top: 45px;
-}
-
-#area_fuera_izquierda{
-	top:110px;
-	left: 70px;
-}
-
-#area_fuera_centro{
-	left: 140px;
-	top: 110px;
-}
-
-#area_fuera_derecha{
-	right: 70px;
-	top: 110px;
-}
-
-.indepth_zonas_ind_item{
-	width: 100px;
-	
-}
-
-.indepth_zonas_cuadrado{
-	width: 15px;
-	height: 15px;
-	margin-right: 5px;
-}
-
-.indepth_zonas_text{
-	line-height: 15px;
-	font-size: 12px;
-}
-
-.indepth_penales_cont{
-	margin-top: 40px;
-	margin-bottom: 60px;
-}
-
-.indepth_penales_lado{
-	float: none;
-	margin-bottom: 30px;
-}
-
-.indepth_penales_title{
-	margin-bottom: 10px;
-}
-
-
-
 
 	
 }
 
 @media screen and (max-width:385px) {
 	
-	.indepth_uniformes_cont{
-	width: 205px;
-}
-
-
-
-.indepth_cont_rec{
-	display: block;
-}
+	
 
 	.indepth_page_content .indepth_title{
 		font-size: 32px;
@@ -3699,11 +3419,7 @@ margin: auto;
 }
 
 @media screen and (max-width:360px) {
-	
-	.indepth_overflow{
-		width: 270px;
-	}
-	
+
 	#indepth_min_jug_container_movil{
 		width: 310px;
 	}

@@ -22,11 +22,7 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
-<<<<<<< HEAD
-            "minutos": "1612",
-=======
-            "minutos": "1702",
->>>>>>> origin/gh-pages
+            "minutos": "1522",
             "tipo":"jugador",
             "goles":  
               {
@@ -54,11 +50,7 @@
             "nombre": "Diego",
             "apellido": "Reyes",
             "estado": "Ciudad de México",
-<<<<<<< HEAD
-            "minutos": "920",
-=======
-            "minutos": "1010",
->>>>>>> origin/gh-pages
+            "minutos": "830",
             "tipo":"jugador",
             "goles":  
               {
@@ -86,11 +78,7 @@
             "nombre": "Guillermo",
             "apellido": "Ochoa",
             "estado": "Jalisco",
-<<<<<<< HEAD
-            "minutos": "1142",
-=======
-            "minutos": "1232",
->>>>>>> origin/gh-pages
+            "minutos": "1052",
             "tipo":"portero",
             "goles_recibidos":[
 	            	{
@@ -126,15 +114,11 @@
             "nombre": "Andrés",
             "apellido": "Guardado",
             "estado": "Jalisco",
-<<<<<<< HEAD
-            "minutos": "1214",
-=======
-            "minutos": "1304",
->>>>>>> origin/gh-pages
+            "minutos": "1142",
             "tipo":"jugador",
             "goles":  
               {
-                "cabeza": "1",
+                "cabeza": "0",
                 "pie_der": "0",
                 "pie_izq": "1"
               }
@@ -158,11 +142,7 @@
             "nombre": "Héctor",
             "apellido": "Herrera",
             "estado": "Baja California Sur",
-<<<<<<< HEAD
-            "minutos": "1303",
-=======
-            "minutos": "1393",
->>>>>>> origin/gh-pages
+            "minutos": "1213",
             "tipo":"jugador",
             "goles":  
               {
@@ -201,28 +181,20 @@
             "nombre": "Giovani",
             "apellido": "dos Santos",
             "estado": "Ciudad de México",
-<<<<<<< HEAD
-            "minutos": "858",
-=======
-            "minutos": "955",
->>>>>>> origin/gh-pages
+            "minutos": "825",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "1",
-                "pie_izq": "2"
+                "pie_izq": "1"
               }
           },
           {
             "nombre": "Jonathan",
             "apellido": "dos Santos",
             "estado": "Nuevo León",
-<<<<<<< HEAD
-            "minutos": "242",
-=======
-            "minutos": "246",
->>>>>>> origin/gh-pages
+            "minutos": "192",
             "tipo":"jugador",
             "goles":  
               {
@@ -235,24 +207,20 @@
             "nombre": "Carlos",
             "apellido": "Vela",
             "estado": "Quintana Roo",
-<<<<<<< HEAD
-            "minutos": "270",
-=======
-            "minutos": "360",
->>>>>>> origin/gh-pages
+            "minutos": "198",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "0",
                 "pie_der": "0",
-                "pie_izq": "3"
+                "pie_izq": "2"
               }
           },
           {
             "nombre": "Jesús",
             "apellido": "Corona",
             "estado": "Sonora",
-            "minutos": "502",
+            "minutos": "484",
             "tipo":"jugador",
             "goles":  
               {
@@ -368,11 +336,7 @@
             "nombre": "Paul",
             "apellido": "Aguilar",
             "estado": "Sinaloa",
-<<<<<<< HEAD
-            "minutos": "1792",
-=======
-            "minutos": "1875",
->>>>>>> origin/gh-pages
+            "minutos": "1702",
             "tipo":"jugador",
             "goles":  
               {
@@ -385,17 +349,13 @@
             "nombre": "Oribe",
             "apellido": "Peralta",
             "estado": "Coahuila",
-<<<<<<< HEAD
-            "minutos": "1230",
-=======
-            "minutos": "1320",
->>>>>>> origin/gh-pages
+            "minutos": "1140",
             "tipo":"jugador",
             "goles":  
               {
                 "cabeza": "1",
-                "pie_der": "6",
-                "pie_izq": "4"
+                "pie_der": "4",
+                "pie_izq": "3"
               }
           }
         ]
@@ -535,11 +495,7 @@
             "nombre": "Francisco",
             "apellido": "Rodríguez",
             "estado": "Sinaloa",
-<<<<<<< HEAD
-            "minutos": "1479",
-=======
-            "minutos": "1569",
->>>>>>> origin/gh-pages
+            "minutos": "1389",
             "tipo":"jugador",
             "goles":  
               {
@@ -666,7 +622,7 @@
             "nombre": "José Juan",
             "apellido": "Vázquez",
             "estado": "Guanajuato",
-            "minutos": "997",
+            "minutos": "930",
             "tipo":"jugador",
             "goles":  
               {
@@ -913,7 +869,7 @@
             "nombre": "Javier",
             "apellido": "Orozco",
             "estado": "Guanajuato",
-            "minutos": "170",
+            "minutos": "167",
             "tipo":"jugador",
             "goles":  
               {
@@ -1065,7 +1021,7 @@
 	        "nombre": "Antonio",
 	        "apellido": "Ríos",
 	        "estado": "Guerrero",
-	        "minutos": "270",
+	        "minutos": "180",
 	        "tipo":"jugador",
             "goles":  
 	          {
@@ -1078,11 +1034,7 @@
 	        "nombre": "Carlos",
 	        "apellido": "Esquivel",
 	        "estado": "Michoacán",
-<<<<<<< HEAD
-	        "minutos": "229",
-=======
-	        "minutos": "252",
->>>>>>> origin/gh-pages
+	        "minutos": "211",
 	        "tipo":"jugador",
             "goles":  
 	          {

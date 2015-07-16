@@ -105,7 +105,7 @@ var indepth_menu=function(){
 		
 	},{offset: '50%'});
 	
-	 $('#indepth_page11').waypoint(function(direction) {
+	 $('#indepth_page6').waypoint(function(direction) {
 		 if(direction=='down'){
 			 $("#indepth_menu").fadeOut();
 			 $(".indepth_share").fadeOut("slow");
@@ -823,32 +823,7 @@ var indepth_circulos = function(component, width, minw, datos, img){
 		});
 				
 		indeppth_por_equipos(por_eq);
-		
-		
-		var u_ver=$("#indepth_u_verde");
-		var u_rojo=$("#indepth_u_roja");
-		var u_negra=$("#indepth_u_negra");
-		var u_blanca=$("#indepth_u_blanca");
-		var uniformes=data.jerseys;
-		
-		u_ver.find(".uniformes_ganados").html(uniformes[0]["partidos"]["ganados"]);
-		u_ver.find(".uniformes_empatados").html(uniformes[0]["partidos"]["empatados"]);
-		u_ver.find(".uniformes_perdidos").html(uniformes[0]["partidos"]["perdidos"]);
-		
-		u_rojo.find(".uniformes_ganados").html(uniformes[1]["partidos"]["ganados"]);
-		u_rojo.find(".uniformes_empatados").html(uniformes[1]["partidos"]["empatados"]);
-		u_rojo.find(".uniformes_perdidos").html(uniformes[1]["partidos"]["perdidos"]);
-		u_rojo.find(".indepth_uniformes_total").html(parseInt(uniformes[1]["partidos"]["perdidos"])+parseInt(uniformes[1]["partidos"]["empatados"])+parseInt(uniformes[1]["partidos"]["ganados"]));
-		
-		u_negra.find(".uniformes_ganados").html(uniformes[2]["partidos"]["ganados"]);
-		u_negra.find(".uniformes_empatados").html(uniformes[2]["partidos"]["empatados"]);
-		u_negra.find(".uniformes_perdidos").html(uniformes[2]["partidos"]["perdidos"]);
-		u_negra.find(".indepth_uniformes_total").html(parseInt(uniformes[2]["partidos"]["perdidos"])+parseInt(uniformes[2]["partidos"]["empatados"])+parseInt(uniformes[2]["partidos"]["ganados"]));
-      
-		u_blanca.find(".uniformes_ganados").html(uniformes[3]["partidos"]["ganados"]);
-		u_blanca.find(".uniformes_empatados").html(uniformes[3]["partidos"]["empatados"]);
-		u_blanca.find(".uniformes_perdidos").html(uniformes[3]["partidos"]["perdidos"]);
-		u_blanca.find(".indepth_uniformes_total").html(parseInt(uniformes[3]["partidos"]["perdidos"])+parseInt(uniformes[3]["partidos"]["empatados"])+parseInt(uniformes[3]["partidos"]["ganados"]));
+
       
     });
 	
