@@ -22,7 +22,11 @@
             "nombre": "Miguel",
             "apellido": "Layún",
             "estado": "Veracruz",
+<<<<<<< HEAD
             "minutos": "1612",
+=======
+            "minutos": "1702",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -50,7 +54,11 @@
             "nombre": "Diego",
             "apellido": "Reyes",
             "estado": "Ciudad de México",
+<<<<<<< HEAD
             "minutos": "920",
+=======
+            "minutos": "1010",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -78,7 +86,11 @@
             "nombre": "Guillermo",
             "apellido": "Ochoa",
             "estado": "Jalisco",
+<<<<<<< HEAD
             "minutos": "1142",
+=======
+            "minutos": "1232",
+>>>>>>> origin/gh-pages
             "tipo":"portero",
             "goles_recibidos":[
 	            	{
@@ -114,7 +126,11 @@
             "nombre": "Andrés",
             "apellido": "Guardado",
             "estado": "Jalisco",
+<<<<<<< HEAD
             "minutos": "1214",
+=======
+            "minutos": "1304",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -142,7 +158,11 @@
             "nombre": "Héctor",
             "apellido": "Herrera",
             "estado": "Baja California Sur",
+<<<<<<< HEAD
             "minutos": "1303",
+=======
+            "minutos": "1393",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -181,7 +201,11 @@
             "nombre": "Giovani",
             "apellido": "dos Santos",
             "estado": "Ciudad de México",
+<<<<<<< HEAD
             "minutos": "858",
+=======
+            "minutos": "955",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -194,7 +218,11 @@
             "nombre": "Jonathan",
             "apellido": "dos Santos",
             "estado": "Nuevo León",
+<<<<<<< HEAD
             "minutos": "242",
+=======
+            "minutos": "246",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -207,7 +235,11 @@
             "nombre": "Carlos",
             "apellido": "Vela",
             "estado": "Quintana Roo",
+<<<<<<< HEAD
             "minutos": "270",
+=======
+            "minutos": "360",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -336,7 +368,11 @@
             "nombre": "Paul",
             "apellido": "Aguilar",
             "estado": "Sinaloa",
+<<<<<<< HEAD
             "minutos": "1792",
+=======
+            "minutos": "1875",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -349,7 +385,11 @@
             "nombre": "Oribe",
             "apellido": "Peralta",
             "estado": "Coahuila",
+<<<<<<< HEAD
             "minutos": "1230",
+=======
+            "minutos": "1320",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -495,7 +535,11 @@
             "nombre": "Francisco",
             "apellido": "Rodríguez",
             "estado": "Sinaloa",
+<<<<<<< HEAD
             "minutos": "1479",
+=======
+            "minutos": "1569",
+>>>>>>> origin/gh-pages
             "tipo":"jugador",
             "goles":  
               {
@@ -622,7 +666,7 @@
             "nombre": "José Juan",
             "apellido": "Vázquez",
             "estado": "Guanajuato",
-            "minutos": "930",
+            "minutos": "997",
             "tipo":"jugador",
             "goles":  
               {
@@ -869,7 +913,7 @@
             "nombre": "Javier",
             "apellido": "Orozco",
             "estado": "Guanajuato",
-            "minutos": "167",
+            "minutos": "170",
             "tipo":"jugador",
             "goles":  
               {
@@ -1034,7 +1078,11 @@
 	        "nombre": "Carlos",
 	        "apellido": "Esquivel",
 	        "estado": "Michoacán",
+<<<<<<< HEAD
 	        "minutos": "229",
+=======
+	        "minutos": "252",
+>>>>>>> origin/gh-pages
 	        "tipo":"jugador",
             "goles":  
 	          {

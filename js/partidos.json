@@ -62,6 +62,15 @@
         "goles_a_favor": "6",
         "goles_encontra": "0",
         "tipo": "Local"
+<<<<<<< HEAD
+=======
+      },
+      {
+        "equipo": "Guatemala",
+        "goles_a_favor": "0",
+        "goles_encontra": "0",
+        "tipo": "Visitante"
+>>>>>>> origin/gh-pages
       }
       
     ]
