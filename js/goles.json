@@ -7,7 +7,7 @@
         "45": "6",
         "60": "3",
         "75": "7",
-        "90": "6"
+        "90": "7"
       },
       "amistosos": {
         "15": "4",
@@ -67,7 +67,7 @@
 	    {
 		    "area":"grande",
 		    "lado":"centro",
-		    "goles":34
+		    "goles":37
 	    },
 	    {
 		    "area":"fuera",
@@ -93,7 +93,7 @@
 	    },
 	    "oficiales":{
 		    "recibidos":3,
-		    "anotados":1
+		    "anotados":4
 	    }
     },
     "por_equipo":[
@@ -163,7 +163,7 @@
 	    },
 	    {
 		    "nombre":"PSV",
-		    "goles":4
+		    "goles":6
 	    }
 	    
     ],
@@ -172,9 +172,9 @@
 			"nombre":"Verde",
 			"img":"/5Uniformes/Cuadro_Verde.png",
 			"partidos":{
-				"ganados":5,
+				"ganados":9,
 				"empatados":2,
-				"perdidos":1
+				"perdidos":2
 			}
 	    }, 
 	    {
@@ -182,7 +182,7 @@
 			"img":"/5Uniformes/Cuadro_Roja.png",
 			"partidos":{
 				"ganados":3,
-				"empatados":2,
+				"empatados":3,
 				"perdidos":1
 			}
 	    },
@@ -190,8 +190,8 @@
 			"nombre":"Negro",
 			"img":"/5Uniformes/Cuadro_Negro.png",
 			"partidos":{
-				"ganados":2,
-				"empatados":2,
+				"ganados":4,
+				"empatados":4,
 				"perdidos":1
 			}
 	    }, 
@@ -199,9 +199,9 @@
 			"nombre":"Blanco",
 			"img":"/5Uniformes/Cuadro_Blanco.png",
 			"partidos":{
-				"ganados":1,
-				"empatados":2,
-				"perdidos":1
+				"ganados":2,
+				"empatados":3,
+				"perdidos":2
 			}
 	    }
     ]

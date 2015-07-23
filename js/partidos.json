@@ -75,8 +75,20 @@
         "goles_a_favor": "4",
         "goles_encontra": "4",
         "tipo": "Local"
+      } ,
+      {
+        "equipo": "Costa Rica",
+        "goles_a_favor": "1",
+        "goles_encontra": "0",
+        "tipo": "Local"
       }
-      
+       ,
+      {
+        "equipo": "Panamá",
+        "goles_a_favor": "2",
+        "goles_encontra": "1",
+        "tipo": "Visitante"
+      }
     ]
   },
   "amistosos": {
